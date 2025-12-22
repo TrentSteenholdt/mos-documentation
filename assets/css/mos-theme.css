@@ -1,0 +1,226 @@
+:root {
+  /* MOS brand colors */
+  --md-primary-fg-color: #000000;
+  --md-primary-fg-color--light: #222222;
+  --md-primary-fg-color--dark: #000000;
+
+  --md-accent-fg-color: #004b82; /* MOS blue */
+
+  /* Base text and background */
+  --md-default-fg-color: #191a1e;
+  --md-default-bg-color: #ffffff;
+
+  /* Fonts */
+  --md-text-font: Arial, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  --md-code-font: Consolas, "SFMono-Regular", Menlo, Monaco, monospace;
+  --md-mermaid-node-fg-color: #004b82; /* Mermaid nodes: MOS blue */
+  --md-mermaid-node-bg-color: #e6f0f7; /* Light blue background */
+}
+
+/* Navigation links */
+.md-nav__link,
+.md-nav__link:hover,
+.md-nav__link--active {
+  color: var(--md-default-fg-color) !important;
+}
+
+/* Header styling */
+.md-header {
+  background-color: #000 !important;
+}
+
+.md-header,
+.md-header * {
+  color: #fff;
+}
+
+/* Site name styling with MankSans */
+.md-header__title {
+  font-family: "MankSans-MOS", "Segoe UI", sans-serif !important;
+}
+
+/* Sidebar title - hide the full text and replace with "Documentation" */
+.md-nav--primary > .md-nav__title {
+  font-size: 0 !important;
+}
+
+.md-nav--primary > .md-nav__title::before {
+  content: "Documentation" !important;
+  display: inline-block !important;
+  font-size: 1rem !important;
+  font-family: "MankSans-MOS", "Segoe UI", sans-serif !important;
+  font-weight: 600 !important;
+  color: #191a1e !important;
+}
+
+/* Link styling - blue by default */
+.md-typeset a {
+  color: #004b82;
+}
+
+.md-typeset a:hover {
+  color: #004b82;
+  text-decoration: underline;
+}
+
+/* Sharper corners like MOS */
+.md-button,
+.md-typeset .admonition,
+.md-typeset .tabbed-set > label,
+.md-typeset .tabbed-set > .tabbed-content,
+.md-typeset .highlight,
+.md-typeset .footnotes,
+.md-typeset .quote {
+  border-radius: 0;
+}
+
+/* Base text sizing - responsive */
+.md-typeset {
+  font-size: 0.75rem;
+}
+
+/* On small screens, increase font size */
+@media (max-width: 576px) {
+  .md-typeset {
+    font-size: 0.95rem;
+  }
+}
+
+/* Code font sizing */
+.md-typeset code,
+.md-typeset pre > code {
+  font-size: 0.9em;
+}
+
+/* Heading fonts - use MankSans */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-family: "MankSans-MOS", "Segoe UI", sans-serif !important;
+}
+
+/* Page title font */
+.md-typeset {
+  --md-typeset-h1-font-size: 2.5rem;
+  --md-typeset-h2-font-size: 2rem;
+}
+
+/* Navigation font */
+.md-nav__title,
+.md-nav__link,
+.md-nav__link > * {
+  font-family: "MankSans-MOS", "Segoe UI", sans-serif !important;
+}
+
+/* Search input styling - complete override */
+.md-search__input {
+  background-color: #222 !important;
+  color: #fff !important;
+  border-color: #444 !important;
+}
+
+.md-search__input::placeholder {
+  color: #ccc !important;
+  opacity: 1 !important;
+}
+
+.md-search__input:focus {
+  background-color: #2a2a2a !important;
+  border-color: #004b82 !important;
+  color: #fff !important;
+  box-shadow: 0 0 0 1px #004b82 !important;
+}
+
+/* Override Material defaults for search box in header */
+.md-header .md-search {
+  padding: 8px !important;
+}
+
+.md-header [data-md-toggle="search"]:checked ~ .md-search__inner {
+  display: block !important;
+}
+
+.md-search-result {
+  background-color: #f5f5f5 !important;
+  border-top: 1px solid #ddd !important;
+}
+
+.md-search-result__meta {
+  color: #666 !important;
+  font-size: 0.75rem !important;
+  padding: 12px 16px !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.md-search-result__list {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.md-search-result__item {
+  border-bottom: 1px solid #ddd !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.md-search-result__article {
+  background-color: #fff !important;
+  color: #191a1e !important;
+  padding: 12px 16px !important;
+}
+
+.md-search-result__article h1,
+.md-search-result__article h2 {
+  color: #004b82 !important;
+  font-family: "MankSans-MOS", "Segoe UI", sans-serif !important;
+  margin-bottom: 4px !important;
+}
+
+.md-search-result__article p {
+  color: #191a1e !important;
+  margin: 4px 0 !important;
+  font-size: 0.75rem !important;
+}
+
+.md-search-result__article ul,
+.md-search-result__article ol {
+  color: #191a1e !important;
+  margin: 4px 0 !important;
+}
+
+.md-search-result__article li {
+  color: #191a1e !important;
+  margin: 2px 0 !important;
+}
+
+.md-search-result__link {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.md-search-result__link:hover .md-search-result__article {
+  background-color: #f9f9f9 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+mark {
+  background-color: #fff3cd !important;
+  color: inherit !important;
+}
+
+/* Hide "Made with Material for MkDocs" footer */
+.md-footer-meta {
+  display: none !important;
+}
+
+/* Register MOS font */
+@font-face {
+  font-family: "MankSans-MOS";
+  src: url("../fonts/MankSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
