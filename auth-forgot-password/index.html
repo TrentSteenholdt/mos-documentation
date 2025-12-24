@@ -505,6 +505,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#when-password-recovery-is-disabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When Password Recovery is Disabled
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -701,6 +712,34 @@
     
   
     Change Password
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../profile-change-name/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Change Name
   
 
     
@@ -2006,6 +2045,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#when-password-recovery-is-disabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When Password Recovery is Disabled
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2094,6 +2144,7 @@
 <ul>
 <li>"Incorrect answer": Try your alternate phrasing; consider case/capitalisation.</li>
 <li>"No secret question set": Contact your association to reset security settings.</li>
+<li>"Self-service password recovery is currently disabled": Your password recovery was disabled when your name was changed. Contact your administrator for password reset.</li>
 </ul>
 <h2 id="step-3-reset-email">Step 3: Reset Email</h2>
 <ul>
@@ -2119,12 +2170,41 @@
 <li>Symbols recommended.</li>
 <li>Avoid common words and reuse from other sites.</li>
 </ul>
+<h2 id="when-password-recovery-is-disabled">When Password Recovery is Disabled</h2>
+<p>Self-service password recovery is automatically disabled when:</p>
+<ul>
+<li>Your name is changed by you or an administrator</li>
+<li>An administrator manually disables it for security reasons</li>
+</ul>
+<p><strong>What Happens</strong></p>
+<p>When you enter your username or email:</p>
+<ul>
+<li>The system detects password recovery is disabled</li>
+<li>An error message appears: "Self-service password recovery is currently disabled for your account"</li>
+<li>You cannot proceed to the secret question step</li>
+</ul>
+<p><strong>How to Reset Your Password</strong></p>
+<ol>
+<li>Contact your association administrator</li>
+<li>They can reset your password using the Admin User Management page</li>
+<li>You will receive an email with a new temporary password</li>
+<li>Use the temporary password to log in</li>
+<li>Change your password immediately after logging in</li>
+</ol>
+<p><strong>Why This Happens</strong></p>
+<p>Password recovery is disabled when your name changes because:</p>
+<ul>
+<li>Your username changes when your name changes</li>
+<li>Security questions and answers are tied to your original identity</li>
+<li>This prevents unauthorised access using outdated credentials</li>
+</ul>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <ul>
 <li>No email received: Verify the correct email is on your account via an admin; re-run the flow; check Spam/Junk.</li>
 <li>Link expired: Re-run the Forgot Password flow to receive a fresh link.</li>
 <li>Locked out: Too many attempts may temporarily lock recovery; wait and retry.</li>
 <li>No access to email: Contact your association to update your email.</li>
+<li>Password recovery disabled: Contact your administrator to reset your password.</li>
 </ul>
 <h2 id="tips">Tips</h2>
 <ul>
@@ -2137,6 +2217,8 @@
 <li><a href="../auth-login/">Sign In</a></li>
 <li><a href="../auth-register/">Register</a></li>
 <li><a href="../profile-change-password/">Change Password</a></li>
+<li><a href="../profile-change-name/">Change Your Name</a></li>
+<li><a href="../admin-user-management/">Admin User Management</a></li>
 </ul>
 
 
