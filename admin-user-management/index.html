@@ -1907,6 +1907,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../profile-linked-accounts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linked Accounts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../profile-search-users/" class="md-nav__link">
         
   
@@ -2725,6 +2753,7 @@
 </div>
 <h2 id="overview">Overview</h2>
 <p>Manage all users in your organisation through the User Management page. View user lists, search for members, edit user details, create new accounts, change user names, reset passwords, manage group membership, upload profile pictures, and export user data.</p>
+<p>User accounts are managed through Microsoft Azure AD B2C for enhanced security.</p>
 <h2 id="how-to-access">How to Access</h2>
 <p>Click <strong>Admin</strong> then <strong>User Management</strong></p>
 <h2 id="page-layout">Page Layout</h2>
@@ -2843,6 +2872,10 @@
 <li>Confirm the deletion</li>
 <li>Result: Picture is deleted and replaced with default avatar</li>
 </ol>
+<div class="admonition tip">
+<p class="admonition-title">Alternative Method</p>
+<p>You can also delete profile pictures from the <a href="../library-media/">Media</a> page, which allows you to manage multiple profile images at once or delete orphaned profile pictures.</p>
+</div>
 <p><strong>Multiple Groups</strong></p>
 <p>If the user belongs to multiple groups:</p>
 <ul>
@@ -2947,8 +2980,24 @@
 <li>Click <strong>Create User</strong></li>
 </ol>
 <p><strong>What Happens Next</strong></p>
-<p>The system checks if the email already exists:</p>
-<p><strong>Flowchart: Add User Outcomes</strong></p>
+<p>The system:</p>
+<ul>
+<li>Creates account in Azure AD B2C with a secure password</li>
+<li>Adds the user to your group</li>
+<li>Sends a welcome email with username and temporary password</li>
+<li>User receives email with login instructions</li>
+<li>User should log in and change their password to one they will remember</li>
+</ul>
+<p><strong>Account Details</strong></p>
+<p>New accounts receive:</p>
+<ul>
+<li>Username generated from email address or first and surname</li>
+<li>Temporary password (random, secure)</li>
+<li>Email with sign-in instructions</li>
+<li>Access to your group</li>
+<li>Standard user permissions (can be upgraded later)</li>
+</ul>
+<p><strong>What Happens Next - Flowchart</strong></p>
 <div class="panzoom-box" data-key="alt" id="panzoom0" oncontextmenu="return false;">
     <div class="panzoom-info-box panzoom-info-box-top panzoom-hidden">
 Hold "Alt" / "Option" to enable pan &amp; zoom
@@ -2976,41 +3025,40 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
   A[Enter First Name, Surname, Email] --&gt; B{Valid details?}
   B -- No --&gt; E[Show validation error]
   B -- Yes --&gt; C{Email exists?}
-  C -- No --&gt; D1[Create new account]
-  D1 --&gt; F1["Generate username (firstname.surname)"]
-  D1 --&gt; G1[Generate random 9-character password]
+  C -- No --&gt; D1[Create new account in Azure AD B2C]
+  D1 --&gt; F1["Generate username"]
+  D1 --&gt; G1[Generate secure temporary password]
   D1 --&gt; H1[Add to your group]
-  D1 --&gt; I1["Send welcome email (username + password)"]
+  D1 --&gt; I1["Send welcome email"]
   C -- Yes --&gt; C1{Account deleted?}
   C1 -- Yes --&gt; D2[Restore account]
-  D2 --&gt; G2[Generate new password]
+  D2 --&gt; G2[Generate new temporary password]
   D2 --&gt; H2[Add to your group]
-  D2 --&gt; I2["Send welcome email (username + password)"]
+  D2 --&gt; I2["Send welcome email"]
   C1 -- No --&gt; D3[Add existing user to your group]
-  D3 --&gt; J1[No new password]
+  D3 --&gt; J1[No new password needed]
   D3 --&gt; I3[Send email: Added to new group]</code></pre> 
     
 </div>
 <p><strong>New Email - Creates New Account</strong></p>
 <ul>
-<li>New account is created</li>
-<li>Username generates as firstname.surname</li>
-<li>Random 9 character password generates automatically</li>
-<li>User is added to your group</li>
-<li>Welcome email is sent with username and password</li>
+<li>New account created in Azure AD B2C</li>
+<li>Temporary password sent via email</li>
+<li>User added to your group</li>
+<li>User receives welcome email with username and login link</li>
 </ul>
 <p><strong>Existing Email - Active User</strong></p>
 <ul>
-<li>Existing user is added to your group</li>
-<li>No new password is generated</li>
-<li>User receives an email about being added to your group</li>
-<li>You can now edit their details for your group</li>
+<li>Existing user added to your group</li>
+<li>No new password generated</li>
+<li>User receives notification they're added to your group</li>
+<li>You can now edit their details</li>
 </ul>
 <p><strong>Existing Email - Deleted User</strong></p>
 <ul>
 <li>Deleted account is restored</li>
 <li>User is re-added to your group</li>
-<li>New password generates</li>
+<li>New temporary password generates</li>
 <li>Welcome email is sent</li>
 </ul>
 <p><strong>After Creation</strong></p>
@@ -3065,29 +3113,40 @@ Jane,Doe,jane.doe@example.com
 <p>Each imported user uses a licence seat. Ensure you have enough available licences before importing.</p>
 </div>
 <h2 id="resetting-user-passwords">Resetting User Passwords</h2>
+<p>You can reset a user's password when they forget it or need a temporary password.</p>
+<p><strong>Available for:</strong> Users with local password accounts (not social logins like Microsoft or Facebook)</p>
 <p>To reset a user's password:</p>
 <ol>
 <li>Click <strong>Edit</strong> next to the user's name</li>
 <li>Locate the password reset option in the user actions</li>
 <li>Click <strong>Reset Password</strong></li>
-<li>Confirm the reset</li>
-<li>Result: New random password generates and is emailed to the user</li>
+<li>Confirm the reset in the dialog</li>
+<li>Result: New password generates and is emailed to the user</li>
 </ol>
 <p><strong>What Happens</strong></p>
 <ul>
-<li>Random 9 character password generates</li>
-<li>Password reset field is updated in database</li>
-<li>Email is sent to both primary and secondary email addresses if secondary exists</li>
-<li>Email contains new password and login instructions</li>
+<li>Random 12-character password generates automatically</li>
+<li>Password is securely sent to the user's email address</li>
+<li>Email includes the new password and login instructions</li>
 <li>User can log in immediately with the new password</li>
+<li>User should change their password to something they'll remember</li>
 </ul>
 <p><strong>Email Content</strong></p>
 <p>The user receives:</p>
 <ul>
 <li>Notification that an administrator reset their password</li>
-<li>New password</li>
-<li>Link to log in</li>
+<li>New temporary password</li>
+<li>Link to sign in</li>
 <li>Administrator name who performed the reset</li>
+<li>Instructions to change their password</li>
+</ul>
+<p><strong>For Social Account Users (Microsoft, Facebook)</strong></p>
+<p>If a user signed up with a social provider:</p>
+<ul>
+<li>The password reset button may not be available</li>
+<li>They must reset their password through their social provider</li>
+<li>Tell them to go to Microsoft Account, Facebook, etc. and change their password there</li>
+<li>Their new password will work in Match Official System</li>
 </ul>
 <h2 id="deleting-users">Deleting Users</h2>
 <p>To remove a user from the system:</p>

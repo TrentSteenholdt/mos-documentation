@@ -194,6 +194,26 @@
 .md-search-result__article li {
   color: #191a1e !important;
   margin: 2px 0 !important;
+  margin-left: 20px !important;
+}
+
+.md-search-result .md-typeset h1 {
+  color: var(--md-default-fg-color) !important;
+  font-size: 0.8rem !important;
+  font-weight: 400 !important;
+  line-height: 1.4 !important;
+  margin: 0.55rem 0 0.55rem 1.5rem !important;
+}
+
+.md-search-result__icon {
+  color: #191a1e !important;
+  flex-shrink: 0 !important;
+  margin-right: 0.5rem !important;
+}
+
+.md-search-result__icon .md-icon {
+  color: #191a1e !important;
+  background-color: transparent !important;
 }
 
 .md-search-result__link {

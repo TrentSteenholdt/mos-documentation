@@ -441,6 +441,34 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#forgot-your-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Forgot Your Password
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Forgot Your Password">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-reset-your-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Reset Your Password
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#account-lockout" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1691,6 +1719,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../profile-linked-accounts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linked Accounts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../profile-search-users/" class="md-nav__link">
         
   
@@ -2126,6 +2182,34 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#forgot-your-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Forgot Your Password
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Forgot Your Password">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-reset-your-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Reset Your Password
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#account-lockout" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2292,8 +2376,8 @@
 <p>Public (before authentication)</p>
 </div>
 <h2 id="overview">Overview</h2>
-<p>Sign in to access your Match Official System account. Enter your username or email and password to proceed.</p>
-<p><img alt="Sign In Page" src="../assets/images/sign-in.png" /></p>
+<p>Sign in to access your Match Official System account using your email address. Your account uses Microsoft Azure AD B2C for secure authentication.
+<img alt="Sign In Page" src="../assets/images/sign-in.png" /></p>
 <p><strong>How to Access:</strong> Go to <a href="https://matchofficialsystem.com">matchofficialsystem.com</a> and the sign-in page appears by default.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2302,63 +2386,108 @@
 <h2 id="how-to-sign-in">How to Sign In</h2>
 <ol>
 <li>Go to <a href="https://matchofficialsystem.com">matchofficialsystem.com</a></li>
-<li>The sign in page appears automatically</li>
-<li>Enter your username or email address</li>
-<li>Enter your password</li>
-<li>Optional: Check <strong>Keep me signed in</strong> to stay signed in longer</li>
-<li>Click <strong>Sign In</strong></li>
-<li>Result: You are signed in and taken to the Home page</li>
+<li>The sign in page appears</li>
+<li>Enter your <strong>email address</strong> (or username if you remember it)</li>
+<li>Click <strong>Next</strong></li>
+<li>Result: You are redirected to Microsoft Azure AD B2C</li>
 </ol>
+<p><strong>In Azure AD B2C:</strong></p>
+<ol>
+<li>Enter your <strong>password</strong></li>
+<li>Optional: Check <strong>Keep me signed in</strong> to stay signed in longer (up to 3 months on trusted devices)</li>
+<li>Click <strong>Sign In</strong></li>
+<li>Result: You are authenticated and returned to Match Official System</li>
+</ol>
+<p><strong>After Sign In:</strong></p>
+<ul>
+<li>You are signed in and taken to the Home page</li>
+<li>Your session is active for 50 minutes of inactivity</li>
+</ul>
 <p><strong>Fields:</strong></p>
 <ul>
-<li><strong>Username/Email</strong> (required): Your username or registered email address</li>
-<li><strong>Password</strong> (required): Your account password</li>
-<li><strong>Forgot my password</strong>: Starts the password recovery flow</li>
-<li><strong>Register</strong>: Visible only if your association allows self-registration (most use invitation links)</li>
-<li><strong>Keep me signed in</strong> (optional): Extends your session on trusted devices</li>
+<li><strong>Email Address</strong> (required): Your registered email address or username</li>
+<li><strong>Password</strong> (required in Azure AD B2C): Your account password</li>
+<li><strong>Forgot my password</strong>: Click to start password recovery (see Forgot Password below)</li>
+<li><strong>Keep me signed in</strong> (optional): Extends your session to 3 months on trusted devices</li>
 </ul>
 <p><strong>Validation:</strong></p>
 <ul>
-<li>Both username and password are required</li>
-<li>Spaces at the beginning and end are removed automatically</li>
+<li>Email must be valid format (name@domain.com)</li>
+<li>Password is case-sensitive</li>
+<li>Spaces at beginning and end are removed automatically</li>
 </ul>
 <p><strong>Errors:</strong></p>
 <ul>
-<li>"Invalid username or password": Check for typos; verify Caps Lock is off</li>
-<li>"Your account is locked": See Account Lockout section below</li>
+<li>"Account not found": Check for typos in your email; try your username</li>
+<li>"Incorrect password": Verify Caps Lock is off; try password recovery</li>
+<li>Account temporarily locked: You may have entered incorrect password multiple times - wait a few minutes and try again</li>
 </ul>
 <h2 id="keep-me-signed-in">Keep Me Signed In</h2>
-<p>When you check <strong>Keep me signed in</strong>, your session is extended to 3 months on the current device.</p>
+<p>When you check <strong>Keep me signed in</strong> in Azure AD B2C, your session is extended.</p>
+<p><strong>How it works:</strong></p>
+<ul>
+<li>Your session extends to 3 months on the current device</li>
+<li>Uses secure cookies to maintain authentication</li>
+<li>Your login status is preserved across browser sessions</li>
+</ul>
 <p><strong>When to use it:</strong></p>
 <ul>
-<li>On your personal computer or phone</li>
+<li>On your personal computer</li>
+<li>On your personal phone</li>
 <li>When you use the system frequently</li>
+<li>On devices you trust</li>
 </ul>
 <p><strong>When NOT to use it:</strong></p>
 <ul>
 <li>On shared computers</li>
-<li>On public computers</li>
+<li>On public computers (libraries, airports, schools)</li>
 <li>When using someone else's device</li>
+<li>On computers at work shared with others</li>
 </ul>
-<p><strong>Security:</strong> Uses secure cookies to maintain your authentication for up to 3 months.</p>
+<p><strong>Security:</strong> Your authentication is protected by Microsoft Azure AD B2C enterprise security.</p>
 <h2 id="session-timeout">Session Timeout</h2>
 <p>Your session ends automatically after a period of inactivity to protect your account.</p>
 <p><strong>What happens:</strong></p>
 <ul>
 <li>After 50 minutes of inactivity, your session expires</li>
-<li>You are automatically signed out if you do not respond</li>
+<li>You are automatically signed out</li>
 <li>Unsaved changes can be lost if your session expires</li>
 </ul>
-<p><strong>Tip:</strong> Save your work regularly to avoid losing changes when your session ends</p>
+<p><strong>How to stay signed in:</strong></p>
+<ul>
+<li>Check <strong>Keep me signed in</strong> on the login page (3 month session)</li>
+<li>Actively use the system (refresh activity timer)</li>
+<li>Save your work regularly</li>
+</ul>
+<p><strong>If you're signed out:</strong></p>
+<ol>
+<li>Go to <a href="https://matchofficialsystem.com">matchofficialsystem.com</a></li>
+<li>Sign in with your email and password</li>
+<li>You'll be returned to the system</li>
+</ol>
+<p><strong>Tip:</strong> Save your work regularly to avoid losing changes when your session ends.</p>
+<h2 id="forgot-your-password">Forgot Your Password</h2>
+<p>If you forget your password, you can reset it.</p>
+<h3 id="how-to-reset-your-password">How to Reset Your Password</h3>
+<ol>
+<li>On the sign-in page, click <strong>Forgot my password</strong></li>
+<li>Enter your <strong>email address</strong></li>
+<li>Click <strong>Next</strong></li>
+<li>You'll be directed to a secure password reset process</li>
+<li>Follow the on-screen instructions to create a new password</li>
+</ol>
+<p>See <a href="../auth-forgot-password/">Forgot Password</a> for detailed instructions.</p>
 <h2 id="account-lockout">Account Lockout</h2>
 <p>If you enter the wrong password several times, your account may be temporarily locked for security.</p>
 <h3 id="if-your-account-is-locked">If Your Account Is Locked</h3>
 <ol>
 <li>Wait a few minutes before trying again</li>
-<li>Use <strong>Forgot my password</strong> to reset your password</li>
-<li>Contact your administrator if you need immediate access</li>
+<li>Your account will automatically unlock</li>
+<li>Try signing in again with the correct password</li>
+<li>If locked again, use <strong>Forgot my password</strong> to reset</li>
+<li>Contact your administrator if you need immediate help</li>
 </ol>
-<p><strong>How to Fix:</strong> Multiple failed attempts trigger temporary lockout to protect against brute force attacks. After reset, lockouts are cleared.</p>
+<p><strong>Why this happens:</strong> Multiple failed password attempts trigger a temporary security lockout to protect against brute force attacks. This is normal and your account automatically recovers.</p>
 <h2 id="maintenance-mode">Maintenance Mode</h2>
 <p>During scheduled maintenance, you may not be able to sign in.</p>
 <p><strong>What you see:</strong></p>
@@ -2428,6 +2557,7 @@
 <li><a href="../auth-register/">Register</a>: Create a new account with an invitation</li>
 <li><a href="../auth-forgot-password/">Forgot Password</a>: Reset your password</li>
 <li><a href="../profile-update-email/">Update Email</a>: Change your email address</li>
+<li><a href="../profile-linked-accounts/">Linked Accounts</a>: Link Microsoft or Google accounts for easier sign-in</li>
 </ul>
 
 
