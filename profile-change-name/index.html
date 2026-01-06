@@ -2390,17 +2390,13 @@
 <h2 id="how-to-access">How to Access</h2>
 <p>Click <strong>My Account</strong> then <strong>Change Name</strong></p>
 <h2 id="before-you-start">Before You Start</h2>
-<div class="admonition warning">
-<p class="admonition-title">Important</p>
-<p>Changing your name disables self-service password recovery. If you forget your password in the future, you must contact your association administrator to reset it.</p>
-</div>
-<p><strong>Why Password Recovery is Disabled</strong></p>
-<p>Password recovery uses your secret question and answer to verify your identity. When your name changes, your username also changes. To maintain security, the system disables password recovery to prevent unauthorised access using old credentials.</p>
+<p><strong>What Happens To Password Recovery</strong></p>
+<p>If you have a secret question and answer configured on your account they will be retained when you change your name. You can continue to use the <strong>Forgot Password</strong> process as before.</p>
 <p><strong>What This Means</strong></p>
 <ul>
-<li>You can still change your password any time while logged in</li>
-<li>Administrators can reset your password if needed</li>
-<li>You cannot use the Forgot Password feature to reset your own password</li>
+<li><strong>If you have a secret question and answer:</strong> You can continue to use the <strong>Forgot Password</strong> process.</li>
+<li><strong>Social (external) login accounts:</strong> Accounts managed by an external identity provider may not support secret question/answer recovery — follow the message shown on the <strong>Forgot Password</strong> page.</li>
+<li><strong>Administrators can reset passwords:</strong> Association administrators can still reset passwords for any account.</li>
 </ul>
 <h2 id="how-to-change-your-name">How to Change Your Name</h2>
 <ol>
@@ -2460,18 +2456,16 @@
 </ul>
 <p><strong>Password Recovery</strong></p>
 <ul>
-<li>Secret question is set to DISABLED</li>
-<li>Secret answer is set to DISABLED</li>
-<li>You cannot use Forgot Password feature</li>
-<li>Administrators can still reset your password</li>
+<li>If you have a secret question/answer configured it remains available and you can use the <strong>Forgot Password</strong> process.</li>
+<li>If you use a social/external login the <strong>Forgot Password</strong> page will explain how to proceed.</li>
+<li>Administrators can still reset your password for you.</li>
 </ul>
 <p><strong>Email Notification</strong></p>
 <p>You receive an email confirming:</p>
 <ul>
 <li>Your new name</li>
 <li>Your new username</li>
-<li>Warning about password recovery being disabled</li>
-<li>Instructions to contact your administrator if you did not request this change</li>
+<li>Note: the confirmation email shows your updated information but does not always indicate whether password recovery remains enabled; check your account or contact your administrator if unsure</li>
 </ul>
 <p><strong>Session Updates</strong></p>
 <ul>
@@ -2514,14 +2508,14 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
   D2 --&gt; E{Does this username already exist?}
   E -- No --&gt; F[Use generated username]
   E -- Yes --&gt; G[Add a number to make it unique]
-  F --&gt; H[Disable password recovery (secret question and answer)]
+  F --&gt; H[Secret question retained]
   G --&gt; H
   H --&gt; I[Update your profile name]
   I --&gt; J[Send confirmation email]
   J --&gt; K[Update session: top-right name changes]
   K --&gt; L[Result: Name updated immediately]
   L --&gt; M[Next login: use your new username]
-  H --&gt; N[Forgot Password is disabled; contact your administrator if needed]</code></pre> 
+  H --&gt; N[If social/external account: follow Forgot Password guidance]</code></pre> 
     
 </div>
 <h2 id="after-changing-your-name">After Changing Your Name</h2>
@@ -2578,8 +2572,7 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
 <ul>
 <li>Make sure you know your current password</li>
 <li>Consider whether you need the name change</li>
-<li>Understand password recovery will be disabled</li>
-<li>Contact your administrator if unsure</li>
+<li>Check whether your account uses a social/external login or has a secret question configured; contact your administrator if unsure</li>
 </ul>
 <p><strong>After Changing Your Name</strong></p>
 <ul>
