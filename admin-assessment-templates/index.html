@@ -59,7 +59,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -2659,10 +2659,13 @@
 <li>In the "Diary description the user sees when reviewed" field, enter what users see after their diary is reviewed</li>
 </ol>
 <p><strong>Add custom detail fields:</strong></p>
-<p>Diary entries include three hardcoded fields that are always present:
-- <strong>Team A</strong> - First team name
-- <strong>Team B</strong> - Second team name<br />
-- <strong>Venue</strong> - Location of the diary entry</p>
+<p>Diary entries include three hardcoded fields that are always present:</p>
+<ul>
+<li><strong>Team A</strong> - First team name (autocomplete enabled)</li>
+<li><strong>Team B</strong> - Second team name (autocomplete enabled)</li>
+<li><strong>Venue</strong> - Location of the diary entry (autocomplete enabled)</li>
+</ul>
+<p>These three fields automatically provide suggestions as users type, based on previously used teams and venues in your group. Users can select from suggestions or enter a new name.</p>
 <p>You can add up to 6 additional custom detail fields (Detail 1 through Detail 6):</p>
 <ol>
 <li>Under "Details" section, you see 6 detail fields available</li>
@@ -2710,9 +2713,10 @@
 </ol>
 <p><strong>Add detail fields:</strong></p>
 <p>Match day assessments include three hardcoded fields that are always present:
-- <strong>Team A</strong> - First team name
-- <strong>Team B</strong> - Second team name
-- <strong>Venue</strong> - Location of the match</p>
+- <strong>Team A</strong> - First team name (autocomplete enabled)
+- <strong>Team B</strong> - Second team name (autocomplete enabled)
+- <strong>Venue</strong> - Location of the match (autocomplete enabled)</p>
+<p>These three fields automatically provide suggestions as users type, based on previously used teams and venues in your group.</p>
 <p>You can add up to 6 additional custom detail fields (Detail 1 through Detail 6):</p>
 <ol>
 <li>Enter labels for each custom detail field</li>
@@ -2759,8 +2763,14 @@
 <p>Media templates are for entries containing video, image, or other media content.</p>
 <p><img alt="Media template configuration page" src="../assets/images/template-media.png" /></p>
 <p><strong>Add detail fields:</strong></p>
+<p>Media assessments include two hardcoded fields that are always present:
+- <strong>Team A</strong> - First team name (autocomplete enabled)
+- <strong>Team B</strong> - Second team name (autocomplete enabled)</p>
+<p>These fields automatically provide suggestions as users type, based on previously used teams in your group.</p>
+<p>You can also add labels for all 6 detail fields:</p>
 <ol>
-<li>Enter labels for all 6 detail fields</li>
+<li>Enter labels for detail fields you want to use</li>
+<li>Leave blank to hide unused detail fields</li>
 <li>Examples:<ul>
 <li>Detail 1: Media description</li>
 <li>Detail 2: Key moments</li>
