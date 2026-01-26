@@ -63,7 +63,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -1768,6 +1768,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#selector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selector
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#owner" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2244,6 +2255,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#selector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selector
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#owner" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2447,7 +2469,7 @@
 <h2 id="overview">Overview</h2>
 <p>Access in the system is role-based. Each role grants specific permissions to features, data, and administrative functions. Access levels are assigned by group administrators when adding members to a group.</p>
 <h2 id="access-levels-and-permissions">Access Levels and Permissions</h2>
-<p>The system includes four access levels:</p>
+<p>The system includes five access levels:</p>
 <h3 id="user">User</h3>
 <p><strong>Description:</strong> Standard member access with personal workspace</p>
 <p><strong>Permissions:</strong></p>
@@ -2484,6 +2506,13 @@
 <li>Sit an exam</li>
 <li>Access folders in their group(s), but restricted to subgroup(s) if not also a User/Viewer at that level</li>
 <li>Upload files to all <strong>subgroup</strong> folders they are a reviewer too</li>
+</ul>
+<h3 id="selector">Selector</h3>
+<p><strong>Description:</strong> For upcoming features</p>
+<p><strong>Note:</strong> This role is being prepared for future functionality. Full details will be available when features are released.</p>
+<p><strong>Permissions:</strong></p>
+<ul>
+<li>To be defined</li>
 </ul>
 <h3 id="owner">Owner</h3>
 <p><strong>Description:</strong> Full administrative control</p>
@@ -2558,6 +2587,7 @@
 <div class="highlight"><pre><span></span><code>User (basic) → Viewer (read/review) → Reviewer (all reviews) → Owner (administrative)
 </code></pre></div>
 <p>Each higher level includes all permissions of lower levels, plus additional capabilities.</p>
+<p>The permission hierarchy may evolve as new features are introduced, potentially adding roles that provide more granular control over specific capabilities.</p>
 <h2 id="common-permission-scenarios">Common Permission Scenarios</h2>
 <h3 id="can-i-upload-files">Can I upload files?</h3>
 <ul>
