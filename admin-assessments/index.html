@@ -1117,6 +1117,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#assessment-replied" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assessment Replied
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#view-only-assessments" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1250,6 +1261,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#peer-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Peer Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#custom-review" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1338,6 +1360,17 @@
   
     <nav class="md-nav" aria-label="Open and View an Assessment">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#viewing-user-feedback-on-an-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Viewing User Feedback on an Assessment
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#using-autocomplete-when-editing-teams-or-venues" class="md-nav__link">
@@ -2593,6 +2626,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#assessment-replied" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assessment Replied
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#view-only-assessments" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2726,6 +2770,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#peer-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Peer Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#custom-review" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2814,6 +2869,17 @@
   
     <nav class="md-nav" aria-label="Open and View an Assessment">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#viewing-user-feedback-on-an-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Viewing User Feedback on an Assessment
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#using-autocomplete-when-editing-teams-or-venues" class="md-nav__link">
@@ -3173,6 +3239,15 @@
 <li>You can change the reviewer if needed</li>
 <li>You cannot decline (already completed)</li>
 </ul>
+<h3 id="assessment-replied">Assessment Replied</h3>
+<ul>
+<li>The user or peer recipient has submitted feedback in response to a reviewed assessment</li>
+<li>This indicates the user or peer has replied to reviewer feedback</li>
+<li>For assessments: The assessment feedback appears in a highlighted section when you view the assessment</li>
+<li>For peer reviews: The recipient's feedback response appears in a highlighted section</li>
+<li>You can view the feedback/response but cannot edit or delete it</li>
+<li>The reply is read-only</li>
+</ul>
 <h3 id="view-only-assessments">View-Only Assessments</h3>
 <ul>
 <li>These are shared for viewing only</li>
@@ -3243,14 +3318,18 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
     </nav>
     <pre class="mermaid"><code>stateDiagram-v2
   state "Assigned" as MD_Assigned
-  state "Assessment Assigned" as MD_Reviewed
-  state "Assessment Deleted" as MD_Archived
+  state "Reviewed" as MD_Reviewed
+  state "Replied" as MD_Replied
+  state "Deleted" as MD_Archived
 
   [*] --&gt; MD_Assigned: Admin creates and assigns
   MD_Assigned --&gt; MD_Reviewed: Reviewer completes
+  MD_Reviewed --&gt; MD_Replied: User submits feedback
   MD_Reviewed --&gt; MD_Archived: Admin deletes
+  MD_Replied --&gt; MD_Archived: Admin deletes
 
-  note right of MD_Reviewed: Subject views only, cannot edit or respond</code></pre> 
+  note right of MD_Reviewed: Subject views only, cannot edit or respond
+  note right of MD_Replied: User has submitted feedback</code></pre> 
     
 </div>
 <h3 id="season-review">Season Review</h3>
@@ -3279,17 +3358,21 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
     </nav>
     <pre class="mermaid"><code>stateDiagram-v2
   state "Assigned" as SR_Assigned
-  state "Assessment Assigned" as SR_Reviewed
-  state "Assessment Deleted" as SR_Archived
+  state "Reviewed" as SR_Reviewed
+  state "Replied" as SR_Replied
+  state "Deleted" as SR_Archived
 
   [*] --&gt; SR_Assigned: Admin creates and assigns
   SR_Assigned --&gt; SR_Reviewed: Reviewer completes
+  SR_Reviewed --&gt; SR_Replied: User submits feedback
   SR_Reviewed --&gt; SR_Archived: Admin deletes
+  SR_Replied --&gt; SR_Archived: Admin deletes
 
-  note right of SR_Reviewed: Subject views only, cannot edit or respond</code></pre> 
+  note right of SR_Reviewed: Subject views only, cannot edit or respond
+  note right of SR_Replied: User has submitted feedback</code></pre> 
     
 </div>
-<h3 id="custom-review">Custom Review</h3>
+<h3 id="peer-review">Peer Review</h3>
 <div class="panzoom-box" data-key="alt" id="panzoom0" oncontextmenu="return false;">
     <div class="panzoom-info-box panzoom-info-box-top panzoom-hidden">
 Hold "Alt" / "Option" to enable pan &amp; zoom
@@ -3314,17 +3397,36 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
 </button>
     </nav>
     <pre class="mermaid"><code>stateDiagram-v2
-  state "Assigned" as CR_Assigned
-  state "Assessment Assigned" as CR_Reviewed
-  state "Assessment Deleted" as CR_Archived
+  state "Draft" as PR_Draft
+  state "Published" as PR_Published
+  state "Replied" as PR_Replied
+  state "Deleted" as PR_Archived
 
-  [*] --&gt; CR_Assigned: Admin creates and assigns
-  CR_Assigned --&gt; CR_Reviewed: Reviewer completes
-  CR_Reviewed --&gt; CR_Archived: Admin deletes
+  [*] --&gt; PR_Draft: User creates peer review
+  PR_Draft --&gt; PR_Published: Admin publishes
+  PR_Published --&gt; PR_Replied: Recipient submits feedback
+  PR_Published --&gt; PR_Archived: Admin deletes
+  PR_Replied --&gt; PR_Archived: Admin deletes
 
-  note right of CR_Reviewed: Subject views only, cannot edit or respond</code></pre> 
+  note right of PR_Published: Recipient can view and respond with feedback
+  note right of PR_Replied: Recipient has submitted feedback response</code></pre> 
     
 </div>
+<h3 id="custom-review">Custom Review</h3>
+<p>Reviewed" as CR_Reviewed
+  state "Replied" as CR_Replied
+  state "Deleted" as CR_Archived</p>
+<p>[*] --&gt; CR_Assigned: Admin creates and assigns
+  CR_Assigned --&gt; CR_Reviewed: Reviewer completes
+  CR_Reviewed --&gt; CR_Replied: User submits feedback
+  CR_Reviewed --&gt; CR_Archived: Admin deletes
+  CR_Replied --&gt; CR_Archived: Admin deletes</p>
+<p>note right of CR_Reviewed: Subject views only, cannot edit or respond
+  note right of CR_Replied: User has submitted feedback
+  CR_Assigned --&gt; CR_Reviewed: Reviewer completes
+  CR_Reviewed --&gt; CR_Archived: Admin deletes</p>
+<p>note right of CR_Reviewed: Subject views only, cannot edit or respond
+```</p>
 <h2 id="plan-states">Plan States</h2>
 <p>Plans have similar states:</p>
 <ul>
@@ -3368,10 +3470,23 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
 <li>Reviewer feedback, ratings, and comments (if reviewed)</li>
 <li>General reviewer comment</li>
 <li>Any media attached (files, videos, documents)</li>
+<li>User feedback (if submitted) — see below</li>
 </ul>
 </li>
 <li>Click <strong>Close</strong> to go back to the table</li>
 </ol>
+<h4 id="viewing-user-feedback-on-an-assessment">Viewing User Feedback on an Assessment</h4>
+<p>When a user submits feedback on a completed assessment (if this feature is enabled for your group), you can view it when you open the assessment:</p>
+<ul>
+<li>Scroll to the <strong>User Feedback</strong> section near the bottom of the assessment</li>
+<li>The feedback appears in a highlighted box</li>
+<li>The submission date is shown</li>
+<li>Feedback is read-only and cannot be edited or deleted</li>
+</ul>
+<p>If no feedback appears:
+- The user has not submitted feedback yet
+- Assessment feedback may not be enabled for your group
+- The assessment is not in a completed state</p>
 <h4 id="using-autocomplete-when-editing-teams-or-venues">Using Autocomplete When Editing Teams or Venues</h4>
 <p>When viewing or editing an assessment that has team or venue fields, autocomplete suggestions appear automatically:</p>
 <ul>

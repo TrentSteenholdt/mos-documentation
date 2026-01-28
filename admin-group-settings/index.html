@@ -2623,7 +2623,7 @@
 <h2 id="major-settings">Major Settings</h2>
 <p><img alt="Group Settings page showing major settings tabs" src="../assets/images/group-settings.png" /></p>
 <h3 id="subgroups">Subgroups</h3>
-<p>Subgroups allow you to organise teams or departments within your group. Each subgroup can have its own members and folder structure.</p>
+<p>Subgroups allow you to organise users within your group. Users can be assigned to one or more subgroups for filtering, reporting, and targeted communications.</p>
 <p><strong>View and manage existing subgroups:</strong></p>
 <ol>
 <li>Navigate to Group Settings</li>
@@ -2648,7 +2648,7 @@
 <p>The number of subgroups you can create depends on your licence.</p>
 </div>
 <h3 id="theme">Theme</h3>
-<p>Choose the visual appearance of the system for your group.</p>
+<p>Select a colour theme for your group. This affects the appearance of the system for all users in your group, unless they choose their own theme in their profile settings.</p>
 <p><strong>Change the group theme:</strong></p>
 <ol>
 <li>In the Major Settings section, click the <strong>Theme</strong> tab</li>
@@ -2656,9 +2656,9 @@
 <li>The system reloads and applies your new theme immediately</li>
 <li>All users in your group see the new theme</li>
 </ol>
-<p>If you need a custom theme, contact Cortana Design.</p>
+<p>Requesting a new theme is possible by contacting Cortana Design.</p>
 <h3 id="user-registration">User Registration</h3>
-<p>Control whether new users can register themselves with your group.</p>
+<p>Control whether new users can self-register for your group. When enabled, users can request access via a registration link.</p>
 <p><img alt="User Registration settings with enabled option" src="../assets/images/group-registration.png" /></p>
 <p><strong>Enable or disable user registration:</strong></p>
 <ol>
@@ -2668,7 +2668,7 @@
 <li>New users who register will have group-level access (administrators must assign them to subgroups afterwards)</li>
 </ol>
 <h3 id="calendar-start">Calendar Start</h3>
-<p>Set which month marks the beginning of your calendar year.</p>
+<p>Set when your group's calendar year begins. This affects seasonal reporting and date filtering throughout the system.</p>
 <p><strong>Change the calendar start month:</strong></p>
 <ol>
 <li>Click the <strong>Calendar Start</strong> tab</li>
@@ -2677,7 +2677,7 @@
 </ol>
 <p><img alt="Calendar Start setting with month dropdown" src="../assets/images/group-calendar-start.png" /></p>
 <h3 id="location">Location</h3>
-<p>Store your group's default location and postcode for weather information and location-based features.</p>
+<p>Set your group's default location for weather information and other location-based features.</p>
 <p><strong>Save location details:</strong></p>
 <ol>
 <li>Click the <strong>Location</strong> tab</li>
@@ -2687,7 +2687,7 @@
 <li>Result: These details are stored and used for location-based features</li>
 </ol>
 <h3 id="quick-links">Quick Links</h3>
-<p>Manage shortcut links that appear on the home page for your group.</p>
+<p>Manage the shortcut links displayed on the home page for your group. These provide quick access to frequently used external resources.</p>
 <p><img alt="Quick Links management interface" src="../assets/images/group-quicklinks.png" /></p>
 <p><strong>View quick links:</strong></p>
 <ol>
@@ -2719,7 +2719,7 @@
 <h2 id="user-access-and-actions">User Access and Actions</h2>
 <p>These settings control what features users can access and what actions they can perform.</p>
 <h3 id="folder-settings">Folder Settings</h3>
-<p>Control whether users can access the User folder and Subgroups folder.</p>
+<p>Control which file storage folders are available for your group. Disabling a folder will permanently delete all files within it.</p>
 <p><strong>Enable or disable folders:</strong></p>
 <ol>
 <li>Click the <strong>Folder Settings</strong> tab</li>
@@ -2729,10 +2729,10 @@
 </ol>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Disabling a folder will delete it and all its contents. This cannot be undone.</p>
+<p>Setting a folder to 'No' will delete the folder and all its contents. This is a destructive operation and data cannot be recovered.</p>
 </div>
 <h3 id="modules">Modules</h3>
-<p>Control whether users can access specific assessment types.</p>
+<p>Enable or disable specific features for users in your group.</p>
 <p><img alt="Group settings controls for peer assessments and user search" src="../assets/images/group-settings-controls-peer-and-search.png" /></p>
 <p><strong>Enable or disable peer assessments:</strong></p>
 <ol>
@@ -2746,7 +2746,7 @@
 <li>Click <strong>Save user settings</strong></li>
 </ol>
 <h3 id="user-responses">User Responses</h3>
-<p>Control what options users have when creating assessments and plans.</p>
+<p>Set how users can submit diary and plan entries, including confidentiality and review options.</p>
 <p><img alt="User response controls for diary and plan entries" src="../assets/images/group-flowcontrols-assessments.png" /></p>
 <p><strong>Diary entries - Allow users to:</strong></p>
 <ol>
@@ -2761,7 +2761,14 @@
 <li>Make entries view only: Select <strong>Yes</strong> or <strong>No</strong></li>
 <li>Request a review: Select <strong>Yes</strong> or <strong>No</strong></li>
 </ol>
-<p>All settings can be customised per response type.</p>
+<p><strong>Assessment feedback - Allow users to:</strong></p>
+<ol>
+<li>Submit feedback on assessments: Select <strong>Yes</strong> or <strong>No</strong><ul>
+<li>When enabled, users can provide a one-time feedback response after viewing an assessment</li>
+</ul>
+</li>
+<li>Click <strong>Save user settings</strong></li>
+</ol>
 <h3 id="notifications">Notifications</h3>
 <p>Configure automatic email notifications for various activities.</p>
 <p><img alt="Notifications configuration showing diary, assessment, and plan options" src="../assets/images/group-notifications.png" /></p>
@@ -2771,7 +2778,7 @@
 <li>Under "Notifications for diary entries", choose <strong>Yes</strong> or <strong>No</strong> for:<ul>
 <li>Notify reviewers of new review requests</li>
 <li>Notify user when reviewed</li>
-<li>Notify reviewer when entry is seen by user</li>
+<li>Notify reviewer when unread entry is seen by user</li>
 </ul>
 </li>
 <li>Click <strong>Save user settings</strong></li>
@@ -2781,6 +2788,7 @@
 <li>Under "Notifications for assessment entries", choose <strong>Yes</strong> or <strong>No</strong> for:<ul>
 <li>Notify user when new assessment is assigned</li>
 <li>Notify reviewer when assessment is seen by user</li>
+<li>Notify reviewer when user submits feedback on an assessment</li>
 </ul>
 </li>
 <li>Click <strong>Save user settings</strong></li>
@@ -2790,11 +2798,9 @@
 <li>Under "Notifications for plan entries", choose <strong>Yes</strong> or <strong>No</strong> for:<ul>
 <li>Notify reviewers of new review requests</li>
 <li>Notify user when reviewed</li>
-<li>Notify reviewer when seen by user</li>
-<li>Notify user when reviewer has seen view-only entries</li>
+<li>Notify reviewer when entry isings**</li>
 </ul>
 </li>
-<li>Click <strong>Save user settings</strong></li>
 </ol>
 <p><strong>Peer review notification settings:</strong></p>
 <ol>
