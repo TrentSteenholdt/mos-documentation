@@ -63,7 +63,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -3118,6 +3118,14 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
 </li>
 <li>Select your completed CSV file</li>
 <li>The file uploads in the upload frame</li>
+<li><strong>Preview appears</strong>: Review all rows before importing<ul>
+<li>Valid rows show a green tick</li>
+<li>Problem rows show a red error badge with details</li>
+<li>Count badges show: valid count, error count, and total rows</li>
+</ul>
+</li>
+<li><strong>Check for errors</strong>: Fix any rows with issues in your CSV and re-upload if needed</li>
+<li><strong>Click Import</strong> to create the users</li>
 <li>Result: System processes each row and shows results</li>
 </ol>
 <p><strong>CSV Format Example</strong></p>
@@ -3131,9 +3139,20 @@ Jane,Doe,jane.doe@example.com
 <li>First name starting with capital letter</li>
 <li>Surname starting with capital letter</li>
 <li>Valid email format</li>
+<li>Email not already in use in the system</li>
+</ul>
+<p><strong>Preview Table</strong></p>
+<p>The preview shows a table with these columns:</p>
+<ul>
+<li><strong>#</strong>: Row number from the CSV</li>
+<li><strong>First Name</strong>: User's first name</li>
+<li><strong>Surname</strong>: User's surname</li>
+<li><strong>Email</strong>: User's email address</li>
+<li><strong>Status</strong>: Badge showing Valid, Warning, or Error</li>
+<li><strong>Detail</strong>: Explanation of any issue found</li>
 </ul>
 <p><strong>Results</strong></p>
-<p>After upload completes:</p>
+<p>After import completes:</p>
 <ul>
 <li>Success count shows how many users were created</li>
 <li>Error list shows which rows failed and why</li>

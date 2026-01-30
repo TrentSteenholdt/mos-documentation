@@ -63,7 +63,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -1175,6 +1175,67 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Scoring and Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exam-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exam Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Timing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scoring
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Completion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Descriptions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2112,6 +2173,67 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Scoring and Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exam-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exam Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Timing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scoring
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Completion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Descriptions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2224,14 +2346,54 @@
 <li>For Multiple type questions, select all correct answers.</li>
 </ul>
 <h2 id="scoring-and-settings">Scoring and Settings</h2>
-<ul>
-<li><strong>Points per question</strong> and overall weighting.</li>
-<li><strong>Pass mark</strong> as percentage or raw score.</li>
-<li><strong>Attempts allowed</strong> (1, limited, or unlimited within window).</li>
-<li><strong>Time window</strong>: Start/end dates; <strong>Time limit</strong> per attempt (optional).</li>
-<li><strong>Must-complete flag</strong>: Blocks other workflows until completed (use sparingly).</li>
-<li><strong>Accommodations</strong>: Extended time for specific users (if supported).</li>
-</ul>
+<p>When creating or editing an exam, you configure these settings:</p>
+<h3 id="exam-details">Exam Details</h3>
+<p><strong>Exam Name</strong>, required
+- A short name to identify the exam
+- Displayed to users before they begin</p>
+<p><strong>Questions to Present</strong>, required<br />
+- How many questions to randomly select from the total pool
+- Set to 0 to include all questions
+- Helps create randomised tests from a larger question bank</p>
+<h3 id="timing">Timing</h3>
+<p><strong>Time Limit</strong>
+- Time in minutes to complete the exam
+- Set to 0 for no time limit
+- Users see a countdown timer during the exam
+- When time expires, the exam automatically submits</p>
+<p><strong>Start Date</strong>
+- The date the exam opens for users
+- Users cannot sit the exam before this date
+- Leave empty to open immediately</p>
+<p><strong>End Date</strong>
+- The date the exam closes
+- Users cannot sit the exam after this date
+- Affects "Completion required" enforcement</p>
+<h3 id="scoring">Scoring</h3>
+<p><strong>Pass Mark %</strong>, required
+- Minimum score percentage required to pass (1-100)
+- Displayed to users before they begin the exam
+- Used to determine pass/fail badge on results</p>
+<h3 id="completion">Completion</h3>
+<p><strong>Completion Required</strong>
+- When enabled, users must sit this exam before the end date
+- Blocks other workflows until completed (use sparingly)
+- Creates a "must complete" flag visible to users</p>
+<p><strong>Allow Resits</strong>
+- When enabled, users can retake the exam after a failed attempt
+- When disabled, users may only sit the exam once</p>
+<p><strong>Notify on Completion</strong>
+- When enabled, group administrators receive an email when someone completes the exam
+- Useful for tracking high-stakes or mandatory exams</p>
+<h3 id="descriptions">Descriptions</h3>
+<p><strong>Exam Description</strong>
+- Text shown to users before they begin the exam
+- Use for instructions, tips, or context
+- Appears in the "Ready to start?" modal</p>
+<p><strong>Exam End Description</strong>
+- Text shown to users after they submit the exam
+- Use for encouragement, next steps, or feedback instructions
+- Appears in the completion modal</p>
 <h2 id="publish-and-assign">Publish and Assign</h2>
 <ol>
 <li>Set exam to <strong>Published</strong> when ready.</li>
