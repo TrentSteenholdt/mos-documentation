@@ -63,7 +63,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -1879,6 +1879,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#view-as-user-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        View As User Search
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2071,6 +2082,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#view-as-user-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        View As User Search
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2105,6 +2127,7 @@
 <li><a href="#keep-session-alive">Keep Session Alive</a></li>
 <li><a href="#upload-handler">Upload Handler</a></li>
 <li><a href="#service-worker">Service Worker</a></li>
+<li><a href="#view-as-user-search">View As User Search</a></li>
 <li><a href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 <h2 id="overview">Overview</h2>
@@ -2136,6 +2159,13 @@
 <li>Where you see it: Transparent; the site may register a service worker to cache resources.</li>
 <li>What it does: Caches assets for faster loads and supports limited offline behaviour.</li>
 </ul>
+<h2 id="view-as-user-search">View As User Search</h2>
+<p>Provides a user search endpoint for the View As page, allowing MOS Super Administrators to find and impersonate user accounts for support and troubleshooting purposes.</p>
+<ul>
+<li>Where you see it: The View As page (<code>viewas.aspx</code>), accessible only to MOS Super Administrators.</li>
+<li>What it does: Searches users within the current group by name or username and returns matching results. Requires a minimum of two characters. Returns up to 20 users with their name, username, and profile picture.</li>
+</ul>
+<p><span style="background-color: #dc3545; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">MOS Super Admin</span></p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <ul>
 <li>Upload fails: Check your file size/type and try again on a stable connection.</li>
