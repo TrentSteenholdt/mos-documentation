@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Manage group membership, permissions, and subgroup organization">
+        <meta name="description" content="Manage group membership, permissions, and role assignments">
       
       
         <meta name="author" content="Trent Steenholdt">
@@ -63,7 +63,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#admin-group-membership" class="md-skip">
+        <a href="#admin-membership-and-roles" class="md-skip">
           Skip to content
         </a>
       
@@ -1239,10 +1239,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#permission-levels" class="md-nav__link">
+  <a href="#understanding-access-levels-and-roles" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Permission Levels
+        Understanding Access Levels and Roles
       
     </span>
   </a>
@@ -1250,10 +1250,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#find-members" class="md-nav__link">
+  <a href="#finding-members" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Find Members
+        Finding Members
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding Members">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-by-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search by name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-by-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter by role
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-member" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding a Member
       
     </span>
   </a>
@@ -1261,10 +1300,38 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-members" class="md-nav__link">
+  <a href="#editing-a-member" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Add Members
+        Editing a Member
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Editing a Member">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-happens-when-you-change-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What happens when you change roles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removing-a-member" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removing a Member
       
     </span>
   </a>
@@ -1272,32 +1339,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#edit-permissions" class="md-nav__link">
+  <a href="#working-with-subgroups" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Edit Permissions
+        Working with Subgroups
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Working with Subgroups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#viewing-subgroup-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Viewing subgroup members
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#remove-members" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#adding-members-to-a-subgroup" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Remove Members
+        Adding members to a subgroup
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#subgroups" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#subgroup-level-roles" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Subgroups
+        Subgroup-level roles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#role-badges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Role Badges
       
     </span>
   </a>
@@ -1313,6 +1408,56 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-not-found-when-adding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User not found when adding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cannot-assign-certain-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cannot assign certain roles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#member-cannot-access-expected-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Member cannot access expected features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duplicate-member-entries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Duplicate member entries
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1327,10 +1472,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#related" class="md-nav__link">
+  <a href="#related-pages" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Related
+        Related Pages
       
     </span>
   </a>
@@ -2071,10 +2216,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#permission-levels" class="md-nav__link">
+  <a href="#understanding-access-levels-and-roles" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Permission Levels
+        Understanding Access Levels and Roles
       
     </span>
   </a>
@@ -2082,10 +2227,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#find-members" class="md-nav__link">
+  <a href="#finding-members" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Find Members
+        Finding Members
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding Members">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-by-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search by name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-by-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter by role
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-member" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding a Member
       
     </span>
   </a>
@@ -2093,10 +2277,38 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-members" class="md-nav__link">
+  <a href="#editing-a-member" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Add Members
+        Editing a Member
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Editing a Member">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-happens-when-you-change-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What happens when you change roles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removing-a-member" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removing a Member
       
     </span>
   </a>
@@ -2104,32 +2316,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#edit-permissions" class="md-nav__link">
+  <a href="#working-with-subgroups" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Edit Permissions
+        Working with Subgroups
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Working with Subgroups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#viewing-subgroup-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Viewing subgroup members
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#remove-members" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#adding-members-to-a-subgroup" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Remove Members
+        Adding members to a subgroup
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#subgroups" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#subgroup-level-roles" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Subgroups
+        Subgroup-level roles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#role-badges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Role Badges
       
     </span>
   </a>
@@ -2145,6 +2385,56 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-not-found-when-adding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User not found when adding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cannot-assign-certain-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cannot assign certain roles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#member-cannot-access-expected-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Member cannot access expected features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duplicate-member-entries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Duplicate member entries
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2159,10 +2449,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#related" class="md-nav__link">
+  <a href="#related-pages" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Related
+        Related Pages
       
     </span>
   </a>
@@ -2186,87 +2476,183 @@
 
 
 
-<h1 id="admin-group-membership">Admin: Group Membership</h1>
+<h1 id="admin-membership-and-roles">Admin: Membership and Roles</h1>
 <div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Admin access required</strong> - Owner role only</p>
+<p class="admonition-title">Owner access required</p>
+<p>Only users with Owner access can manage membership and roles.</p>
 </div>
 <h2 id="overview">Overview</h2>
-<p><img alt="Membership Management Interface" src="../assets/images/membership.png" /></p>
-<p>Manage who belongs to your group and what they can do. Organise users into subgroups, assign permission levels, and keep membership aligned with your association structure.</p>
-<h2 id="permission-levels">Permission Levels</h2>
+<p>The Membership and Roles page lets you manage who belongs to your group and what they can do. You can assign access levels, grant specific roles, and organise users into subgroups.</p>
+<p><strong>How to access:</strong> From the main menu, select <strong>Admin</strong> then <strong>Membership and Roles</strong>.</p>
+<h2 id="understanding-access-levels-and-roles">Understanding Access Levels and Roles</h2>
+<p>The system uses two components to control permissions:</p>
+<p><strong>Access Level</strong> (choose one):</p>
 <ul>
-<li><strong>User</strong>: Standard member access.</li>
-<li><strong>Viewer</strong>: Read-only access across areas (cannot modify).</li>
-<li><strong>Reviewer</strong>: Can assess/review where applicable.</li>
-<li><strong>Owner</strong>: Full administrative control.</li>
+<li><strong>User</strong>: Standard member with personal workspace access</li>
+<li><strong>Owner</strong>: Full administrative control of the group</li>
 </ul>
-<p>Choose the least privilege level required for the member's role.</p>
-<h2 id="find-members">Find Members</h2>
+<p><strong>Roles</strong> (choose any combination):</p>
 <ul>
-<li><strong>Search</strong>: Type a name or email, then <strong>Search</strong>.</li>
-<li><strong>Filter</strong>: Show by access level (User, Viewer, Reviewer, Owner).</li>
-<li><strong>Clear</strong>: Reset filters to see all.</li>
+<li><strong>Viewer</strong>: Can create assessments on other users</li>
+<li><strong>Reviewer</strong>: Can review diary and plan entries, and run reports</li>
+<li><strong>Trainer</strong>: Can manage exams (group-level only)</li>
+<li><strong>Communications</strong>: Can manage news articles (group-level only)</li>
+<li><strong>Files Manager</strong>: Can upload, delete, and organise files and folders</li>
 </ul>
-<h2 id="add-members">Add Members</h2>
-<p>Add existing system users into your group, or invite new ones if enabled.</p>
+<p>A member can have multiple roles. For example, a coach might have both Viewer and Reviewer roles.</p>
+<p>For detailed information about what each role can do, see <a href="../levels-of-access/">Levels of Access</a>.</p>
+<h2 id="finding-members">Finding Members</h2>
+<h3 id="search-by-name">Search by name</h3>
 <ol>
-<li>Click <strong>Add Member</strong> or <strong>Invite Member</strong>.</li>
-<li>Search by name or email, select the person.</li>
-<li>Choose <strong>Permission Level</strong>.</li>
-<li>Assign to <strong>Subgroup(s)</strong> (optional, recommended).</li>
-<li>Confirm.</li>
+<li>Type a name in the search box</li>
+<li>Click <strong>Search</strong> or press Enter</li>
+<li>Matching members appear in the list</li>
 </ol>
-<p>Invitations (if enabled):</p>
-<ul>
-<li>Sends an email with a registration link to join your group.</li>
-<li>Links may expire; re-send as needed.</li>
-</ul>
-<h2 id="edit-permissions">Edit Permissions</h2>
+<h3 id="filter-by-role">Filter by role</h3>
 <ol>
-<li>Click <strong>Edit</strong> next to a member.</li>
-<li>Change <strong>Permission Level</strong>.</li>
-<li>Update <strong>Subgroup</strong> assignments.</li>
-<li>Save changes.</li>
+<li>Click the <strong>Filter</strong> dropdown</li>
+<li>Select one or more access levels or roles to filter by</li>
+<li>Click <strong>Apply</strong></li>
+<li>Only members with the selected roles appear</li>
 </ol>
-<p>Considerations:</p>
+<p>To clear filters, click <strong>Clear</strong> in the filter dropdown.</p>
+<h2 id="adding-a-member">Adding a Member</h2>
+<p>Add existing system users to your group.</p>
+<ol>
+<li>Click <strong>Add Member</strong> (appears when viewing a subgroup or group)</li>
+<li>Search for the user by name</li>
+<li>Click on the user to select them</li>
+<li>Choose an <strong>Access Level</strong>:
+    - <strong>User</strong>: Standard member
+    - <strong>Owner (Admin)</strong>: Full administrative access</li>
+<li>Select any <strong>Roles</strong> to assign:
+    - Tick the checkboxes for roles this person needs
+    - You can select multiple roles</li>
+<li>Click <strong>Add Member</strong></li>
+</ol>
+<p>The member now appears in your group with the assigned access level and roles.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Start with the minimum roles needed. You can add more later if required.</p>
+</div>
+<h2 id="editing-a-member">Editing a Member</h2>
+<p>Change a member's access level or roles.</p>
+<ol>
+<li>Find the member in the list</li>
+<li>Click the <strong>Edit</strong> button (pencil icon)</li>
+<li>Change the <strong>Access Level</strong> if needed</li>
+<li>Tick or untick <strong>Roles</strong> as required</li>
+<li>Click <strong>Save</strong></li>
+</ol>
+<p>Changes take effect immediately.</p>
+<h3 id="what-happens-when-you-change-roles">What happens when you change roles</h3>
 <ul>
-<li>Permission changes take effect immediately.</li>
-<li>Reviewers may gain access to assessment tools and reports.</li>
+<li><strong>Adding a role</strong>: The member gains access to that feature immediately</li>
+<li><strong>Removing a role</strong>: The member loses access to that feature immediately</li>
+<li><strong>Changing to Owner</strong>: The member gains full administrative access</li>
+<li><strong>Changing from Owner to User</strong>: The member loses administrative access but keeps any assigned roles</li>
 </ul>
-<h2 id="remove-members">Remove Members</h2>
+<h2 id="removing-a-member">Removing a Member</h2>
+<p>Remove a member from your group.</p>
+<ol>
+<li>Find the member in the list</li>
+<li>Click the <strong>Remove</strong> button</li>
+<li>Confirm the removal</li>
+</ol>
+<p>Removing a member:</p>
 <ul>
-<li>Click <strong>Remove</strong> on a user to revoke group access.</li>
-<li>Removing does not delete the person from MOS - only from your group.</li>
-<li>Re-add later if needed.</li>
+<li>Removes them from the group only</li>
+<li>Does not delete their account from the system</li>
+<li>Does not affect their membership in other groups</li>
+<li>Can be reversed by adding them again</li>
 </ul>
-<h2 id="subgroups">Subgroups</h2>
-<p>Use subgroups to mirror teams, regions, or squads.</p>
+<h2 id="working-with-subgroups">Working with Subgroups</h2>
+<p>Subgroups help organise members into teams, regions, or divisions.</p>
+<h3 id="viewing-subgroup-members">Viewing subgroup members</h3>
 <ul>
-<li><strong>Expand/Collapse</strong> to manage subgroup members.</li>
-<li>Users can belong to multiple subgroups.</li>
-<li>Subgroup membership often controls visibility of news, reports, and files.</li>
+<li>Click on a subgroup name to expand it</li>
+<li>Use <strong>Expand All</strong> to see all subgroups at once</li>
+<li>Use <strong>Collapse All</strong> to close all subgroups</li>
 </ul>
-<p>For a detailed guide on how subgroups affect visibility, notifications and reviews, see <a href="../admin-subgroup-membership/">Subgroup Membership</a>.</p>
+<h3 id="adding-members-to-a-subgroup">Adding members to a subgroup</h3>
+<ol>
+<li>Expand the subgroup</li>
+<li>Click <strong>Add Member</strong> within that subgroup</li>
+<li>Follow the standard add member process</li>
+</ol>
+<p>Members can belong to multiple subgroups.</p>
+<h3 id="subgroup-level-roles">Subgroup-level roles</h3>
+<p>Some roles work differently at the subgroup level:</p>
+<ul>
+<li><strong>Viewer</strong> and <strong>Reviewer</strong> can be assigned at subgroup level</li>
+<li><strong>Files Manager</strong> can be assigned at subgroup level</li>
+<li><strong>Trainer</strong> and <strong>Communications</strong> are group-level only (not available for subgroups)</li>
+</ul>
+<p>For more details about subgroup permissions, see <a href="../admin-subgroup-membership/">Subgroup Membership</a>.</p>
+<h2 id="role-badges">Role Badges</h2>
+<p>Members display coloured badges showing their roles:</p>
+<table>
+<thead>
+<tr>
+<th>Badge Colour</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Green</td>
+<td>Owner</td>
+</tr>
+<tr>
+<td>Blue</td>
+<td>Viewer</td>
+</tr>
+<tr>
+<td>Yellow/Orange</td>
+<td>Reviewer</td>
+</tr>
+<tr>
+<td>Red</td>
+<td>Trainer</td>
+</tr>
+<tr>
+<td>Purple</td>
+<td>Communications</td>
+</tr>
+<tr>
+<td>Teal</td>
+<td>Files Manager</td>
+</tr>
+</tbody>
+</table>
+<p>A member may display multiple badges if they have multiple roles.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
-<ul>
-<li>User not found: The person may not exist in MOS yet - send an invite.</li>
-<li>Cannot change level: Restricted by policy - contact an Owner or support.</li>
-<li>Visibility issues: Ensure subgroup assignments are correct.</li>
-<li>Duplicate members: Remove the redundant entry and keep a single membership record.</li>
-</ul>
+<h3 id="user-not-found-when-adding">User not found when adding</h3>
+<p>The person may not have an account in the system yet. They need to register first, or you can create an account for them in User Management.</p>
+<h3 id="cannot-assign-certain-roles">Cannot assign certain roles</h3>
+<p>Some roles (Trainer, Communications) are only available at the group level, not subgroup level. If you are editing a subgroup membership, these options will not appear.</p>
+<h3 id="member-cannot-access-expected-features">Member cannot access expected features</h3>
+<p>Check that:</p>
+<ol>
+<li>They have the correct role assigned</li>
+<li>They are in the correct subgroup (if features are subgroup-specific)</li>
+<li>They have logged out and back in (some permission changes require a fresh login)</li>
+</ol>
+<h3 id="duplicate-member-entries">Duplicate member entries</h3>
+<p>If someone appears twice, remove the duplicate entry and keep a single membership record with the correct roles.</p>
 <h2 id="tips">Tips</h2>
 <ul>
-<li>✅ Apply the principle of least privilege.</li>
-<li>✅ Keep subgroup membership up to date.</li>
-<li>✅ Review Reviewer/Owner lists quarterly.</li>
-<li>✅ Document changes for compliance where required.</li>
+<li>Apply the principle of least privilege - give only the roles needed</li>
+<li>Review role assignments regularly, especially for Reviewer and Owner</li>
+<li>Use subgroups to organise members and control visibility</li>
+<li>Document role assignments for compliance if required</li>
 </ul>
-<h2 id="related">Related</h2>
+<h2 id="related-pages">Related Pages</h2>
 <ul>
-<li><a href="../admin-user-management/">User Management</a></li>
-<li><a href="../admin-group-settings/">Group Settings</a></li>
-<li><a href="../reports-group-reporting/">Group Reporting</a></li>
+<li><a href="../levels-of-access/">Levels of Access</a>: Detailed explanation of each role</li>
+<li><a href="../admin-user-management/">User Management</a>: Creating and managing user accounts</li>
+<li><a href="../admin-subgroup-membership/">Subgroup Membership</a>: How subgroups affect permissions</li>
+<li><a href="../admin-group-settings/">Group Settings</a>: Configure group options</li>
 </ul>
 
 

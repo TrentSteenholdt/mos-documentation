@@ -63,7 +63,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -2278,8 +2278,8 @@
 
 <h1 id="admin-subgroup-membership">Admin: Subgroup Membership</h1>
 <div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Admin access required</strong> - Owner role only</p>
+<p class="admonition-title">Owner access required</p>
+<p>Only users with Owner access can manage subgroup membership.</p>
 </div>
 <h2 id="overview">Overview</h2>
 <p>This guide explains how subgroups affect what people can see, who gets notified, and who can review items. Use it when setting up groups and subgroups so the right people have the right access.</p>
@@ -2288,14 +2288,17 @@
 <p>This feature/guide is only useable if the associate is license for subgroups.</p>
 </div>
 <p><strong>How to Access</strong></p>
-<p>From the main menu select <strong>Administration</strong> then <strong>Membership</strong></p>
+<p>From the main menu select <strong>Admin</strong> then <strong>Membership and Roles</strong></p>
 <p><strong>Before You Start</strong></p>
-<p>Make sure you understand the four levels of access and how they apply at group and subgroup level.</p>
+<p>Make sure you understand the access levels and roles, and how they apply at group and subgroup level.</p>
 <ul>
-<li>User (0) – member only</li>
-<li>Viewer (1) – can see group or subgroup items</li>
-<li>Reviewer (2) – can review items</li>
-<li>Owner (3) – full control at group level only (not available at subgroup level)</li>
+<li><strong>User</strong>: Standard member with personal workspace access</li>
+<li><strong>Viewer</strong>: Can create assessments on other users and view subgroup folders</li>
+<li><strong>Reviewer</strong>: Can review diary and plan entries, run reports, and view subgroup folders</li>
+<li><strong>Trainer</strong>: Can manage exams (group-level only)</li>
+<li><strong>Communications</strong>: Can manage news articles (group-level only)</li>
+<li><strong>Files Manager</strong>: Can upload, delete, and organise files and folders</li>
+<li><strong>Owner</strong>: Full administrative control (group-level only)</li>
 </ul>
 <h2 id="membership-and-permissions">Membership and Permissions</h2>
 <p>Subgroups give you a way to narrow visibility and actions inside a group. People can have one level in the group and a different level in one or more subgroups.</p>
@@ -2306,7 +2309,7 @@
 </ul>
 <h3 id="how-to-manage-membership">How to Manage Membership</h3>
 <ol>
-<li>Go to <strong>Administration</strong> &gt; <strong>Membership</strong></li>
+<li>Go to <strong>Admin</strong> &gt; <strong>Membership and Roles</strong></li>
 <li>Use the search box to find a group</li>
 <li>Click the group name to expand it</li>
 <li>Click a subgroup to expand it</li>
@@ -2317,7 +2320,7 @@
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <ul>
-<li>Use the role filter to quickly show Users, Viewers, Reviewers or Owners</li>
+<li>Use the role filter to quickly show members by role</li>
 <li>You can remove a member using <strong>Remove</strong> on their row</li>
 <li>At subgroup level, the Owner option is not available</li>
 </ul>
@@ -2568,8 +2571,8 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
 <h2 id="field-details-and-messages">Field Details and Messages</h2>
 <p>Required vs optional  </p>
 <ul>
-<li>Group level: User, Viewer, Reviewer, Owner are available  </li>
-<li>Subgroup level: User, Viewer, Reviewer are available (Owner not available)</li>
+<li>Group level: User, Viewer, Reviewer, Trainer, Communications, Files Manager, Owner are available</li>
+<li>Subgroup level: User, Viewer, Reviewer, Files Manager are available (Trainer, Communications, Owner are group-level only)</li>
 </ul>
 <p>Common messages  </p>
 <ul>
@@ -2585,8 +2588,9 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
 </ul>
 <h2 id="related-pages">Related Pages</h2>
 <ul>
-<li>Administration – Membership: Manage group and subgroup membership</li>
-<li>Levels of Access: What User, Viewer, Reviewer and Owner mean</li>
+<li><a href="../admin-membership/">Membership and Roles</a>: Manage group and subgroup membership</li>
+<li><a href="../levels-of-access/">Levels of Access</a>: Detailed explanation of each role</li>
+<li><a href="../groups-and-associations/">Groups and Associations</a>: Overview of how groups and subgroups are structured</li>
 <li>Groups and Associations: Overview of how groups and subgroups are structured</li>
 </ul>
 

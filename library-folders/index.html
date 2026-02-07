@@ -63,7 +63,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -2585,9 +2585,17 @@
 <p><strong>Reviewer Level:</strong></p>
 <ul>
 <li>Can access personal user folder (if enabled)</li>
-<li>Can view, upload, and download files from all group and subgroup folders</li>
+<li>Can view and download files from subgroup folders they are assigned to (read-only)</li>
+<li>Cannot upload to group or subgroup folders</li>
 <li>Cannot create or delete folders</li>
-<li>Can manage files they uploaded</li>
+</ul>
+<p><strong>Files Manager Level:</strong></p>
+<ul>
+<li>Can access personal user folder (if enabled)</li>
+<li>Can view, upload, and download files from all group and subgroup folders</li>
+<li>Can create, rename, move, and delete folders</li>
+<li>Can delete files</li>
+<li>Can generate share links for any file</li>
 </ul>
 <p><strong>Owner Level:</strong></p>
 <ul>
@@ -2611,8 +2619,8 @@
 <ul>
 <li>Shows team, regional, or division subfolders (if enabled)</li>
 <li>Access depends on your subgroup membership</li>
-<li>Reviewers and Owners can upload to these folders</li>
-<li>Users and Viewers can only view</li>
+<li>Viewers and Reviewers can view these folders (read-only)</li>
+<li>Files Managers and Owners can upload, delete, and manage files</li>
 </ul>
 <h2 id="permissions-and-actions">Permissions and Actions</h2>
 <table>
@@ -2622,6 +2630,7 @@
 <th>User</th>
 <th>Viewer</th>
 <th>Reviewer</th>
+<th>Files Manager</th>
 <th>Owner</th>
 </tr>
 </thead>
@@ -2630,12 +2639,14 @@
 <td>View files</td>
 <td>Own folder only</td>
 <td>Subgroups</td>
+<td>Subgroups</td>
 <td>All folders</td>
 <td>All folders</td>
 </tr>
 <tr>
 <td>Upload files</td>
 <td>Personal folder</td>
+<td>No</td>
 <td>No</td>
 <td>All folders</td>
 <td>All folders</td>
@@ -2646,12 +2657,14 @@
 <td>No</td>
 <td>No</td>
 <td>Yes</td>
+<td>Yes</td>
 </tr>
 <tr>
 <td>Delete files</td>
 <td>Own folder</td>
 <td>No</td>
-<td>Own files</td>
+<td>No</td>
+<td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
@@ -2660,16 +2673,19 @@
 <td>No</td>
 <td>No</td>
 <td>Yes</td>
+<td>Yes</td>
 </tr>
 <tr>
 <td>Move files</td>
 <td>Within personal</td>
+<td>No</td>
 <td>No</td>
 <td>All folders</td>
 <td>All folders</td>
 </tr>
 <tr>
 <td>Share files</td>
+<td>No</td>
 <td>No</td>
 <td>No</td>
 <td>Yes</td>
@@ -2679,7 +2695,8 @@
 <td>Rename files</td>
 <td>Own folder</td>
 <td>No</td>
-<td>Own files</td>
+<td>No</td>
+<td>Yes</td>
 <td>Yes</td>
 </tr>
 </tbody>

@@ -63,7 +63,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -1521,13 +1521,74 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#access-control-by-admin-level" class="md-nav__link">
+  <a href="#access-control-by-role" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Access Control by Admin Level
+        Access Control by Role
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Access Control by Role">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#viewer-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Viewer Role
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reviewer-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reviewer Role
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewer-reviewer-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Viewer + Reviewer Role
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#owner-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Owner Role
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-reference-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Reference Table
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3030,13 +3091,74 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#access-control-by-admin-level" class="md-nav__link">
+  <a href="#access-control-by-role" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Access Control by Admin Level
+        Access Control by Role
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Access Control by Role">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#viewer-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Viewer Role
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reviewer-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reviewer Role
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewer-reviewer-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Viewer + Reviewer Role
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#owner-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Owner Role
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-reference-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Reference Table
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3165,13 +3287,24 @@
 <h1 id="admin-view-assessments-and-plans">Admin: View Assessments and Plans</h1>
 <div class="admonition note">
 <p class="admonition-title">Access Level</p>
-<p>Admin Level 1 or higher (Viewer+)</p>
+<p>Viewer, Reviewer, or Owner access required</p>
 </div>
 <h2 id="overview">Overview</h2>
-<p>View all assessments and plans for members in your group. Search for specific entries, view assessment details including reviewer feedback, reassign entries to different members, change reviewers, and delete entries when needed.</p>
-<p>This page shows match assessments, diary entries, seasonal reviews, and goal setting plans. You can search by member name, view the full assessment with all ratings and comments, and manage who is assigned to complete reviews.</p>
+<p>View assessments and plans for members in your group. What you see and can do depends on your role:</p>
+<ul>
+<li><strong>Viewers</strong> see all assessment types (diary, match day, season, media, custom, peer reviews), can create assessments on other users, but cannot reassign entries, change reviewers or review diary entries</li>
+<li><strong>Reviewers</strong> see diary entries only and can reassign entries and change assigned reviewers</li>
+<li><strong>Users with both Viewer and Reviewer roles</strong> see all assessment types, can review/create all assessment types and can reassign and change reviewers</li>
+<li><strong>Owners</strong> have full access including viewing all types, reassigning, changing reviewers, declining reviews, deleting entries, and using bulk actions</li>
+</ul>
+<p>This page shows match assessments, diary entries, seasonal reviews, and goal setting plans. You can search by member name and view assessment details including ratings and comments. See <a href="#access-control-by-role">Access Control by Role</a> for full details.</p>
 <h2 id="how-to-access">How to Access</h2>
-<p>Click <strong>Admin</strong> then <strong>View assessments and plans</strong></p>
+<p>From the sidebar, click <strong>Assessments</strong> to expand the menu, then:</p>
+<ul>
+<li><strong>View assessments</strong> or <strong>View plans</strong> to see all entries</li>
+<li><strong>Diary entries</strong> or <strong>Plan entries</strong> to review items awaiting your feedback (Reviewer role required)</li>
+<li><strong>Match day</strong>, <strong>Media</strong>, <strong>Season</strong>, or <strong>Custom</strong> to create new assessments on other users (Viewer role required)</li>
+</ul>
 <h2 id="assessment-types">Assessment Types</h2>
 <p>The system supports different assessment types based on templates set up in your group settings. Each type may show different sections, ratings, and feedback fields.</p>
 <table>
@@ -3413,20 +3546,47 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
     
 </div>
 <h3 id="custom-review">Custom Review</h3>
-<p>Reviewed" as CR_Reviewed
+<div class="panzoom-box" data-key="alt" id="panzoom0" oncontextmenu="return false;">
+    <div class="panzoom-info-box panzoom-info-box-top panzoom-hidden">
+Hold "Alt" / "Option" to enable pan &amp; zoom
+</div>
+    <nav class="panzoom-nav panzoom-top-nav">
+    <button class="panzoom-info panzoom-button">
+    <svg class="panzoom-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm169.8-90.7c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"></path>
+    </svg>
+</button><button class="panzoom-reset panzoom-button">
+    <svg class="panzoom-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M125.7 160l50.3 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L48 224c-17.7 0-32-14.3-32-32L16 64c0-17.7 14.3-32 32-32s32 14.3 32 32l0 51.2L97.6 97.6c87.5-87.5 229.3-87.5 316.8 0s87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3s-163.8-62.5-226.3 0L125.7 160z"></path>
+    </svg>
+</button><button class="panzoom-max panzoom-button">
+    <svg class="panzoom-icon" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 32C14.3 32 0 46.3 0 64l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-64 64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32l96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0 0-64zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0 0 64c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96c0-17.7-14.3-32-32-32l-96 0zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 64-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c17.7 0 32-14.3 32-32l0-96z"></path>
+    </svg>
+</button><button class="panzoom-min panzoom-button panzoom-hidden">
+    <svg class="panzoom-icon" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M160 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 64-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c17.7 0 32-14.3 32-32l0-96zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0 0 64c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96c0-17.7-14.3-32-32-32l-96 0zM352 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32l96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0 0-64zM320 320c-17.7 0-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-64 64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0z"></path>
+    </svg>
+</button>
+    </nav>
+    <pre class="mermaid"><code>Reviewed" as CR_Reviewed
   state "Replied" as CR_Replied
-  state "Deleted" as CR_Archived</p>
-<p>[*] --&gt; CR_Assigned: Admin creates and assigns
+  state "Deleted" as CR_Archived
+
+  [*] --&gt; CR_Assigned: Admin creates and assigns
   CR_Assigned --&gt; CR_Reviewed: Reviewer completes
   CR_Reviewed --&gt; CR_Replied: User submits feedback
   CR_Reviewed --&gt; CR_Archived: Admin deletes
-  CR_Replied --&gt; CR_Archived: Admin deletes</p>
-<p>note right of CR_Reviewed: Subject views only, cannot edit or respond
+  CR_Replied --&gt; CR_Archived: Admin deletes
+
+  note right of CR_Reviewed: Subject views only, cannot edit or respond
   note right of CR_Replied: User has submitted feedback
   CR_Assigned --&gt; CR_Reviewed: Reviewer completes
-  CR_Reviewed --&gt; CR_Archived: Admin deletes</p>
-<p>note right of CR_Reviewed: Subject views only, cannot edit or respond
-```</p>
+  CR_Reviewed --&gt; CR_Archived: Admin deletes
+
+  note right of CR_Reviewed: Subject views only, cannot edit or respond</code></pre> 
+    
+</div>
 <h2 id="plan-states">Plan States</h2>
 <p>Plans have similar states:</p>
 <ul>
@@ -3537,11 +3697,11 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
 </ol>
 <p>Who can do this:</p>
 <ul>
-<li>Requires Reviewer level or higher admin access</li>
+<li>Requires Reviewer or Owner role</li>
 <li>Only available for entries in Reviewed status (not Draft or Awaiting Review)</li>
 <li>Only available for certain assessment types (Match Day and others, not Diary entries)</li>
-<li>If the member belongs to a subgroup, only reviewers with admin in that same subgroup appear in the list</li>
-<li>The new reviewer must have admin level 1 or higher in the group</li>
+<li>If the member belongs to a subgroup, only reviewers in that same subgroup appear in the list</li>
+<li>The new reviewer must have the Reviewer role in the group</li>
 </ul>
 <h3 id="decline-a-review">Decline a Review</h3>
 <p>Use this to return an entry that is awaiting review back to draft status.</p>
@@ -3592,7 +3752,7 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
 </ol>
 <h3 id="who-can-do-this">Who Can Do This</h3>
 <ul>
-<li>Reviewers with admin level 1 or higher in the group can review Diary (Draft) entries</li>
+<li>Users with the Reviewer role can review Diary (Draft) entries</li>
 <li>While a reviewer is working on their review, the diary creator cannot edit the original entry</li>
 <li>Draft reviews are visible only to the reviewer until submitted</li>
 <li>Once submitted, the review becomes final and visible to the diary creator</li>
@@ -3603,31 +3763,172 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
 <li>Draft reviews are temporary and do not count as completed until submitted</li>
 <li>Reviewers can save their work as a draft without sending it to the member</li>
 </ul>
-<h2 id="access-control-by-admin-level">Access Control by Admin Level</h2>
-<p>Your ability to manage assessments depends on your admin level in the group:</p>
+<h2 id="access-control-by-role">Access Control by Role</h2>
+<p>Your ability to manage assessments depends on your role in the group. Each role has different visibility and capabilities on this page.</p>
+<h3 id="viewer-role">Viewer Role</h3>
+<p>Viewers can see all assessment types and create assessments on other users.</p>
+<p><strong>Can see:</strong></p>
+<ul>
+<li>All assessment types: diary, match day, season, media, custom, peer reviews</li>
+</ul>
+<p><strong>Can do:</strong></p>
+<ul>
+<li>View the list of all assessments and plans in the group</li>
+<li>Search for entries by member name</li>
+<li>Open and view assessment details, ratings, and comments</li>
+<li>View reviewer feedback on completed assessments</li>
+<li>View user feedback responses on assessments</li>
+<li>Create assessments on other users (match day, media, season, custom) via the Create menu</li>
+</ul>
+<p><strong>Cannot do:</strong></p>
+<ul>
+<li>Reassign entries to different members</li>
+<li>Change assigned reviewers</li>
+<li>Decline review requests</li>
+<li>Delete entries</li>
+<li>Use bulk actions</li>
+<li>Review diary entries (review capability requires Reviewer role)</li>
+</ul>
+<h3 id="reviewer-role">Reviewer Role</h3>
+<p>Reviewers can see diary entries and perform review-related actions.</p>
+<p><strong>Can see:</strong></p>
+<ul>
+<li>Diary entries only (not match day, season, media, custom, or peer reviews)</li>
+</ul>
+<p><strong>Can do:</strong></p>
+<ul>
+<li>View diary entries in the group</li>
+<li>Search for entries by member name</li>
+<li>Review diary entries that are awaiting review</li>
+<li>Provide ratings, comments, and feedback on diary entries</li>
+<li>Save draft reviews and submit completed reviews</li>
+<li>Reassign entries to different members</li>
+<li>Change the assigned reviewer on reviewed entries</li>
+</ul>
+<p><strong>Cannot do:</strong></p>
+<ul>
+<li>See non-diary assessment types (unless also has Viewer role)</li>
+<li>Decline review requests</li>
+<li>Delete entries</li>
+<li>Use bulk actions</li>
+</ul>
+<h3 id="viewer-reviewer-role">Viewer + Reviewer Role</h3>
+<p>Users with both Viewer and Reviewer roles have combined capabilities.</p>
+<p><strong>Can see:</strong></p>
+<ul>
+<li>All assessment types: diary, match day, season, media, custom, peer reviews</li>
+</ul>
+<p><strong>Can do:</strong></p>
+<ul>
+<li>Everything Viewers can do (see all types)</li>
+<li>Everything Reviewers can do (review, reassign, change reviewer)</li>
+</ul>
+<h3 id="owner-role">Owner Role</h3>
+<p>Owners have full administrative control over assessments and plans.</p>
+<p><strong>Can see:</strong></p>
+<ul>
+<li>All assessment types</li>
+</ul>
+<p><strong>Can do:</strong></p>
+<ul>
+<li>Everything Viewers and Reviewers can do</li>
+<li>Decline review requests (returns entry to confidential/draft)</li>
+<li>Delete entries (diary entries soft delete; other types permanently delete)</li>
+<li>Use bulk actions to decline or delete multiple entries at once</li>
+<li>Access all management functions</li>
+</ul>
+<h3 id="quick-reference-table">Quick Reference Table</h3>
 <table>
 <thead>
 <tr>
-<th>Level</th>
-<th>What You Can Do</th>
+<th>Capability</th>
+<th>Viewer</th>
+<th>Reviewer</th>
+<th>Viewer + Reviewer</th>
+<th>Owner</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Viewer</td>
-<td>View assessments and plans, search members, view reviews and feedback</td>
+<td>See all assessment types</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td>Reviewer</td>
-<td>Reassign entries to different members, change reviewer (for reviewed items), review diary entries awaiting review</td>
+<td>See diary entries</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
 <tr>
-<td>Owner</td>
-<td>All actions: reassign, change reviewer, decline review, delete, and use bulk actions</td>
+<td>Create assessments on others</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Search members</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>View feedback</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Review diary entries</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Reassign entries</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Change reviewer</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Decline review</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Delete entries</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Bulk actions</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
-<p>Bulk action buttons only appear if you have Owner level access.</p>
+<p>Bulk action buttons only appear if you have Owner access.</p>
 <h2 id="tracking-who-has-viewed-assessments">Tracking Who Has Viewed Assessments</h2>
 <p>The system tracks whether a member has viewed a reviewed assessment. When they view it and click <strong>Mark as read</strong>, it's marked as Seen. This helps you know who has viewed their assessment.</p>
 <p>For View Only assessments, the system automatically marks them as Seen when an admin opens them to review.</p>
@@ -3648,10 +3949,10 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
 </ul>
 <h3 id="cant-change-reviewer-or-reassign">Can't Change Reviewer or Reassign</h3>
 <ul>
-<li>Ensure you have Owner level admin access to the group</li>
+<li>Ensure you have Owner access to the group</li>
 <li>Check that the dropdown list isn't empty - you must have at least one reviewer available</li>
 <li>For reassign: you can only reassign to users in your group</li>
-<li>For change reviewer: the new reviewer must have admin level 1 or higher</li>
+<li>For change reviewer: the new reviewer must have the Reviewer role</li>
 </ul>
 <h3 id="entry-still-shows-old-reviewer-after-change">Entry Still Shows Old Reviewer After Change</h3>
 <ul>

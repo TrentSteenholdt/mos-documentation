@@ -63,7 +63,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -2706,11 +2706,14 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Access Level</p>
-<p>Folder access depends on your role:
-- Users can upload to their personal folder (if allowed in group settings)
-- Viewers can view subgroup folders
-- Reviewers can upload to all folders
-- Owners have full administrative control</p>
+<p>Folder access depends on your role:</p>
+<ul>
+<li><strong>Users</strong>: Can upload to their personal folder (if enabled in group settings)</li>
+<li><strong>Viewers</strong>: Can view subgroup folders they are assigned to (read-only)</li>
+<li><strong>Reviewers</strong>: Can view subgroup folders they are assigned to (read-only)</li>
+<li><strong>Files Manager</strong>: Can upload, delete, and organise files in group and subgroup folders</li>
+<li><strong>Owners</strong>: Full administrative control of all folders</li>
+</ul>
 </div>
 <p><a href="../library-folders/">Learn more: Folders</a></p>
 <h3 id="media">Media</h3>
@@ -2751,13 +2754,13 @@
 <h2 id="administrator-features">Administrator Features</h2>
 <div class="admonition note">
 <p class="admonition-title">Access Level</p>
-<p>Administrator access required. The following features are only available to users with elevated access, such as Reviewers or Owners.</p>
+<p>The following features are only available to users with specific roles such as Viewer, Reviewer, Trainer, Communications, Files Manager, or Owner.</p>
 </div>
 <h3 id="user-management">User Management</h3>
 <p>Add and manage users within your association.</p>
 <div class="admonition note">
-<p class="admonition-title">Access Level: Owner only</p>
-<p>Owner access required. This feature is only available to users with Owner permissions.</p>
+<p class="admonition-title">Access Level</p>
+<p>Owner access required.</p>
 </div>
 <p>Includes:</p>
 <ul>
@@ -2770,8 +2773,8 @@
 <h3 id="group-membership">Group Membership</h3>
 <p>Organise members into subgroups and assign permissions.</p>
 <div class="admonition note">
-<p class="admonition-title">Access Level: Owner only</p>
-<p>Owner access required. This feature is only available to users with Owner permissions.</p>
+<p class="admonition-title">Access Level</p>
+<p>Owner access required.</p>
 </div>
 <p>Includes:</p>
 <ul>
@@ -2780,12 +2783,12 @@
 <li>Create and manage subgroups</li>
 <li>Bulk membership updates</li>
 </ul>
-<p><a href="../admin-membership/">Learn more: Group Membership</a></p>
+<p><a href="../admin-membership/">Learn more: Membership and Roles</a></p>
 <h3 id="group-settings">Group Settings</h3>
 <p>Configure how your organisation operates within the system.</p>
 <div class="admonition note">
-<p class="admonition-title">Access Level: Owner only</p>
-<p>Owner access required. This feature is only available to users with Owner permissions.</p>
+<p class="admonition-title">Access Level</p>
+<p>Owner access required.</p>
 </div>
 <p>Includes:</p>
 <ul>
@@ -2800,8 +2803,8 @@
 <h3 id="news-management">News Management</h3>
 <p>Create and publish news articles.</p>
 <div class="admonition note">
-<p class="admonition-title">Access Level: Owner only</p>
-<p>Owner access required. This feature is only available to users with Owner permissions.</p>
+<p class="admonition-title">Access Level</p>
+<p>Communications or Owner access required.</p>
 </div>
 <p>Includes:</p>
 <ul>
@@ -2815,8 +2818,8 @@
 <h3 id="data-management">Data Management</h3>
 <p>Clean and standardise team and venue data across your group.</p>
 <div class="admonition note">
-<p class="admonition-title">Access Level: Owner only</p>
-<p>Owner access required. This feature is only available to users with Owner permissions.</p>
+<p class="admonition-title">Access Level</p>
+<p>Owner access required.</p>
 </div>
 <p>Includes:</p>
 <ul>
@@ -2830,8 +2833,8 @@
 <h3 id="assessment-management">Assessment Management</h3>
 <p>Oversee assessments across your group.</p>
 <div class="admonition note">
-<p class="admonition-title">Access Level: Reviewer and above</p>
-<p>Available to Reviewers and Owners.</p>
+<p class="admonition-title">Access Level</p>
+<p>Viewer, Reviewer, or Owner access required. Actions vary by role.</p>
 </div>
 <p>Includes:</p>
 <ul>
@@ -2844,8 +2847,8 @@
 <h3 id="exam-management">Exam Management</h3>
 <p>Create and manage exams and questions.</p>
 <div class="admonition note">
-<p class="admonition-title">Access Level: Owner only</p>
-<p>Owner access required. This feature is only available to users with Owner permissions.</p>
+<p class="admonition-title">Access Level</p>
+<p>Trainer or Owner access required.</p>
 </div>
 <p>Includes:</p>
 <ul>
@@ -2861,16 +2864,18 @@
 <h3 id="group-reporting">Group Reporting</h3>
 <p>Generate reports across your organisation.</p>
 <div class="admonition note">
-<p class="admonition-title">Access Level: Reviewer and above</p>
-<p>Available to Reviewers and Owners.</p>
+<p class="admonition-title">Access Level</p>
+<p>Reviewer or Owner access required.</p>
 </div>
-<p>Includes:
-- Login activity analysis
-- Assessment and performance metrics
-- Exam analytics
-- Observer engagement
-- Subgroup filtering
-- CSV and raw data export</p>
+<p>Includes:</p>
+<ul>
+<li>Login activity analysis</li>
+<li>Assessment and performance metrics</li>
+<li>Exam analytics</li>
+<li>Observer engagement</li>
+<li>Subgroup filtering</li>
+<li>CSV and raw data export</li>
+</ul>
 <p><a href="../reports-group-reporting/">Learn more: Group Reporting</a></p>
 <h2 id="feature-availability-by-role">Feature Availability by Role</h2>
 <table>
@@ -2880,12 +2885,18 @@
 <th>User</th>
 <th>Viewer</th>
 <th>Reviewer</th>
+<th>Trainer</th>
+<th>Comms</th>
+<th>Files Mgr</th>
 <th>Owner</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Personal dashboard</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
@@ -2897,44 +2908,115 @@
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-</tr>
-<tr>
-<td>Assessments</td>
-<td>✅</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
 </tr>
 <tr>
-<td>Exams</td>
+<td>Assessments (own)</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>News</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
 </tr>
 <tr>
-<td>Media viewing</td>
+<td>Create assessments on others</td>
+<td>❌</td>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Review diary/plan entries</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Sit exams</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
 </tr>
 <tr>
-<td>Folder upload personal</td>
+<td>Manage exams</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>View news</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
 </tr>
 <tr>
-<td>Folder upload all</td>
+<td>Publish news</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>View media</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Upload to personal folder</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Manage group/subgroup files</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>View subgroup folders</td>
+<td>❌</td>
+<td>☑️</td>
+<td>☑️</td>
 <td>❌</td>
 <td>❌</td>
 <td>☑️</td>
@@ -2946,23 +3028,25 @@
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
 </tr>
 <tr>
 <td>Group reports</td>
 <td>❌</td>
-<td>✅</td>
-<td>✅</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>Assessment review</td>
-<td>❌</td>
 <td>❌</td>
 <td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
 <td>✅</td>
 </tr>
 <tr>
 <td>User management</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
@@ -2973,17 +3057,6 @@
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>News publishing</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>Exam management</td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
@@ -2994,21 +3067,26 @@
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
 <td>✅</td>
 </tr>
 </tbody>
 </table>
-<p>☑️ - Conditional access based on certain controls to subgroups only.</p>
+<p>☑️ - Access limited to assigned subgroups only.</p>
 <h2 id="feature-enablement">Feature Enablement</h2>
 <div class="admonition tip">
 <p class="admonition-title">Feature availability can vary</p>
 <p>Some features are controlled by your association administrator and may not be enabled for all groups.</p>
 </div>
-<p>Examples include:
-- User registration
-- Personal folders
-- Email notifications
-- Subgroup targeting</p>
+<p>Examples include:</p>
+<ul>
+<li>User registration</li>
+<li>Personal folders</li>
+<li>Email notifications</li>
+<li>Subgroup targeting</li>
+</ul>
 <p>Contact your administrator to confirm which features are enabled for your group.</p>
 <h2 id="getting-started">Getting Started</h2>
 <ol>
