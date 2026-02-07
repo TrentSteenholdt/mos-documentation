@@ -3569,7 +3569,9 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
     </svg>
 </button>
     </nav>
-    <pre class="mermaid"><code>Reviewed" as CR_Reviewed
+    <pre class="mermaid"><code>stateDiagram-v2
+  state "Assigned" as CR_Assigned
+  state "Reviewed" as CR_Reviewed
   state "Replied" as CR_Replied
   state "Deleted" as CR_Archived
 
@@ -3580,11 +3582,7 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
   CR_Replied --&gt; CR_Archived: Admin deletes
 
   note right of CR_Reviewed: Subject views only, cannot edit or respond
-  note right of CR_Replied: User has submitted feedback
-  CR_Assigned --&gt; CR_Reviewed: Reviewer completes
-  CR_Reviewed --&gt; CR_Archived: Admin deletes
-
-  note right of CR_Reviewed: Subject views only, cannot edit or respond</code></pre> 
+  note right of CR_Replied: User has submitted feedback</code></pre> 
     
 </div>
 <h2 id="plan-states">Plan States</h2>
@@ -3766,6 +3764,7 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
 <h2 id="access-control-by-role">Access Control by Role</h2>
 <p>Your ability to manage assessments depends on your role in the group. Each role has different visibility and capabilities on this page.</p>
 <h3 id="viewer-role">Viewer Role</h3>
+<p><strong>Badge colour:</strong> Blue</p>
 <p>Viewers can see all assessment types and create assessments on other users.</p>
 <p><strong>Can see:</strong></p>
 <ul>
