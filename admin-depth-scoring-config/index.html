@@ -6,19 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Search for and find other members in your groups">
+        <meta name="description" content="Configure depth scoring weights, thresholds, subgroups, subjective metrics and tier names">
       
       
-        <meta name="author" content="Trent Steenholdt">
+        <meta name="author" content="Codex">
       
       
-        <link rel="canonical" href="https://docs.matchofficialsystem.com/profile-search-users/">
+        <link rel="canonical" href="https://docs.matchofficialsystem.com/admin-depth-scoring-config/">
       
       
-        <link rel="prev" href="../profile-linked-accounts/">
+        <link rel="prev" href="../admin-depth-score-breakdown/">
       
       
-        <link rel="next" href="../faq/">
+        <link rel="next" href="../admin-exam-management/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Search Users - Match Official System - Documentation</title>
+        <title>Scoring Config - Match Official System - Documentation</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#search-users" class="md-skip">
+        <a href="#admin-depth-scoring-config" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Search Users
+              Scoring Config
             
           </span>
         </div>
@@ -927,20 +927,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -961,7 +961,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1060,20 +1060,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_4" checked>
         
           
           <label class="md-nav__link" for="__nav_9_4" id="__nav_9_4_label" tabindex="0">
@@ -1094,7 +1094,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1193,10 +1193,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../admin-depth-scoring-config/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scoring Config
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1212,6 +1239,359 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before You Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tab-grade-prestige" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tab: Grade Prestige
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tab: Grade Prestige">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-save-grade-prestige-weight" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task: Save Grade Prestige Weight
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tab-scoring-weights" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tab: Scoring Weights
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tab: Scoring Weights">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#important-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Important Rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-save-scoring-weights-and-thresholds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task: Save Scoring Weights and Thresholds
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tab-subgroup-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tab: Subgroup Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tab: Subgroup Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-save-subgroup-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task: Save Subgroup Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tab-subjective-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tab: Subjective Metrics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tab: Subjective Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-add-a-metric" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task: Add a Metric
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-add-metric-and-update-all-grade-configs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task: Add Metric and Update All Grade Configs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-remove-a-metric" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task: Remove a Metric
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tab-tier-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tab: Tier Names
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tab: Tier Names">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-save-tier-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task: Save Tier Names
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-and-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation and Rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cannot-save-scoring-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cannot save scoring config
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cannot-save-prestige-or-subgroup-weight" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cannot save prestige or subgroup weight
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metric-actions-fail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metric actions fail
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Pages
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1461,20 +1841,20 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
         
           
           <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
@@ -1495,7 +1875,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1678,37 +2058,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Search Users
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../profile-search-users/" class="md-nav__link">
         
   
   
@@ -1724,292 +2077,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-search-for-users" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How to Search for Users
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#understanding-search-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Understanding Search Results
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#privacy-and-visibility" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Privacy and Visibility
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Privacy and Visibility">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-information-you-see" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What Information You See
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#full-information-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Full Information Mode
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#limited-information-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Limited Information Mode
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-tasks" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Common Tasks
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Common Tasks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#finding-a-specific-person" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Finding a Specific Person
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getting-someones-email" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Getting Someone's Email
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#finding-contact-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Finding Contact Information
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#viewing-someones-profile-picture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Viewing Someone's Profile Picture
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Troubleshooting
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#no-results-found" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        No Results Found
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#limited-information-displayed" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Limited Information Displayed
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#profile-pictures-not-loading" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Profile Pictures Not Loading
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#person-youre-looking-for-doesnt-appear" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Person You're Looking For Doesn't Appear
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tips-best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tips &amp; Best Practices
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tips &amp; Best Practices">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#effective-searching" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Effective Searching
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#respecting-privacy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Respecting Privacy
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#when-to-contact-an-administrator" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        When to Contact an Administrator
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-pages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Related Pages
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2396,10 +2463,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-search-for-users" class="md-nav__link">
+  <a href="#how-to-access" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How to Search for Users
+        How to Access
       
     </span>
   </a>
@@ -2407,10 +2474,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#understanding-search-results" class="md-nav__link">
+  <a href="#before-you-start" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Understanding Search Results
+        Before You Start
       
     </span>
   </a>
@@ -2418,22 +2485,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#privacy-and-visibility" class="md-nav__link">
+  <a href="#tab-grade-prestige" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Privacy and Visibility
+        Tab: Grade Prestige
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Privacy and Visibility">
+    <nav class="md-nav" aria-label="Tab: Grade Prestige">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#what-information-you-see" class="md-nav__link">
+  <a href="#fields" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What Information You See
+        Fields
       
     </span>
   </a>
@@ -2441,21 +2508,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#full-information-mode" class="md-nav__link">
+  <a href="#task-save-grade-prestige-weight" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Full Information Mode
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#limited-information-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Limited Information Mode
+        Task: Save Grade Prestige Weight
       
     </span>
   </a>
@@ -2468,22 +2524,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#common-tasks" class="md-nav__link">
+  <a href="#tab-scoring-weights" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Common Tasks
+        Tab: Scoring Weights
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Common Tasks">
+    <nav class="md-nav" aria-label="Tab: Scoring Weights">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#finding-a-specific-person" class="md-nav__link">
+  <a href="#fields_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Finding a Specific Person
+        Fields
       
     </span>
   </a>
@@ -2491,10 +2547,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getting-someones-email" class="md-nav__link">
+  <a href="#important-rules" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Getting Someone's Email
+        Important Rules
       
     </span>
   </a>
@@ -2502,21 +2558,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#finding-contact-information" class="md-nav__link">
+  <a href="#task-save-scoring-weights-and-thresholds" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Finding Contact Information
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#viewing-someones-profile-picture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Viewing Someone's Profile Picture
+        Task: Save Scoring Weights and Thresholds
       
     </span>
   </a>
@@ -2525,6 +2570,156 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tab-subgroup-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tab: Subgroup Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tab: Subgroup Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-save-subgroup-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task: Save Subgroup Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tab-subjective-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tab: Subjective Metrics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tab: Subjective Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-add-a-metric" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task: Add a Metric
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-add-metric-and-update-all-grade-configs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task: Add Metric and Update All Grade Configs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-remove-a-metric" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task: Remove a Metric
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tab-tier-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tab: Tier Names
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tab: Tier Names">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-save-tier-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task: Save Tier Names
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-and-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation and Rules
+      
+    </span>
+  </a>
   
 </li>
       
@@ -2541,10 +2736,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#no-results-found" class="md-nav__link">
+  <a href="#cannot-save-scoring-config" class="md-nav__link">
     <span class="md-ellipsis">
       
-        No Results Found
+        Cannot save scoring config
       
     </span>
   </a>
@@ -2552,10 +2747,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#limited-information-displayed" class="md-nav__link">
+  <a href="#cannot-save-prestige-or-subgroup-weight" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Limited Information Displayed
+        Cannot save prestige or subgroup weight
       
     </span>
   </a>
@@ -2563,71 +2758,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#profile-pictures-not-loading" class="md-nav__link">
+  <a href="#metric-actions-fail" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Profile Pictures Not Loading
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#person-youre-looking-for-doesnt-appear" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Person You're Looking For Doesn't Appear
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tips-best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tips &amp; Best Practices
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tips &amp; Best Practices">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#effective-searching" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Effective Searching
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#respecting-privacy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Respecting Privacy
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#when-to-contact-an-administrator" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        When to Contact an Administrator
+        Metric actions fail
       
     </span>
   </a>
@@ -2667,199 +2801,217 @@
 
 
 
-<h1 id="search-users">Search Users</h1>
+<h1 id="admin-depth-scoring-config">Admin: Depth Scoring Config</h1>
 <div class="admonition note">
 <p class="admonition-title">Access Level</p>
-<p>All users (if user search is enabled for the group).</p>
+<p><span style="background-color: #198754; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Owner</span> access required.<br />
+<span style="background-color: #212529; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Selector</span> can manage ranking actions in depth chart pages but cannot change scoring configuration.</p>
 </div>
 <h2 id="overview">Overview</h2>
-<p>The search function lets members quickly locate people in their organisation or groups. Use the search bar (top right of any page) to find users by first name, last name or full name; results return match-ranked profile cards that respect group privacy and user sharing settings. Depending on your access level and group configuration, results may include contact details, phone numbers and addresses, or only basic name and avatar information.</p>
-<p><img alt="Search bar" src="../assets/images/search.png" /></p>
-<h2 id="how-to-search-for-users">How to Search for Users</h2>
+<p>Use <strong>Scoring Config</strong> to control how depth scores and tiers are calculated for your group.</p>
+<p>This page lets you manage:</p>
+<ul>
+<li>Grade prestige weight</li>
+<li>Scoring weights and tier thresholds</li>
+<li>Subgroup inclusion and subgroup weight</li>
+<li>Subjective metrics</li>
+<li>Tier names and colours</li>
+</ul>
+<h2 id="how-to-access">How to Access</h2>
+<p>From the sidebar, expand <strong>Depth Charting</strong>, then click <strong>Scoring Config</strong>.</p>
+<h2 id="before-you-start">Before You Start</h2>
+<ul>
+<li>Changes here affect depth chart behaviour across the group.</li>
+<li>Use <strong>Save</strong> buttons in each tab after editing.</li>
+<li>For scoring weights, totals must equal 100 before saving.</li>
+</ul>
+<h2 id="tab-grade-prestige">Tab: Grade Prestige</h2>
+<p>Use this tab to set each grade's <strong>Level Weight</strong>.</p>
+<h3 id="fields">Fields</h3>
+<p><strong>Level Weight</strong>, required</p>
+<ul>
+<li>Range: 0.1 to 10</li>
+<li>Higher values increase a grade's influence in cross-grade ranking</li>
+</ul>
+<h3 id="task-save-grade-prestige-weight">Task: Save Grade Prestige Weight</h3>
 <ol>
-<li>Look for the <strong>search bar</strong> at the top right of any page</li>
-<li>Type a person's name (first name, last name, or both)</li>
-<li>Click the search icon</li>
-<li>View the search results below</li>
+<li>Open <strong>Grade Prestige</strong>.</li>
+<li>Enter a <strong>Level Weight</strong> for a grade.</li>
+<li>Click <strong>Save</strong> in that row.</li>
+<li>Result: Prestige weight is saved.</li>
 </ol>
-<p><strong>What You Can Search:</strong></p>
+<h2 id="tab-scoring-weights">Tab: Scoring Weights</h2>
+<p>Use this tab to set per-grade scoring rules.</p>
+<h3 id="fields_1">Fields</h3>
+<p><strong>Grade</strong>, required</p>
 <ul>
-<li>First name</li>
-<li>Last name</li>
-<li>Full name (first and last)</li>
+<li>Selects which grade config you are editing</li>
 </ul>
-<p><strong>Search Tips:</strong></p>
+<p><strong>Weight fields</strong>, required</p>
 <ul>
-<li>You don't need to type the full name</li>
-<li>Search is not case-sensitive (<code>john</code> finds <code>John</code>)</li>
-<li>Partial names work (<code>smi</code> finds <code>Smith</code>)</li>
-<li>Try last name if first name doesn't work</li>
+<li>All enabled weight fields together must total exactly 100</li>
 </ul>
-<h2 id="understanding-search-results">Understanding Search Results</h2>
-<p>Each search result shows a card with the person's information:</p>
-<p><strong>Profile Picture</strong></p>
+<p><strong>Tier thresholds</strong>, required</p>
 <ul>
-<li>Member's photo (if they've uploaded one)</li>
-<li>Default avatar if no photo</li>
+<li>Must follow descending order: Tier 1 &gt; Tier 2 &gt; Tier 3 &gt; Tier 4</li>
 </ul>
-<p><strong>Name</strong></p>
+<p><strong>Auto-scale thresholds by grade prestige</strong>, optional</p>
 <ul>
-<li>Full name (first and last)</li>
-<li>Clickable to view more details (if available)</li>
+<li>When enabled, lower-prestige grades use scaled threshold values</li>
 </ul>
-<p><strong>Email Address</strong></p>
+<h3 id="important-rules">Important Rules</h3>
 <ul>
-<li>Primary email for contact</li>
-<li>Click to send an email</li>
+<li>Disabled lifecycle/feedback factors show as <strong>Disabled - 0 pts earned</strong></li>
+<li>Disabled factors are set to zero and cannot be edited</li>
+<li><strong>Balance</strong> redistributes enabled weights to total 100, then saves</li>
+<li><strong>Save as New Version</strong> creates a new scoring config version</li>
 </ul>
-<p><strong>Phone Numbers</strong> (if available and shared)</p>
-<ul>
-<li>Primary phone</li>
-<li>Work phone</li>
-<li>Secondary phone</li>
-</ul>
-<p><strong>Address</strong> (if available and shared)</p>
-<ul>
-<li>Full formatted address (single line)</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Not all information may be visible depending on privacy settings and group configuration.</p>
-</div>
-<h2 id="privacy-and-visibility">Privacy and Visibility</h2>
-<h3 id="what-information-you-see">What Information You See</h3>
-<p>The information displayed depends on:</p>
-<ul>
-<li><strong>Group settings</strong> - Your organisation's privacy configuration</li>
-<li><strong>User preferences</strong> - What the member has chosen to share</li>
-<li><strong>Your permissions</strong> - Your access level in the system</li>
-</ul>
-<h3 id="full-information-mode">Full Information Mode</h3>
-<p>If your group allows full directory access, you'll see:</p>
-<ul>
-<li>Profile picture</li>
-<li>Full name</li>
-<li>Email address</li>
-<li>Phone numbers</li>
-<li>Full address</li>
-</ul>
-<h3 id="limited-information-mode">Limited Information Mode</h3>
-<p>If your group has restricted directory access, you'll see:</p>
-<ul>
-<li>Profile picture</li>
-<li>Full name only</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Administrators and system accounts may be hidden from search results.</p>
-</div>
-<h2 id="common-tasks">Common Tasks</h2>
-<h3 id="finding-a-specific-person">Finding a Specific Person</h3>
+<h3 id="task-save-scoring-weights-and-thresholds">Task: Save Scoring Weights and Thresholds</h3>
 <ol>
-<li>Know their first or last name</li>
-<li>Type it in the <strong>search bar</strong> at the top right of any page</li>
-<li>Press <strong>Enter</strong></li>
-<li>Scroll through results to find them</li>
+<li>Open <strong>Scoring Weights</strong>.</li>
+<li>Select a grade in <strong>Grade</strong>.</li>
+<li>Update weights as required.</li>
+<li>Confirm total shows <strong>Valid</strong> at 100.</li>
+<li>Set tier thresholds in descending order.</li>
+<li>Click <strong>Save as New Version</strong>.</li>
+<li>Result: New scoring config version is saved for that grade.</li>
 </ol>
-<h3 id="getting-someones-email">Getting Someone's Email</h3>
+<h2 id="tab-subgroup-settings">Tab: Subgroup Settings</h2>
+<p>Use this tab to control subgroup inclusion in depth charting.</p>
+<h3 id="fields_2">Fields</h3>
+<p><strong>Include in Depth</strong>, required</p>
+<ul>
+<li>Turn on to include the subgroup in depth charting</li>
+</ul>
+<p><strong>Level Weight</strong>, required</p>
+<ul>
+<li>Range: 0.1 to 10</li>
+<li>Disabled when <strong>Include in Depth</strong> is off</li>
+</ul>
+<h3 id="task-save-subgroup-settings">Task: Save Subgroup Settings</h3>
 <ol>
-<li>Search for the person's name</li>
-<li>Find their card in the search results</li>
-<li>Look for the <strong>email address</strong> on their card</li>
-<li>Click the email to open your email client</li>
-<li>Send your message</li>
+<li>Open <strong>Subgroup Settings</strong>.</li>
+<li>Set <strong>Include in Depth</strong> for a subgroup.</li>
+<li>Enter <strong>Level Weight</strong>.</li>
+<li>Click <strong>Save</strong> in that row.</li>
+<li>Result: Subgroup setting is saved.</li>
 </ol>
-<h3 id="finding-contact-information">Finding Contact Information</h3>
+<h2 id="tab-subjective-metrics">Tab: Subjective Metrics</h2>
+<p>Use this tab to manage subjective scoring criteria.</p>
+<h3 id="fields_3">Fields</h3>
+<p><strong>Name</strong>, required</p>
+<ul>
+<li>Metric name must not be blank</li>
+</ul>
+<p><strong>Description</strong>, optional</p>
+<ul>
+<li>Clarifies what the metric measures</li>
+</ul>
+<p><strong>Weight</strong>, required</p>
+<ul>
+<li>Must be greater than 0</li>
+</ul>
+<p><strong>Order</strong>, optional</p>
+<ul>
+<li>Controls display order</li>
+</ul>
+<h3 id="task-add-a-metric">Task: Add a Metric</h3>
 <ol>
-<li>Search for the person</li>
-<li>View their result card</li>
-<li><strong>Email:</strong> Click the email address to send a message</li>
-<li><strong>Phone:</strong> Call the phone number shown</li>
-<li><strong>Address:</strong> Use the address if you need to mail something</li>
+<li>Open <strong>Subjective Metrics</strong>.</li>
+<li>Enter <strong>Name</strong>.</li>
+<li>Enter optional <strong>Description</strong>.</li>
+<li>Enter <strong>Weight</strong> and <strong>Order</strong>.</li>
+<li>Click <strong>Add Metric</strong>.</li>
+<li>Result: Metric is added. Update per-grade scoring weights and save new config versions as needed.</li>
 </ol>
-<h3 id="viewing-someones-profile-picture">Viewing Someone's Profile Picture</h3>
+<h3 id="task-add-metric-and-update-all-grade-configs">Task: Add Metric and Update All Grade Configs</h3>
 <ol>
-<li>Search for the person</li>
-<li>Their profile picture appears at the top of their result card</li>
-<li>If no picture is uploaded, you'll see a default avatar</li>
+<li>Fill in the new metric fields.</li>
+<li>Click <strong>Add, Balance &amp; Save</strong>.</li>
+<li>Result: Metric is added and all grade configs are updated.</li>
 </ol>
+<h3 id="task-remove-a-metric">Task: Remove a Metric</h3>
+<ol>
+<li>Click the delete button for the metric.</li>
+<li>Confirm removal.</li>
+<li>Result: Metric is removed from active use.</li>
+</ol>
+<h2 id="tab-tier-names">Tab: Tier Names</h2>
+<p>Use this tab to rename tier labels and choose tier colours used across depth pages.</p>
+<h3 id="fields_4">Fields</h3>
+<p><strong>Tier name</strong>, required</p>
+<ul>
+<li>All five tier names must be filled in</li>
+</ul>
+<p><strong>Tier colour</strong>, required</p>
+<ul>
+<li>Choose from the provided colour list</li>
+</ul>
+<h3 id="task-save-tier-names">Task: Save Tier Names</h3>
+<ol>
+<li>Open <strong>Tier Names</strong>.</li>
+<li>Update names and colours.</li>
+<li>Click <strong>Save Tier Names</strong>.</li>
+<li>Result: New tier names/colours are applied across depth chart pages.</li>
+</ol>
+<h2 id="validation-and-rules">Validation and Rules</h2>
+<ul>
+<li>Level weight must be between 0.1 and 10</li>
+<li>Weight total must equal exactly 100 before saving a config</li>
+<li>Tier thresholds must be descending (Tier 1 &gt; Tier 2 &gt; Tier 3 &gt; Tier 4)</li>
+<li>Subjective metric name is required</li>
+<li>Subjective metric weight must be greater than 0</li>
+<li>All tier names are required before saving</li>
+</ul>
 <h2 id="troubleshooting">Troubleshooting</h2>
-<h3 id="no-results-found">No Results Found</h3>
-<p><strong>Possible Reasons:</strong></p>
-<ul>
-<li>Name is spelled differently than you think</li>
-<li>Person is not in your group</li>
-<li>Person's account is inactive or deleted</li>
-<li>Administrator has hidden their account</li>
-</ul>
-<p><strong>What to Try:</strong></p>
+<h3 id="cannot-save-scoring-config">Cannot save scoring config</h3>
+<p>Symptoms<br />
+Save fails with a validation message.</p>
+<p>How to Fix</p>
 <ol>
-<li>Check your spelling</li>
-<li>Try just the first name or just the last name</li>
-<li>Try a nickname if you know it</li>
-<li>Ask a colleague for the correct spelling</li>
-<li>Contact an administrator if you can't find someone you expect to see</li>
+<li>Confirm all enabled weight fields total exactly 100.</li>
+<li>Confirm thresholds are descending (Tier 1 highest).</li>
+<li>Try <strong>Balance</strong>, then save again.</li>
 </ol>
-<h3 id="limited-information-displayed">Limited Information Displayed</h3>
-<p><strong>Why This Happens:</strong>
-Your organisation has configured the directory for privacy.</p>
-<p><strong>What You Can Do:</strong></p>
+<p>Common Causes</p>
 <ul>
-<li>Contact the person directly if you have another way to reach them</li>
-<li>Ask an administrator for contact information</li>
-<li>Request your organisation enable full directory access</li>
+<li>Weight total is not 100</li>
+<li>Tier thresholds are out of order</li>
 </ul>
-<h3 id="profile-pictures-not-loading">Profile Pictures Not Loading</h3>
-<p><strong>How to Fix:</strong></p>
+<h3 id="cannot-save-prestige-or-subgroup-weight">Cannot save prestige or subgroup weight</h3>
+<p>Symptoms<br />
+You see a level weight error.</p>
+<p>How to Fix</p>
 <ol>
-<li>Wait a moment - pictures load progressively</li>
-<li>Refresh the page</li>
-<li>Check your internet connection</li>
-<li>Try a different browser</li>
-<li>Contact support if pictures consistently don't load</li>
+<li>Enter a value between 0.1 and 10.</li>
+<li>Click <strong>Save</strong> again.</li>
 </ol>
-<h3 id="person-youre-looking-for-doesnt-appear">Person You're Looking For Doesn't Appear</h3>
-<p><strong>Possible Reasons:</strong></p>
+<p>Common Causes</p>
+<ul>
+<li>Value is below 0.1 or above 10</li>
+</ul>
+<h3 id="metric-actions-fail">Metric actions fail</h3>
+<p>Symptoms<br />
+Metric add/update/remove does not complete.</p>
+<p>How to Fix</p>
 <ol>
-<li><strong>Not in your group:</strong> They may be in a different organisation</li>
-<li><strong>Account inactive:</strong> Their account may be disabled</li>
-<li><strong>Hidden by admin:</strong> System accounts are often hidden</li>
-<li><strong>Different spelling:</strong> Try variations of their name</li>
+<li>Check metric <strong>Name</strong> is filled in.</li>
+<li>Ensure <strong>Weight</strong> is greater than 0.</li>
+<li>Retry and refresh the tab.</li>
 </ol>
-<p><strong>What to Do:</strong></p>
+<p>Common Causes</p>
 <ul>
-<li>Ask an administrator to verify the person has an active account</li>
-<li>Confirm they're in the same organisation/group as you</li>
-<li>Try alternative name spellings or nicknames</li>
-</ul>
-<h2 id="tips-best-practices">Tips &amp; Best Practices</h2>
-<h3 id="effective-searching">Effective Searching</h3>
-<ul>
-<li>Start with just a last name for common first names</li>
-<li>Try both "Michael" and "Mike" for nicknames</li>
-<li>Use partial names if you're unsure of spelling</li>
-<li>Check capitalisation doesn't matter</li>
-</ul>
-<h3 id="respecting-privacy">Respecting Privacy</h3>
-<ul>
-<li>Use contact information appropriately</li>
-<li>Don't share others' contact details without permission</li>
-<li>Respect that some information may be intentionally private</li>
-<li>Follow your organisation's communication policies</li>
-</ul>
-<h3 id="when-to-contact-an-administrator">When to Contact an Administrator</h3>
-<ul>
-<li>Can't find someone who should be in the system</li>
-<li>Need contact information not shown in search</li>
-<li>Believe there's an error in someone's information</li>
-<li>Need to update directory privacy settings for your group</li>
+<li>Missing metric name</li>
+<li>Invalid metric weight</li>
 </ul>
 <h2 id="related-pages">Related Pages</h2>
 <ul>
-<li><a href="../profile-update-profile/">Update Profile</a> - Manage your own contact information and visibility</li>
-<li><a href="../profile-change-password/">Change Password</a> - Update your password and secret question</li>
-<li><a href="../profile-update-email/">Update Email Address</a> - Change your primary or secondary email</li>
+<li><a href="../admin-depth-overview/">Admin: Depth Charting Overview</a>, view cross-grade ranking results</li>
+<li><a href="../admin-depth-grade-chart/">Admin: Grade Depth Chart</a>, apply grade-level manual overrides</li>
+<li><a href="../admin-depth-score-breakdown/">Admin: Score Breakdown</a>, review factor-by-factor scores</li>
 </ul>
+<p>How to Access<br />
+From the sidebar, expand <strong>Depth Charting</strong>.</p>
 
 
 
