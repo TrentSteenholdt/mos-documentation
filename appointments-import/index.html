@@ -59,7 +59,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -1123,6 +1123,28 @@
     <span class="md-ellipsis">
       
         Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before You Start
       
     </span>
   </a>
@@ -2712,6 +2734,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-to-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before You Start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#import-tab" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2998,17 +3042,17 @@
 <h1 id="importing-appointments">Importing Appointments</h1>
 <div class="admonition note">
 <p class="admonition-title">Access Level</p>
-<p>Administrator access required (Owner or Super Admin).</p>
+<p><span style="background-color: #198754; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Owner</span> access required</p>
 </div>
 <h2 id="overview">Overview</h2>
 <p>The Import page lets you bring events, appointments, and availability records into MOS from a CSV or Excel file. This is the primary way to sync data when your organisation uses an external appointments system such as OfficialsHQ.</p>
-<p>How to Access
-From the main menu under <strong>Owner Admin</strong>, click <strong>Appointments</strong> then <strong>Appointments</strong>. Click <strong>Import</strong> in the top right corner.</p>
-<p>Before You Start</p>
+<h2 id="how-to-access">How to Access</h2>
+<p>From the main menu under <strong>Owner Admin</strong>, click <strong>Appointments</strong> then <strong>Appointments</strong>. Click <strong>Import</strong> in the top right corner.</p>
+<h2 id="before-you-start">Before You Start</h2>
 <ul>
 <li>You need a CSV or Excel (.xlsx) file exported from your external system, or prepared manually</li>
 <li>For OfficialsHQ imports, export your allocations from OfficialsHQ first</li>
-<li>Setting up <a href="#mappings">Mappings</a> before importing will save time and ensure officials are matched correctly</li>
+<li>Setting up <a href="#mappings-tab">Mappings</a> before importing will save time and ensure officials are matched correctly</li>
 </ul>
 <hr />
 <h2 id="import-tab">Import Tab</h2>
@@ -3070,7 +3114,7 @@ From the main menu under <strong>Owner Admin</strong>, click <strong>Appointment
 </li>
 </ul>
 <blockquote>
-<p><strong>Tip:</strong> If you see many <strong>Warning</strong> rows, go to the <a href="#mappings">Mappings</a> tab to set up name mappings, then re-validate.</p>
+<p><strong>Tip:</strong> If you see many <strong>Warning</strong> rows, go to the <a href="#mappings-tab">Mappings</a> tab to set up name mappings, then re-validate.</p>
 </blockquote>
 <h4 id="unresolved-officials">Unresolved Officials</h4>
 <p>If any official names in the file could not be automatically matched to a MOS user, they appear in the <strong>Unresolved Officials</strong> section with options to:</p>
@@ -3148,50 +3192,17 @@ From the main menu under <strong>Owner Admin</strong>, click <strong>Appointment
 <hr />
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="officials-are-showing-as-warning-not-matched">Officials are showing as "Warning — not matched"</h3>
-<p>Symptoms
-Many rows show a yellow Warning badge with "not matched in MOS".</p>
-<p>How to Fix</p>
-<ol>
-<li>Go to the <strong>Mappings</strong> tab</li>
-<li>In <strong>User Mappings</strong>, find the unresolved names (shown by default)</li>
-<li>Edit each one and map it to the correct MOS user</li>
-<li>Return to the <strong>Import</strong> tab and click <strong>Validate File</strong> again</li>
-</ol>
-<p>Common Causes</p>
-<ul>
-<li>The official's name in the import file is abbreviated or formatted differently to their MOS name</li>
-<li>The official is not a member of your group in MOS</li>
-</ul>
+<p>Many rows show a yellow Warning badge with "not matched in MOS". This happens when the official's name in the import file is abbreviated or formatted differently to their MOS name, or the official is not a member of your group in MOS. Go to the <strong>Mappings</strong> tab, find the unresolved names in <strong>User Mappings</strong>, edit each one and map it to the correct MOS user, then return to the <strong>Import</strong> tab and click <strong>Validate File</strong> again.</p>
 <h3 id="events-are-created-but-appointments-show-0-officials">Events are created but appointments show 0 officials</h3>
-<p>Symptoms
-Import appears successful but events have no officials assigned.</p>
-<p>How to Fix</p>
-<ol>
-<li>Check the validation preview table — look for rows showing <strong>Warning</strong> (not matched)</li>
-<li>Set up User Mappings for the unmatched names</li>
-<li>Re-validate and commit again</li>
-</ol>
-<p>Common Causes</p>
-<ul>
-<li>Official names were not mapped before committing</li>
-</ul>
+<p>Import appears successful but events have no officials assigned. Check the validation preview table for rows showing <strong>Warning</strong> (not matched). Set up User Mappings for the unmatched names, then re-validate and commit again. This is caused by official names not being mapped before committing.</p>
 <h3 id="import-shows-failed-in-history">Import shows "Failed" in history</h3>
-<p>Symptoms
-The import appears in history with a red <strong>Failed</strong> badge.</p>
-<p>How to Fix</p>
-<ol>
-<li>Click <strong>Download Error Report</strong> next to the failed import</li>
-<li>Review the errors listed in the report</li>
-<li>Fix the issues in your source file and import again</li>
-</ol>
+<p>The import appears in history with a red <strong>Failed</strong> badge. Click <strong>Download Error Report</strong> next to the failed import, review the errors listed, fix the issues in your source file, and import again.</p>
 <hr />
 <h2 id="related-pages">Related Pages</h2>
 <ul>
 <li><a href="../appointments-overview/">Appointments</a> — Manage events and official assignments</li>
 <li><a href="../appointments-auto-appoint/">Auto-Appoint</a> — Automatically suggest officials using depth chart rankings</li>
 </ul>
-<p>How to Access
-<strong>Owner Admin</strong> → <strong>Appointments</strong> → <strong>Appointments</strong> → <strong>Import</strong></p>
 
 
 
