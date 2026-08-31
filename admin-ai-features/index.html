@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://docs.matchofficialsystem.com/admin-ai-features/">
       
       
-        <link rel="prev" href="../admin-exam-management/">
+        <link rel="prev" href="../admin-trainer/">
       
       
         <link rel="next" href="../admin-billing/">
@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -828,6 +828,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trainer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trainer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1505,6 +1533,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../admin-trainer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trainer Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1603,6 +1659,28 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exam-question-drafting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exam Question Drafting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trainer
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1872,10 +1950,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10_9" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10_10" >
         
           
-          <label class="md-nav__link" for="__nav_10_9" id="__nav_10_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10_10" id="__nav_10_10_label" tabindex="0">
             
   
   
@@ -1893,8 +1971,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_9">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_10">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2685,6 +2763,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#exam-question-drafting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exam Question Drafting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trainer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ai-text-rewriting" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2891,7 +2991,7 @@
 <p>AI features require an active MOS subscription with the AI add-on enabled. Access to individual features depends on your role. Contact your administrator if you cannot see a feature described here.</p>
 </div>
 <h2 id="overview">Overview</h2>
-<p>MOS includes a suite of AI-powered tools to help reviewers and administrators work more efficiently. These tools assist with writing, summarising official performance, and generating end-of-season reviews.</p>
+<p>MOS includes AI-assisted tools for writing, summarising official performance, creating Trainer content, and drafting source-grounded exam questions.</p>
 <p>AI features are an optional add-on available on any MOS subscription. They are enabled or disabled per group from the Billing page.</p>
 <hr />
 <h2 id="configuring-ai-feature-access">Configuring AI Feature Access</h2>
@@ -2926,6 +3026,16 @@
 <td>Season Review Summary available to</td>
 <td>Owners only / Owners &amp; Viewers</td>
 </tr>
+<tr>
+<td>Trainer</td>
+<td>Trainer available to</td>
+<td>Owners only / Owners &amp; Trainers</td>
+</tr>
+<tr>
+<td>Exam Question Drafting</td>
+<td>AI exam question drafting available to</td>
+<td>Owners only / Owners &amp; Trainers</td>
+</tr>
 </tbody>
 </table>
 <p>The AI features section only appears in Group Settings when your subscription has AI features enabled. If you do not see this section, AI features are not active on your subscription.</p>
@@ -2936,6 +3046,18 @@
 <li>For each feature, select the access level from the dropdown</li>
 <li>Click <strong>Save settings</strong></li>
 </ol>
+<hr />
+<h2 id="exam-question-drafting">Exam Question Drafting</h2>
+<p><strong>Available in:</strong> <strong>Learning Management</strong>, then <strong>Exams</strong></p>
+<p>Creates private, source-grounded question drafts from pasted laws or playing conditions and uploaded PDF, Word, or plain-text documents. The original and readable source content are retained with the draft batch so an authorised reviewer can check the evidence.</p>
+<p>The AI may return fewer questions than requested when the source does not directly support enough unambiguous questions. Every question remains outside the exam until an admin explicitly verifies its wording, all correct and incorrect answers, and the cited source excerpt.</p>
+<p>See <a href="../admin-exam-management/#generate-private-question-drafts-with-ai">Exam Management</a> for the complete review and publication workflow.</p>
+<hr />
+<h2 id="trainer">Trainer</h2>
+<p><strong>Available in:</strong> <strong>Learning</strong> then <strong>Trainer</strong>, and <strong>Learning Management</strong> then <strong>Trainer</strong></p>
+<p>Trainer provides approved scenario packs for users to complete. Owners and trainers can create packs manually or ask AI to suggest draft packs and scenarios from selected diaries, assessments, and development plans.</p>
+<p>AI suggestions are not made available to users automatically. A trainer reviews the scenario prompt, scoring guidance, audience, and other pack settings before activating the pack.</p>
+<p>See <a href="../admin-trainer/">Trainer Management</a> for pack creation and session review. See <a href="../trainer/">Trainer</a> for the user workflow.</p>
 <hr />
 <h2 id="ai-text-rewriting">AI Text Rewriting</h2>
 <p><strong>Available in:</strong> Any text field across MOS (assessments, diary entries, plans, review comments)</p>
@@ -3017,6 +3139,8 @@
 <h2 id="related-pages">Related Pages</h2>
 <ul>
 <li><a href="../admin-billing/">Billing</a> - Enable or manage the AI features add-on</li>
+<li><a href="../admin-trainer/">Trainer Management</a> - Create training packs and review sessions</li>
+<li><a href="../admin-exam-management/">Exam Management</a> - Create and verify AI-assisted exam questions</li>
 <li><a href="../admin-assessments/">Assessments</a> - Managing assessment entries</li>
 <li><a href="../admin-depth-overview/">Depth Charting Overview</a> - Understanding depth charts and official scoring</li>
 </ul>
@@ -3074,7 +3198,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.expand", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
       

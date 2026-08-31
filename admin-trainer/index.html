@@ -6,19 +6,15 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Glossary of terms used in Match Official System documentation">
       
       
-        <meta name="author" content="Trent Steenholdt">
+        <link rel="canonical" href="https://docs.matchofficialsystem.com/admin-trainer/">
       
       
-        <link rel="canonical" href="https://docs.matchofficialsystem.com/GLOSSARY/">
+        <link rel="prev" href="../admin-exam-management/">
       
       
-        <link rel="prev" href="../errors/">
-      
-      
-        <link rel="next" href="../system-endpoints/">
+        <link rel="next" href="../admin-ai-features/">
       
       
         
@@ -29,7 +25,7 @@
     
     
       
-        <title>Glossary - Match Official System - Documentation</title>
+        <title>Trainer Management - Match Official System - Documentation</title>
       
     
     
@@ -75,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#glossary" class="md-skip">
+        <a href="#trainer-management-create-training-packs-and-review-sessions" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Glossary
+              Trainer Management
             
           </span>
         </div>
@@ -1207,20 +1203,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
         
           
           <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
@@ -1241,7 +1237,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1537,10 +1533,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../admin-trainer/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trainer Management
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1556,6 +1579,225 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-training-pack-manually" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create a Training Pack Manually
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create a Training Pack Manually">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pack-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pack Fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario Fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ask-ai-to-suggest-a-pack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ask AI to Suggest a Pack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ask-ai-to-suggest-a-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ask AI to Suggest a Scenario
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-or-delete-a-pack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edit or Delete a Pack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-user-sessions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Review User Sessions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release-manually-reviewed-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Release Manually Reviewed Feedback
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-a-user-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delete a User Session
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trainer-is-not-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trainer is not enabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-evidence-matched-the-selected-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        No evidence matched the selected controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-is-temporarily-unavailable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI is temporarily unavailable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-pack-will-not-save" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The pack will not save
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printing-does-not-open" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Printing does not open
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Pages
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2077,20 +2319,20 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
         
           
           <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
@@ -2111,7 +2353,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2266,37 +2508,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Glossary
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../GLOSSARY/" class="md-nav__link">
         
   
   
@@ -2312,92 +2527,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#roles-and-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Roles and Access
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#organizations-and-groups" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Organizations and Groups
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assessments-and-performance" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Assessments and Performance
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#content-and-communication" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Content and Communication
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#files-and-media" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Files and Media
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#system-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        System Features
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2549,10 +2678,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#roles-and-access" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Roles and Access
+        Overview
       
     </span>
   </a>
@@ -2560,10 +2689,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#organizations-and-groups" class="md-nav__link">
+  <a href="#create-a-training-pack-manually" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Organizations and Groups
+        Create a Training Pack Manually
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create a Training Pack Manually">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pack-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pack Fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario Fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ask-ai-to-suggest-a-pack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ask AI to Suggest a Pack
       
     </span>
   </a>
@@ -2571,10 +2739,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#assessments-and-performance" class="md-nav__link">
+  <a href="#ask-ai-to-suggest-a-scenario" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Assessments and Performance
+        Ask AI to Suggest a Scenario
       
     </span>
   </a>
@@ -2582,10 +2750,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#content-and-communication" class="md-nav__link">
+  <a href="#edit-or-delete-a-pack" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Content and Communication
+        Edit or Delete a Pack
       
     </span>
   </a>
@@ -2593,10 +2761,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#files-and-media" class="md-nav__link">
+  <a href="#review-user-sessions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Files and Media
+        Review User Sessions
       
     </span>
   </a>
@@ -2604,10 +2772,104 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#system-features" class="md-nav__link">
+  <a href="#release-manually-reviewed-feedback" class="md-nav__link">
     <span class="md-ellipsis">
       
-        System Features
+        Release Manually Reviewed Feedback
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-a-user-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delete a User Session
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trainer-is-not-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trainer is not enabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-evidence-matched-the-selected-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        No evidence matched the selected controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-is-temporarily-unavailable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI is temporarily unavailable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-pack-will-not-save" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The pack will not save
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printing-does-not-open" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Printing does not open
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Pages
       
     </span>
   </a>
@@ -2631,47 +2893,154 @@
 
 
 
-<h1 id="glossary">Glossary</h1>
-<h2 id="roles-and-access">Roles and Access</h2>
+<h1 id="trainer-management-create-training-packs-and-review-sessions">Trainer Management: Create Training Packs and Review Sessions</h1>
+<div class="admonition note">
+<p class="admonition-title">Access Level</p>
+<p>Trainer or Owner access is required. Trainer must also be enabled for the group.</p>
+</div>
+<h2 id="overview">Overview</h2>
+<p>Trainer Management lets you create reusable scenario packs, choose who can access them, and review user sessions. You can write packs yourself or ask AI to suggest drafts from recent development evidence.</p>
+<p><strong>How to access</strong></p>
+<p>Click <strong>Learning Management</strong> then <strong>Trainer</strong>.</p>
+<p>The page contains two sections:</p>
 <ul>
-<li><strong>Owner:</strong> Full administrative control of the group. Can manage members, settings, and all features.</li>
-<li><strong>Viewer:</strong> Can create assessments on other users and view subgroup folders (read-only).</li>
-<li><strong>Reviewer:</strong> Can review diary and plan entries, run reports, and view subgroup folders (read-only).</li>
-<li><strong>Trainer:</strong> Can manage exams (group-level only).</li>
-<li><strong>Communications:</strong> Can manage news articles (group-level only).</li>
-<li><strong>Files Manager:</strong> Can upload, delete, and organise files and folders.</li>
-<li><strong>User:</strong> Standard member with personal workspace access. No administrative roles.</li>
+<li><strong>Training Packs</strong> for creating and maintaining packs</li>
+<li><strong>User Sessions</strong> for reviewing users' progress, answers, scores, and feedback</li>
 </ul>
-<h2 id="organizations-and-groups">Organizations and Groups</h2>
+<h2 id="create-a-training-pack-manually">Create a Training Pack Manually</h2>
+<ol>
+<li>Open <strong>Training Packs</strong>.</li>
+<li>Click <strong>New Pack</strong>.</li>
+<li>Enter a <strong>Pack name</strong>.</li>
+<li>Optionally enter a <strong>Description</strong>.</li>
+<li>Choose the evidence and audience settings.</li>
+<li>Click <strong>Add Scenario</strong>.</li>
+<li>Complete the scenario fields.</li>
+<li>Add further scenarios when required.</li>
+<li>Turn on <strong>Active</strong> when the pack is ready for users.</li>
+<li>Click <strong>Save and Close</strong> or <strong>Save and Continue Editing</strong>.</li>
+<li>Result: The pack is saved. Active packs are available to the selected audience.</li>
+</ol>
+<h3 id="pack-fields">Pack Fields</h3>
+<p><strong>Pack name</strong>, required</p>
 <ul>
-<li><strong>Group/Association:</strong> Your primary organisation within MOS. Many features (News, Reports, Assessments) are scoped to an association.</li>
-<li><strong>Subgroup:</strong> A subdivision within an association used for targeting (e.g., region, squad, team). Membership in subgroups controls visibility of targeted content like News.</li>
+<li>Use a clear name that users and trainers will recognise.</li>
 </ul>
-<h2 id="assessments-and-performance">Assessments and Performance</h2>
+<p><strong>Active</strong>, optional</p>
 <ul>
-<li><strong>Assessment:</strong> A review or evaluation of match official performance created by reviewers based on match observations.</li>
-<li><strong>Diary Entry:</strong> A personal record of a match created by an official. Contains observations and self-reflection.</li>
-<li><strong>Plan:</strong> A development or training plan. Includes goals, actions, and timeframes.</li>
-<li><strong>Assessments:</strong> Evaluations such as exams or reviews completed by members within the system.</li>
+<li>Only active packs can be started by users.</li>
+<li>Leave this off while reviewing a new or AI-suggested pack.</li>
 </ul>
-<h2 id="content-and-communication">Content and Communication</h2>
+<p><strong>Manual review</strong>, optional</p>
 <ul>
-<li><strong>News:</strong> Articles posted by admins for the association and its subgroups. Sorted by last updated; paged with a Show more button.</li>
-<li><strong>Email-to-News:</strong> Sending an email to a designated mailbox (shown on the News page for admins) to create an article. Subject is the title, body is the content, and attachments are added.</li>
+<li>Turn this on when a trainer must check and release coaching feedback before the user can see it.</li>
+<li>The user is emailed when feedback is released.</li>
 </ul>
-<h2 id="files-and-media">Files and Media</h2>
+<p><strong>Description</strong>, optional</p>
 <ul>
-<li><strong>Attachments:</strong> Files associated with a record (e.g., News, Media). May be stored in Azure Blob Storage or local uploads, with links routed through file.aspx.</li>
-<li><strong>Media Library:</strong> Read-only browsing of media (e.g., videos, images) linked to reviews/assessments.</li>
-<li><strong>Folders (File Manager):</strong> Admin-facing area for creating, uploading, moving, and sharing files/folders.</li>
-<li><strong>Share Link:</strong> A predefined or generated URL that provides access to a file or resource, sometimes with restricted scope/time.</li>
+<li>Explain what the pack develops and when users should complete it.</li>
 </ul>
-<h2 id="system-features">System Features</h2>
+<p><strong>Evidence scope</strong>, required</p>
 <ul>
-<li><strong>Sanitization:</strong> Unsafe HTML is removed before rendering to protect users. Links are preserved where possible.</li>
-<li><strong>Time-ago Display:</strong> Relative time formatting for dates (e.g., "Last updated 2 hours ago").</li>
-<li><strong>Data Storage:</strong> All data is stored securely in Microsoft Azure in the Australia Southeast region, ensuring data residency compliance.</li>
-<li><strong>Microsoft Azure AD B2C:</strong> Microsoft's cloud-based authentication and identity management service used by Match Official System. Enables secure sign-in with email/password or social providers (Microsoft, Google), password recovery with security questions, and account linking for multiple login methods.</li>
+<li>Select <strong>Whole group evidence</strong> to use relevant records from across the group when requesting AI suggestions.</li>
+<li>Select <strong>Selected subgroup evidence</strong> to restrict suggestions to selected subgroups.</li>
+</ul>
+<p><strong>Target subgroups</strong>, optional</p>
+<ul>
+<li>Leave this blank to make an active pack available across the group.</li>
+<li>Select one or more subgroups to restrict who can see and start the pack.</li>
+</ul>
+<h3 id="scenario-fields">Scenario Fields</h3>
+<p><strong>Title</strong>, required</p>
+<ul>
+<li>Enter a short name for the scenario.</li>
+</ul>
+<p><strong>Internal scoring benchmark</strong>, required</p>
+<ul>
+<li>Enter a value from 1 to 100.</li>
+</ul>
+<p><strong>Prompt</strong>, required</p>
+<ul>
+<li>Describe the situation and what the user must respond to.</li>
+</ul>
+<p><strong>Rubric</strong>, required</p>
+<ul>
+<li>Describe what a strong answer should demonstrate.</li>
+</ul>
+<p>A pack must contain at least one complete scenario before it can be saved.</p>
+<h2 id="ask-ai-to-suggest-a-pack">Ask AI to Suggest a Pack</h2>
+<p>AI suggestions are drafts. Review every scenario, rubric, and scoring benchmark before activating the pack.</p>
+<ol>
+<li>In <strong>Training Packs</strong>, click <strong>Suggest a Pack</strong>.</li>
+<li>Optionally enter <strong>Focus areas</strong>.</li>
+<li>Select an <strong>Evidence period</strong>.</li>
+<li>Select at least one evidence source: <strong>Diaries</strong>, <strong>Assessments</strong>, or <strong>Development plans</strong>.</li>
+<li>Click <strong>Continue</strong>.</li>
+<li>Review the suggested pack in the Pack Editor.</li>
+<li>Edit the name, description, audience, scenarios, rubrics, and scoring benchmarks as needed.</li>
+<li>Turn on <strong>Active</strong> only when the pack is ready.</li>
+<li>Save the pack.</li>
+</ol>
+<p>If you select <strong>Selected subgroup evidence</strong>, you must select at least one subgroup.</p>
+<h2 id="ask-ai-to-suggest-a-scenario">Ask AI to Suggest a Scenario</h2>
+<ol>
+<li>Create or open a pack.</li>
+<li>Make sure the pack has a name, description, or other clear direction.</li>
+<li>Click <strong>Suggest a Scenario</strong>.</li>
+<li>Optionally enter <strong>Focus areas</strong>.</li>
+<li>Select the evidence period and at least one evidence source.</li>
+<li>Click <strong>Continue</strong>.</li>
+<li>Review and edit the suggested title, prompt, rubric, and scoring benchmark.</li>
+<li>Save the pack.</li>
+</ol>
+<p>AI uses the selected development evidence only when a trainer requests a suggestion. It does not generate new scenarios when a user starts a session.</p>
+<h2 id="edit-or-delete-a-pack">Edit or Delete a Pack</h2>
+<ul>
+<li>Select a pack to open it in the Pack Editor, make changes, then click <strong>Save and Close</strong> or <strong>Save and Continue Editing</strong>.</li>
+<li>Turn off <strong>Active</strong> to stop new users from starting the pack.</li>
+<li>Click the pack's delete action, then click <strong>Delete Pack</strong> to confirm permanent removal.</li>
+</ul>
+<h2 id="review-user-sessions">Review User Sessions</h2>
+<ol>
+<li>Open the <strong>User Sessions</strong> tab.</li>
+<li>Find the session by user, pack, date, status, or summary.</li>
+<li>Open the session.</li>
+<li>Review each scenario's <strong>Prompt</strong>, <strong>Response</strong>, score, and <strong>Coaching Feedback</strong>.</li>
+<li>Click <strong>Print</strong> when you need a printable session record.</li>
+<li>Click <strong>Close</strong> to return to the session list.</li>
+</ol>
+<p>Session statuses include <strong>In progress</strong>, <strong>Awaiting review</strong>, and <strong>Completed</strong>.</p>
+<h2 id="release-manually-reviewed-feedback">Release Manually Reviewed Feedback</h2>
+<p>When <strong>Manual review</strong> is enabled for a pack:</p>
+<ol>
+<li>Open <strong>User Sessions</strong> and select a session marked <strong>Awaiting review</strong>.</li>
+<li>Open the scenario's <strong>Coaching Feedback</strong> tab.</li>
+<li>Review and, if required, edit <strong>Coaching feedback</strong> shown to the user.</li>
+<li>Optionally enter <strong>Internal review notes</strong> for trainers.</li>
+<li>Click <strong>Release feedback and notify user</strong>.</li>
+<li>Result: The feedback becomes visible to the user and the user is emailed.</li>
+</ol>
+<h2 id="delete-a-user-session">Delete a User Session</h2>
+<ol>
+<li>In <strong>User Sessions</strong>, click the session's delete action.</li>
+<li>Confirm the warning.</li>
+<li>Result: The session is permanently removed.</li>
+</ol>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="trainer-is-not-enabled">Trainer is not enabled</h3>
+<p>If the page shows <strong>Trainer is not enabled</strong>, the feature is not available for the group. A group owner can review the group's billing and AI feature settings.</p>
+<h3 id="no-evidence-matched-the-selected-controls">No evidence matched the selected controls</h3>
+<p>Widen the evidence period, select another evidence source, choose a different subgroup, or add a scenario manually.</p>
+<h3 id="ai-is-temporarily-unavailable">AI is temporarily unavailable</h3>
+<p>Keep your existing pack content and try the suggestion again later. You can always add a pack or scenario manually.</p>
+<h3 id="the-pack-will-not-save">The pack will not save</h3>
+<p>Check that the pack has a name and at least one scenario. Every scenario requires a title, prompt, rubric, and scoring benchmark from 1 to 100.</p>
+<h3 id="printing-does-not-open">Printing does not open</h3>
+<p>Allow pop-ups for MOS, reopen the session, and click <strong>Print</strong> again.</p>
+<h2 id="related-pages">Related Pages</h2>
+<ul>
+<li><a href="../trainer/">Trainer</a> - Complete training packs as a user</li>
+<li><a href="../admin-ai-features/">AI Features</a> - Configure AI feature access</li>
 </ul>
 
 
@@ -2679,9 +3048,6 @@
 
 
 
-
-  
-  
 
 
 

@@ -6,10 +6,6 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Create and manage exams, questions, and scoring for group members">
-      
-      
-        <meta name="author" content="Trent Steenholdt">
       
       
         <link rel="canonical" href="https://docs.matchofficialsystem.com/admin-exam-management/">
@@ -18,14 +14,14 @@
         <link rel="prev" href="../admin-depth-scoring-config/">
       
       
-        <link rel="next" href="../admin-ai-features/">
+        <link rel="next" href="../admin-trainer/">
       
       
         
       
       
       <link rel="icon" href="../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -33,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -75,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#admin-exam-management" class="md-skip">
+        <a href="#exam-management-create-and-manage-exams" class="md-skip">
           Skip to content
         </a>
       
@@ -832,6 +828,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trainer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trainer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1555,6 +1579,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#exam-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exam List
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#create-an-exam" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1563,113 +1598,14 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question-types" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Question Types
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-questions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Creating Questions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#editing-questions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Editing Questions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deleting-questions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Deleting Questions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scoring-and-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Scoring and Settings
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Scoring and Settings">
+    <nav class="md-nav" aria-label="Create an Exam">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exam-details" class="md-nav__link">
+  <a href="#exam-fields" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exam Details
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#timing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Timing
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#scoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Scoring
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#completion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Completion
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#descriptions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Descriptions
+        Exam Fields
       
     </span>
   </a>
@@ -1682,10 +1618,138 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#publish-and-assign" class="md-nav__link">
+  <a href="#add-a-question-manually" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Publish and Assign
+        Add a Question Manually
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Add a Question Manually">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#question-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Question Rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-private-question-drafts-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generate Private Question Drafts with AI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Generate Private Question Drafts with AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before You Start
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-a-draft-batch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generate a Draft Batch
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-an-ai-draft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Review an AI Draft
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Review an AI Draft">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verify-and-add-a-draft-to-the-exam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify and Add a Draft to the Exam
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-a-draft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edit a Draft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regenerate-or-reject-a-draft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regenerate or Reject a Draft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resume-or-delete-drafts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resume or Delete Drafts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-or-delete-an-existing-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edit or Delete an Existing Question
       
     </span>
   </a>
@@ -1693,10 +1757,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#monitor-and-results" class="md-nav__link">
+  <a href="#clone-an-exam" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Monitor and Results
+        Clone an Exam
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-and-export-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Review and Export Results
       
     </span>
   </a>
@@ -1712,24 +1787,74 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tips" class="md-nav__link">
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-with-ai-is-not-visible" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tips
+        Generate with AI is not visible
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#related" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#no-drafts-were-generated" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Related
+        No drafts were generated
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-source-document-cannot-be-processed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A source document cannot be processed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-draft-cannot-be-published" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A draft cannot be published
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#an-existing-question-cannot-be-edited" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        An existing question cannot be edited
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Pages
       
     </span>
   </a>
@@ -1740,6 +1865,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../admin-trainer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trainer Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1846,10 +1999,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10_9" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10_10" >
         
           
-          <label class="md-nav__link" for="__nav_10_9" id="__nav_10_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10_10" id="__nav_10_10_label" tabindex="0">
             
   
   
@@ -1867,8 +2020,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_9">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_10">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2631,6 +2784,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#exam-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exam List
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#create-an-exam" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2639,113 +2803,14 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#question-types" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Question Types
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-questions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Creating Questions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#editing-questions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Editing Questions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deleting-questions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Deleting Questions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scoring-and-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Scoring and Settings
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Scoring and Settings">
+    <nav class="md-nav" aria-label="Create an Exam">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exam-details" class="md-nav__link">
+  <a href="#exam-fields" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exam Details
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#timing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Timing
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#scoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Scoring
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#completion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Completion
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#descriptions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Descriptions
+        Exam Fields
       
     </span>
   </a>
@@ -2758,10 +2823,138 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#publish-and-assign" class="md-nav__link">
+  <a href="#add-a-question-manually" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Publish and Assign
+        Add a Question Manually
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Add a Question Manually">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#question-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Question Rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-private-question-drafts-with-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generate Private Question Drafts with AI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Generate Private Question Drafts with AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before You Start
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-a-draft-batch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generate a Draft Batch
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-an-ai-draft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Review an AI Draft
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Review an AI Draft">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verify-and-add-a-draft-to-the-exam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify and Add a Draft to the Exam
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-a-draft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edit a Draft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regenerate-or-reject-a-draft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regenerate or Reject a Draft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resume-or-delete-drafts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resume or Delete Drafts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-or-delete-an-existing-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edit or Delete an Existing Question
       
     </span>
   </a>
@@ -2769,10 +2962,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#monitor-and-results" class="md-nav__link">
+  <a href="#clone-an-exam" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Monitor and Results
+        Clone an Exam
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-and-export-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Review and Export Results
       
     </span>
   </a>
@@ -2788,24 +2992,74 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tips" class="md-nav__link">
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-with-ai-is-not-visible" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tips
+        Generate with AI is not visible
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#related" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#no-drafts-were-generated" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Related
+        No drafts were generated
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-source-document-cannot-be-processed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A source document cannot be processed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-draft-cannot-be-published" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A draft cannot be published
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#an-existing-question-cannot-be-edited" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        An existing question cannot be edited
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Pages
       
     </span>
   </a>
@@ -2829,131 +3083,208 @@
 
 
 
-<h1 id="admin-exam-management">Admin: Exam Management</h1>
+<h1 id="exam-management-create-and-manage-exams">Exam Management: Create and Manage Exams</h1>
 <div class="admonition note">
 <p class="admonition-title">Access Level</p>
-<p><span style="background-color: #dc3545; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Trainer</span> or <span style="background-color: #198754; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Owner</span> access required</p>
+<p>Trainer or Owner access is required.</p>
 </div>
 <h2 id="overview">Overview</h2>
-<p><img alt="Exam Management Interface" src="../assets/images/exam-management.png" /></p>
-<p>Build and administer exams using reusable question banks. Assign to users or subgroups with time windows and completion requirements. Analyse results and export for records.</p>
+<p>Exam Management lets you create exams, configure availability and scoring, add questions, and review completed attempts. You can write questions yourself or, when enabled for your group, generate private AI-assisted drafts from source material.</p>
+<p><strong>How to access</strong></p>
+<p>Click <strong>Learning Management</strong> then <strong>Exams</strong>.</p>
+<h2 id="exam-list">Exam List</h2>
+<p>The exam list shows each exam's name, availability status, pass mark, number of questions presented, time limit, and start and end dates.</p>
+<p>Available actions include:</p>
+<ul>
+<li><strong>Results</strong>, shown after users have completed the exam</li>
+<li><strong>Questions</strong> or <strong>Add questions</strong></li>
+<li><strong>Edit</strong></li>
+<li><strong>Delete</strong></li>
+<li><strong>Clone</strong>, shown after questions have been added</li>
+</ul>
 <h2 id="create-an-exam">Create an Exam</h2>
 <ol>
-<li>Click <strong>Create New Exam</strong>.</li>
-<li>Enter title, description/instructions.</li>
-<li>Add questions (from bank or new) and set order.</li>
-<li>Save as <strong>Draft</strong>.</li>
+<li>Click <strong>New exam</strong>.</li>
+<li>Complete the exam details and settings.</li>
+<li>Click <strong>Save</strong>.</li>
+<li>Result: The exam appears in the exam list.</li>
 </ol>
-<h2 id="question-types">Question Types</h2>
-<p>The system supports three question types:</p>
+<h3 id="exam-fields">Exam Fields</h3>
+<p><strong>Name</strong>, required</p>
 <ul>
-<li><strong>Single</strong>: Multiple choice with one correct answer.</li>
-<li><strong>Multiple</strong>: Multiple select where users select all correct options.</li>
-<li><strong>True/False</strong>: Binary true or false question.</li>
+<li>Enter a short name for the exam.</li>
+<li>Use letters, numbers, spaces, underscores, full stops, or hyphens.</li>
 </ul>
-<h2 id="creating-questions">Creating Questions</h2>
-<p>Add questions to build your exam:</p>
+<p><strong>Questions</strong>, required</p>
+<ul>
+<li>Enter how many questions should be randomly presented from the question pool.</li>
+<li>Enter <code>0</code> to present every question.</li>
+</ul>
+<p><strong>Time limit</strong>, required</p>
+<ul>
+<li>Enter the number of minutes allowed.</li>
+<li>Enter <code>0</code> for no time limit.</li>
+</ul>
+<p><strong>Pass mark %</strong>, required</p>
+<ul>
+<li>Enter a value from 1 to 100.</li>
+</ul>
+<p><strong>Completion required</strong>, optional</p>
+<ul>
+<li>Select this when users must sit the exam before its end date.</li>
+</ul>
+<p><strong>Allow resits</strong>, optional</p>
+<ul>
+<li>Select this to let users attempt the exam again after failing.</li>
+</ul>
+<p><strong>Notify on completion</strong>, optional</p>
+<ul>
+<li>Select this to email group administrators when a user completes the exam.</li>
+</ul>
+<p><strong>Start date</strong>, required</p>
+<ul>
+<li>Sets the first day the exam is available.</li>
+</ul>
+<p><strong>End date</strong>, required</p>
+<ul>
+<li>Sets the last day the exam is available.</li>
+</ul>
+<p><strong>Exam Description</strong>, optional</p>
+<ul>
+<li>Add instructions or information shown before a user starts the exam.</li>
+</ul>
+<p><strong>Exam End Description</strong>, optional</p>
+<ul>
+<li>Add information shown after a user submits the exam.</li>
+</ul>
+<h2 id="add-a-question-manually">Add a Question Manually</h2>
 <ol>
-<li>Open the exam and click <strong>Add Question</strong>.</li>
-<li>Choose a question type: <strong>Single</strong>, <strong>Multiple</strong>, or <strong>True/False</strong>.</li>
+<li>Find the exam and click <strong>Questions</strong> or <strong>Add questions</strong>.</li>
+<li>Click <strong>New question</strong>.</li>
 <li>Enter the question text.</li>
-<li>Add answer options and mark the correct answer(s).</li>
-<li>Click <strong>Save Question</strong>.</li>
+<li>Optionally click <strong>Insert image</strong> and select an image.</li>
+<li>Select <strong>Single</strong>, <strong>Multiple</strong>, or <strong>True/False</strong>.</li>
+<li>For <strong>Single</strong> or <strong>Multiple</strong>, select the number of answers and enter every answer.</li>
+<li>Mark the correct answer or answers.</li>
+<li>Click <strong>Save</strong>.</li>
+<li>Result: The question is added to the exam's question pool.</li>
 </ol>
-<h2 id="editing-questions">Editing Questions</h2>
-<p>Click the <strong>Edit</strong> button next to a question to modify its text, options, or correct answer.</p>
-<div class="admonition warning">
-<p class="admonition-title">Cannot Edit Answered Questions</p>
-<p>Once any user has answered a question, the Edit button is disabled. This prevents changes that would invalidate existing attempt records. If the question needs to change, delete it and add a new one in its place.</p>
-</div>
-<h2 id="deleting-questions">Deleting Questions</h2>
-<p>Click the <strong>Delete</strong> button next to a question to permanently remove it from the exam.</p>
-<p><strong>Tips:</strong></p>
+<h3 id="question-rules">Question Rules</h3>
 <ul>
-<li>Use clear wording and avoid ambiguity.</li>
-<li>Mix difficulty levels and question types.</li>
-<li>For Multiple type questions, select all correct answers.</li>
+<li>Question text is required.</li>
+<li>Every displayed answer field must be completed.</li>
+<li>A <strong>Single</strong> question requires one correct answer.</li>
+<li>A <strong>Multiple</strong> question requires at least two correct answers.</li>
+<li>A <strong>True/False</strong> question requires you to select either True or False as the correct answer.</li>
+<li>A question with no defined answer displays <strong>No answer defined</strong> and does not appear in the exam.</li>
 </ul>
-<h2 id="scoring-and-settings">Scoring and Settings</h2>
-<p>When creating or editing an exam, you configure these settings:</p>
-<h3 id="exam-details">Exam Details</h3>
-<p><strong>Exam Name</strong>, required
-- A short name to identify the exam
-- Displayed to users before they begin</p>
-<p><strong>Questions to Present</strong>, required<br />
-- How many questions to randomly select from the total pool
-- Set to 0 to include all questions
-- Helps create randomised tests from a larger question bank</p>
-<h3 id="timing">Timing</h3>
-<p><strong>Time Limit</strong>
-- Time in minutes to complete the exam
-- Set to 0 for no time limit
-- Users see a countdown timer during the exam
-- When time expires, the exam automatically submits</p>
-<p><strong>Start Date</strong>
-- The date the exam opens for users
-- Users cannot sit the exam before this date
-- Leave empty to open immediately</p>
-<p><strong>End Date</strong>
-- The date the exam closes
-- Users cannot sit the exam after this date
-- Affects "Completion required" enforcement</p>
-<h3 id="scoring">Scoring</h3>
-<p><strong>Pass Mark %</strong>, required
-- Minimum score percentage required to pass (1-100)
-- Displayed to users before they begin the exam
-- Used to determine pass/fail badge on results</p>
-<h3 id="completion">Completion</h3>
-<p><strong>Completion Required</strong>
-- When enabled, users must sit this exam before the end date
-- Blocks other workflows until completed (use sparingly)
-- Creates a "must complete" flag visible to users</p>
-<p><strong>Allow Resits</strong>
-- When enabled, users can retake the exam after a failed attempt
-- When disabled, users may only sit the exam once</p>
-<p><strong>Notify on Completion</strong>
-- When enabled, group administrators receive an email when someone completes the exam
-- Useful for tracking high-stakes or mandatory exams</p>
-<h3 id="descriptions">Descriptions</h3>
-<p><strong>Exam Description</strong>
-- Text shown to users before they begin the exam
-- Use for instructions, tips, or context
-- Appears in the "Ready to start?" modal</p>
-<p><strong>Exam End Description</strong>
-- Text shown to users after they submit the exam
-- Use for encouragement, next steps, or feedback instructions
-- Appears in the completion modal</p>
-<h2 id="publish-and-assign">Publish and Assign</h2>
+<h2 id="generate-private-question-drafts-with-ai">Generate Private Question Drafts with AI</h2>
+<p>This feature appears only when AI features and AI exam question drafting are enabled for your group and role.</p>
+<h3 id="before-you-start">Before You Start</h3>
+<ul>
+<li>Prepare the relevant laws, playing conditions, or other authoritative material.</li>
+<li>You can paste source text, upload PDF, Word, or plain-text documents, or use both.</li>
+<li>You can upload up to five documents. Each document must be no larger than 10 MB.</li>
+<li>Keep the page open while the source is read and drafts are generated.</li>
+<li>AI-generated content may be wrong. A person must verify every question and answer against the source before publication.</li>
+</ul>
+<h3 id="generate-a-draft-batch">Generate a Draft Batch</h3>
 <ol>
-<li>Set exam to <strong>Published</strong> when ready.</li>
-<li><strong>Assign</strong> to individual users, subgroups, or entire group.</li>
-<li>Configure availability window and reminders.</li>
-<li>Notify assignees by email (if enabled).</li>
+<li>Find the exam and click <strong>Questions</strong>.</li>
+<li>Click <strong>Generate with AI</strong>.</li>
+<li>Paste source material into <strong>Paste playing conditions or laws</strong>, upload documents under <strong>Source files</strong>, or do both.</li>
+<li>In <strong>Questions</strong>, enter a number from 1 to 20.</li>
+<li>Select <strong>Mixed</strong>, <strong>Easy</strong>, <strong>Medium</strong>, or <strong>Hard</strong> under <strong>Difficulty</strong>.</li>
+<li>Optionally enter a topic in <strong>Optional topic or focus</strong>.</li>
+<li>Select at least one question type: <strong>Single answer</strong>, <strong>Multiple answer</strong>, or <strong>True/False</strong>.</li>
+<li>Click <strong>Generate private drafts</strong>.</li>
+<li>Wait for the progress window to close. The review workspace opens when processing finishes.</li>
 </ol>
-<h2 id="monitor-and-results">Monitor and Results</h2>
+<p>The system may create fewer questions than requested when the supplied material does not support enough clear, distinct questions.</p>
+<h2 id="review-an-ai-draft">Review an AI Draft</h2>
+<p>Each draft shows:</p>
 <ul>
-<li><strong>Attempts</strong>: Started vs. completed counts.</li>
-<li><strong>Scores</strong>: Individual and average scores; pass/fail.</li>
-<li><strong>Question analysis</strong>: Difficulty index, most missed items (where available).</li>
-<li><strong>Export</strong>: Download results to CSV for archiving/audits.</li>
+<li>The question and question type</li>
+<li>The source used</li>
+<li>Every answer marked <strong>Correct</strong> or <strong>Incorrect</strong></li>
+<li>Reviewer reasoning for every answer</li>
+<li>A source locator and exact supporting excerpt</li>
 </ul>
+<p>Reasoning and source evidence are displayed as readable review content. They only become text boxes after you click <strong>Edit draft</strong>.</p>
+<h3 id="verify-and-add-a-draft-to-the-exam">Verify and Add a Draft to the Exam</h3>
+<ol>
+<li>In <strong>Retained sources</strong>, expand the source and click <strong>open original</strong> when available.</li>
+<li>Read the cited source at the displayed locator.</li>
+<li>Check the question wording.</li>
+<li>Check every answer, its <strong>Correct</strong> or <strong>Incorrect</strong> marking, and its reasoning.</li>
+<li>Check that the exact supporting excerpt supports the entire question.</li>
+<li>If everything is accurate, select <strong>I checked this question, every option, and the marked answers against the retained source.</strong></li>
+<li>Click <strong>Verify and add to exam</strong>.</li>
+<li>Confirm publication.</li>
+<li>Result: The draft is added to the exam question pool and marked as published.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Human Verification Is Mandatory</p>
+<p>Do not publish from AI output alone. The recorded human check is the final authority for the question and its answers.</p>
+</div>
+<h3 id="edit-a-draft">Edit a Draft</h3>
+<ol>
+<li>Click <strong>Edit draft</strong>.</li>
+<li>Update the question, type, source, answer text, correct-answer markings, reasoning, locator, or supporting excerpt.</li>
+<li>Click <strong>Save changes</strong>.</li>
+<li>Review the saved draft again against the retained source.</li>
+<li>Complete the verification steps before publishing.</li>
+</ol>
+<p>Any edit clears the previous verification. Click <strong>Cancel</strong> to discard unsaved edits.</p>
+<h3 id="regenerate-or-reject-a-draft">Regenerate or Reject a Draft</h3>
+<ul>
+<li>Click <strong>Regenerate</strong> and confirm to replace the draft with a new source-grounded suggestion. The replacement must be verified again.</li>
+<li>Click <strong>Reject</strong> and confirm when a draft should not be added to the exam.</li>
+</ul>
+<h3 id="resume-or-delete-drafts">Resume or Delete Drafts</h3>
+<ol>
+<li>Open the exam's question list.</li>
+<li>Click <strong>Resume AI drafts</strong>.</li>
+<li>Click <strong>Review</strong> beside a batch to continue checking it.</li>
+<li>Click <strong>Delete</strong> to remove a batch and its retained private sources.</li>
+</ol>
+<p>Deleting a draft batch does not remove questions that were already published to the exam.</p>
+<h2 id="edit-or-delete-an-existing-question">Edit or Delete an Existing Question</h2>
+<ul>
+<li>Click <strong>Edit</strong> beside a question to change it.</li>
+<li>Once a user has answered a question, editing is disabled to protect completed attempt records.</li>
+<li>Click the delete button and confirm to remove a question.</li>
+</ul>
+<h2 id="clone-an-exam">Clone an Exam</h2>
+<ol>
+<li>Find an exam that contains questions.</li>
+<li>Click the <strong>Clone</strong> button.</li>
+<li>Confirm the action.</li>
+<li>Result: A copy of the exam is added to the exam list.</li>
+</ol>
+<h2 id="review-and-export-results">Review and Export Results</h2>
+<ol>
+<li>Click <strong>Results</strong> beside an exam.</li>
+<li>Review each user's pass or fail result, mark, correct and incorrect totals, completion time, and attempt count when resits are enabled.</li>
+<li>Click <strong>View</strong> to open an individual attempt.</li>
+<li>Click <strong>Export Results</strong> to download the results for your records.</li>
+</ol>
 <h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="generate-with-ai-is-not-visible">Generate with AI is not visible</h3>
+<p>The group's AI master setting or exam-question drafting setting may be disabled, or the feature may not be available to your role. Ask a group owner to check <strong>Admin</strong>, <strong>Group Settings</strong>, <strong>Features</strong>, then <strong>AI features</strong>.</p>
+<h3 id="no-drafts-were-generated">No drafts were generated</h3>
+<p>You may see: <strong>The supplied material did not support any valid questions. Narrow the source or focus and try another batch.</strong></p>
+<p>Try a more specific section of the source, enter a narrower focus, or select question types that suit the material.</p>
+<h3 id="a-source-document-cannot-be-processed">A source document cannot be processed</h3>
+<p>Check that it is a supported PDF, Word, or plain-text document, is no larger than 10 MB, and contains selectable text. Scanned images without readable text may not produce questions.</p>
+<h3 id="a-draft-cannot-be-published">A draft cannot be published</h3>
+<p>Confirm that you selected the verification statement. If the draft was edited or regenerated, review it again before publishing.</p>
+<h3 id="an-existing-question-cannot-be-edited">An existing question cannot be edited</h3>
+<p>Someone has already answered that question. Create a replacement question instead.</p>
+<h2 id="related-pages">Related Pages</h2>
 <ul>
-<li>Users can’t see exam: Check publish state, assignment scope, and date window.</li>
-<li>Results missing: Ensure attempts were submitted; check filters.</li>
-</ul>
-<h2 id="tips">Tips</h2>
-<ul>
-<li>✅ Pilot exams with a small group first.</li>
-<li>✅ Mix question types to test understanding, not memorisation.</li>
-<li>✅ Keep instructions clear and include expected duration.</li>
-</ul>
-<h2 id="related">Related</h2>
-<ul>
-<li><a href="../assessments-exam/">Exams (User)</a></li>
-<li><a href="../reports-group-reporting/">Group Reporting</a></li>
-<li><a href="../admin-user-management/">User Management</a></li>
-<li><a href="../admin-group-settings/">Group Settings</a></li>
+<li><a href="../admin-ai-features/">AI Features</a> - Configure access to AI-assisted tools</li>
+<li><a href="../assessments-exam/">Exams</a> - Sit an exam and review your results</li>
 </ul>
 
 
@@ -2961,9 +3292,6 @@
 
 
 
-
-  
-  
 
 
 
@@ -3012,7 +3340,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.expand", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
       
