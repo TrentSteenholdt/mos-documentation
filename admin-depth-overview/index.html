@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Use the Depth Charting Overview page to view and manage cross-grade ranking">
+        <meta name="description" content="Use Depth Charting to review overall rankings, career progression, coverage, and historical calculations">
       
       
         <meta name="author" content="Codex">
@@ -63,7 +63,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -1519,6 +1519,28 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#career-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Career Progression
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historical-season-progress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Historical season progress
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#search-official" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1624,10 +1646,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#recalculate-all-grades-owner" class="md-nav__link">
+  <a href="#recalculate-all-grades-administrative-access" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Recalculate All Grades (Owner)
+        Recalculate All Grades (administrative access)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#view-career-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        View Career Progression
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-historical-seasons-administrative-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update Historical Seasons (administrative access)
       
     </span>
   </a>
@@ -1678,6 +1722,17 @@
     <span class="md-ellipsis">
       
         Bulk score will not save
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#career-progression-has-no-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Career Progression has no results
       
     </span>
   </a>
@@ -2586,34 +2641,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../system-endpoints/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    System Endpoints
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -2799,6 +2826,28 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#career-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Career Progression
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historical-season-progress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Historical season progress
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#search-official" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2904,10 +2953,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#recalculate-all-grades-owner" class="md-nav__link">
+  <a href="#recalculate-all-grades-administrative-access" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Recalculate All Grades (Owner)
+        Recalculate All Grades (administrative access)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#view-career-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        View Career Progression
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-historical-seasons-administrative-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update Historical Seasons (administrative access)
       
     </span>
   </a>
@@ -2964,6 +3035,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#career-progression-has-no-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Career Progression has no results
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3001,16 +3083,18 @@
 <div class="admonition note">
 <p class="admonition-title">Access Level</p>
 <p><span style="background-color: #212529; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Selector</span> can view rankings and coverage, set manual rank order, and enter subjective scores.
-<span style="background-color: #198754; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Owner</span> can also run full recalculation.</p>
+<span style="background-color: #198754; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Owner</span> can also run full recalculation and update historical seasons.</p>
 </div>
 <h2 id="overview">Overview</h2>
-<p>Use <strong>Overview</strong> to manage the cross-grade ranking list for a season.</p>
+<p>Use <strong>Overview</strong> to review cross-grade rankings for a season, follow officials' career progression, and manage historical season calculations.</p>
 <p>This page shows:</p>
 <ul>
 <li>Overall rank order across all grades</li>
 <li>Each official's best grade and depth score</li>
 <li>Grade coverage summary</li>
 <li>Manual rank movement (for selectors)</li>
+<li>Career progression by season, grade, score, and rank</li>
+<li>Historical season calculation progress</li>
 </ul>
 <p><img alt="Depth Charting overview showing grade coverage and overall ranking tools" src="../assets/images/depth.png" /></p>
 <h2 id="how-to-access">How to Access</h2>
@@ -3038,6 +3122,15 @@
 <li><strong>Subgroups</strong></li>
 <li><strong>Subjective Scoring</strong> (selectors only, when metrics exist)</li>
 </ul>
+<h3 id="career-progression">Career Progression</h3>
+<p>Select the <strong>Career Progression</strong> tab to compare calculated scores and ranks across seasons. The default view is <strong>Graph</strong>; choose <strong>Table</strong> to view season-by-season values in rows.</p>
+<p>Choose a <strong>From season</strong>, <strong>To season</strong>, <strong>Ranking</strong>, and <strong>Official</strong>, then click <strong>Apply</strong>. <strong>Overall ranking</strong> compares officials across grades using each official's best grade for that season. Selecting a grade shows progression for that grade. In <strong>Table</strong> view, click a column heading to sort the rows.</p>
+<p>The graphs show <strong>Score by season</strong> and <strong>Rank by season</strong>. Click an official's name in the legend to focus on them. Use Ctrl-click or Cmd-click to add or remove officials, Shift-click to select a range, or click <strong>Show all</strong> to restore every official.</p>
+<p>Historical values are reconstructed using the current scoring rules and the activity options currently enabled for diaries, assessments, and plans. The experience factor uses all-time activity. These values therefore do not show what the score or ranking was at the time.</p>
+<p><strong>Score change</strong> compares the score with the previous consecutive season. <strong>Rank movement</strong> compares rank with that same season; a positive value means movement towards rank 1. Both values are blank when the previous consecutive season has no calculated result.</p>
+<h3 id="historical-season-progress">Historical season progress</h3>
+<p>Use <strong>Backfill All Seasons</strong> to calculate rankings for all eligible seasons with activity in the selected organisation, including the current season when eligible. While the job runs, the progress card shows completed and failed season-and-grade calculations and the current calculation. The card disappears when the update succeeds; if errors remain, it stays visible and offers <strong>Retry failed scopes</strong>. Existing selector ordering and availability settings are kept.</p>
+<p>If any calculations fail, click <strong>Retry failed scopes</strong> after the job finishes. The retry runs the failed season-and-grade calculations again.</p>
 <h3 id="search-official">Search Official</h3>
 <p>Use <strong>Search official...</strong> in the page header to find an official in the current season table.</p>
 <ul>
@@ -3048,6 +3141,22 @@
 <p><strong>Season</strong>, required</p>
 <ul>
 <li>Chooses which season rankings and coverage are loaded</li>
+</ul>
+<p><strong>From season</strong>, required for Career Progression</p>
+<ul>
+<li>Sets the first season in the comparison range</li>
+</ul>
+<p><strong>To season</strong>, required for Career Progression</p>
+<ul>
+<li>Sets the last season in the comparison range; it must be the same as or later than <strong>From season</strong></li>
+</ul>
+<p><strong>Ranking</strong>, optional</p>
+<ul>
+<li><strong>Overall ranking</strong> compares each official's best grade across the group; choose a grade to view that grade's results</li>
+</ul>
+<p><strong>Official</strong>, optional</p>
+<ul>
+<li>Limits results to one official</li>
 </ul>
 <p><strong>Bulk Score: Metric</strong>, required</p>
 <ul>
@@ -3110,18 +3219,43 @@
 <li>Click <strong>Export CSV</strong>.</li>
 <li>Result: The season's overall ranking downloads as a CSV file.</li>
 </ol>
-<h3 id="recalculate-all-grades-owner">Recalculate All Grades (Owner)</h3>
+<h3 id="recalculate-all-grades-administrative-access">Recalculate All Grades (administrative access)</h3>
 <ol>
 <li>Click <strong>Recalculate</strong>.</li>
 <li>Wait for progress to finish for each grade.</li>
 <li>Result: Rankings are rebuilt and the page refreshes with new results.</li>
 </ol>
+<h3 id="view-career-progression">View Career Progression</h3>
+<ol>
+<li>Open <strong>Depth Charting</strong> &gt; <strong>Overview</strong>.</li>
+<li>Select the <strong>Career Progression</strong> tab.</li>
+<li>Choose a <strong>From season</strong> and <strong>To season</strong>. The ending season must be the same as or later than the starting season.</li>
+<li>Optionally select a <strong>Ranking</strong> or <strong>Official</strong>.</li>
+<li>Click <strong>Apply</strong>.</li>
+<li>Choose <strong>Graph</strong> or <strong>Table</strong> to change how results are displayed.</li>
+<li>Result: You see calculated scores and rankings for the selected seasons and filters.</li>
+</ol>
+<h3 id="update-historical-seasons-administrative-access">Update Historical Seasons (administrative access)</h3>
+<ol>
+<li>Open <strong>Depth Charting</strong> &gt; <strong>Overview</strong>.</li>
+<li>Click <strong>Backfill All Seasons</strong>.</li>
+<li>Review the confirmation for your organisation, then click <strong>Backfill seasons</strong>.</li>
+<li>Follow progress in <strong>Historical season progress</strong>. The job may take a while.</li>
+<li>If the job reports errors, click <strong>Retry failed scopes</strong>.</li>
+<li>Result: Eligible season rankings are recalculated using the current scoring rules and diary, assessment, and plan activity settings. Selector ordering and availability settings remain in place.</li>
+</ol>
 <h2 id="validation-and-rules">Validation and Rules</h2>
 <ul>
 <li>Search requires at least 2 characters</li>
+<li><strong>From season</strong> and <strong>To season</strong> are required; the ending season must not be earlier than the starting season</li>
+<li><strong>Ranking</strong> and <strong>Official</strong> are optional filters</li>
 <li>Bulk score must be between 0 and 100</li>
 <li>At least one official must be selected for bulk score</li>
 <li>Manual ordering is available to selectors only</li>
+<li>Career Progression only includes calculated depth chart data for the selected seasons</li>
+<li>Historical backfill requires administrative access</li>
+<li>Historical backfill recalculates eligible seasons with current settings; it does not recreate past settings</li>
+<li>Score change and rank movement are shown only when the previous consecutive season also has calculated data</li>
 </ul>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="no-depth-chart-data-for-this-season-yet">No depth chart data for this season yet</h3>
@@ -3130,7 +3264,7 @@ The page shows no ranking rows for the selected season.</p>
 <p>How to Fix</p>
 <ol>
 <li>Confirm the correct <strong>Season</strong> is selected.</li>
-<li>If you have Owner access, click <strong>Recalculate</strong>.</li>
+<li>If you have administrative access, click <strong>Recalculate</strong>.</li>
 <li>Reload the page after recalculation completes.</li>
 </ol>
 <p>Common Causes</p>
@@ -3152,11 +3286,26 @@ You see a warning when applying a bulk score.</p>
 <li>Score is blank or outside range</li>
 <li>No officials were selected</li>
 </ul>
+<h3 id="career-progression-has-no-results">Career Progression has no results</h3>
+<p>Symptoms
+The table or graphs show that there is no calculated trend data.</p>
+<p>How to Fix</p>
+<ol>
+<li>Check the selected season range and filters.</li>
+<li>If you have administrative access, run <strong>Recalculate</strong> for the selected season or <strong>Backfill All Seasons</strong> for all eligible seasons.</li>
+<li>Apply the filters again after the calculation finishes.</li>
+</ol>
+<p>Common Causes</p>
+<ul>
+<li>Depth chart calculations have not been run for those seasons</li>
+<li>The selected grade or official has no calculated data in that range</li>
+</ul>
 <h2 id="related-pages">Related Pages</h2>
 <ul>
 <li><a href="../admin-depth-grade-chart/">Admin: Grade Depth Chart</a>, manage one grade in detail</li>
 <li><a href="../admin-depth-score-breakdown/">Admin: Score Breakdown</a>, view per-factor scoring for one official</li>
 <li><a href="../admin-depth-scoring-config/">Admin: Depth Scoring Config</a>, configure weights, tiers and metrics</li>
+<li><a href="../home/">Home</a>, view the depth coverage summary for administrators</li>
 </ul>
 <p>How to Access<br />
 From the sidebar, expand <strong>Depth Charting</strong>.</p>

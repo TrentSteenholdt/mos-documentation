@@ -63,7 +63,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -2708,34 +2708,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../system-endpoints/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    System Endpoints
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -3563,11 +3535,13 @@
 <div class="admonition note">
 <p class="admonition-title">Access Level</p>
 <p>Viewing, manual ordering, and subjective score entry require <span style="background-color: #212529; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Selector</span> access.
-Scoring configuration and recalculation require <span style="background-color: #198754; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Owner</span> access.</p>
+Scoring configuration, recalculation, and historical season management require <span style="background-color: #198754; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Owner</span> access.</p>
 </div>
 <p>Includes:</p>
 <ul>
 <li>Cross grade overall ranking by season</li>
+<li>Career progression charts and sortable season-by-season results</li>
+<li>Historical season recalculation with progress and retry for failed calculations</li>
 <li>Grade by grade tier charting</li>
 <li>Official score breakdown by scoring factor</li>
 <li>Manual ranking overrides</li>
@@ -3579,6 +3553,7 @@ Scoring configuration and recalculation require <span style="background-color: #
 <a href="../admin-depth-grade-chart/">Grade Depth Chart</a><br />
 <a href="../admin-depth-score-breakdown/">Score Breakdown</a><br />
 <a href="../admin-depth-scoring-config/">Depth Scoring Config</a></p>
+<p>Historical recalculation uses current scoring rules and diary, assessment, and plan activity settings. It preserves selector ordering and availability settings; it does not recreate past scoring settings. See <a href="../admin-depth-overview/">Depth Charting Overview</a> for the Career Progression and backfill steps.</p>
 <h2 id="feature-availability-by-role">Feature Availability by Role</h2>
 <table>
 <thead>
@@ -3885,6 +3860,30 @@ Scoring configuration and recalculation require <span style="background-color: #
 <td>✅</td>
 </tr>
 <tr>
+<td>Career Progression</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Recalculate historical depth seasons</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
 <td>Depth chart CSV export</td>
 <td>❌</td>
 <td>❌</td>
@@ -4043,6 +4042,7 @@ Scoring configuration and recalculation require <span style="background-color: #
 </tbody>
 </table>
 <p>☑️ - Access limited to assigned subgroups or when AI add-on is enabled.</p>
+<p>Administrators can use <strong>Backfill All Seasons</strong>. The Home page's <strong>Depth Coverage</strong> card is available to administrators.</p>
 <h2 id="feature-enablement">Feature Enablement</h2>
 <div class="admonition tip">
 <p class="admonition-title">Feature availability can vary</p>
