@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
       
 
@@ -428,6 +428,34 @@
     
   
     Register
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../demo-registration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explore the Demo
   
 
     
@@ -1849,6 +1877,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#edit-an-existing-members-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edit an existing member's roles
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2670,6 +2709,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#edit-an-existing-members-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edit an existing member's roles
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2814,10 +2864,10 @@
 <p>Only users with <span style="background-color: #198754; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Owner</span> access can manage subgroup membership.</p>
 </div>
 <h2 id="overview">Overview</h2>
-<p>This guide explains how subgroups affect what people can see, who gets notified, and who can review items. Use it when setting up groups and subgroups so the right people have the right access.</p>
+<p>This guide explains how to add members to subgroups and how subgroup access affects visibility, notifications and reviews.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This feature/guide is only useable if the associate is license for subgroups.</p>
+<p>Subgroups are available when they are enabled for your organisation.</p>
 </div>
 <p><strong>How to Access</strong></p>
 <p>From the main menu select <strong>Admin</strong> then <strong>Membership and Roles</strong></p>
@@ -2830,6 +2880,8 @@
 <li><span style="background-color: #dc3545; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Trainer</span> Can manage exams (group-level only)</li>
 <li><span style="background-color: #6f42c1; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Communications</span> Can manage news articles (group-level only)</li>
 <li><span style="background-color: #20c997; color: #000; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Files Manager</span> Can upload, delete, and organise files and folders</li>
+<li><strong>Appointer</strong> Can manage appointments and availability</li>
+<li><strong>Selector</strong> Can access depth charting</li>
 <li><span style="background-color: #198754; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Owner</span> Full administrative control (group-level only)</li>
 </ul>
 <h2 id="membership-and-permissions">Membership and Permissions</h2>
@@ -2840,21 +2892,35 @@
 <li>Owner is only available at group level (subgroups cannot have Owners)</li>
 </ul>
 <h3 id="how-to-manage-membership">How to Manage Membership</h3>
+<p><img alt="Subgroup rows with their Add Member controls." src="../assets/images/20261025-subgroup-member-controls.jpg" /></p>
+<p><em>Captured 25 October 2026.</em></p>
+<p><img alt="Add Member form showing the subgroup access level and available roles." src="../assets/images/20261025-subgroup-add-member-form.jpg" /></p>
+<p><em>Captured 25 October 2026.</em></p>
+<p>When adding someone to a subgroup, search for their name, select the member, then choose the access level and any roles that apply. The available subgroup roles are shown in the form.</p>
 <ol>
 <li>Go to <strong>Admin</strong> &gt; <strong>Membership and Roles</strong></li>
-<li>Use the search box to find a group</li>
-<li>Click the group name to expand it</li>
-<li>Click a subgroup to expand it</li>
-<li>Click <strong>Add</strong> to add members or click a member to <strong>Edit</strong> their level</li>
-<li>Click <strong>Save</strong></li>
-<li>Result: The membership list updates and you see confirmation messages</li>
+<li>Find the group and the subgroup you want to manage</li>
+<li>Expand the subgroup row</li>
+<li>Click <strong>Add Member</strong> on that subgroup's row</li>
+<li>Search for a member, select them, choose the available access level and roles, then click <strong>Add Member</strong></li>
+<li>Result: The member is added to that subgroup with the selected access</li>
 </ol>
+<h3 id="edit-an-existing-members-roles">Edit an existing member's roles</h3>
+<ol>
+<li>Expand the subgroup</li>
+<li>Click <strong>Edit permission</strong> on the member's row</li>
+<li>Select or clear the roles they need</li>
+<li>Click <strong>Save Changes</strong></li>
+<li>Result: MOS confirms the permissions update and refreshes the membership list</li>
+</ol>
+<p><img alt="Subgroup member permission dialog showing the access level and available roles." src="../assets/images/20261025-membership-subgroup-edit-permissions.jpg" /></p>
+<p><em>Captured 25 October 2026.</em></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <ul>
 <li>Use the role filter to quickly show members by role</li>
 <li>You can remove a member using <strong>Remove</strong> on their row</li>
-<li>At subgroup level, the Owner option is not available</li>
+<li>Subgroup membership has its own <strong>Add Member</strong> control. The available roles differ from group-level roles.</li>
 </ul>
 </div>
 <h2 id="what-happens-with-notifications-and-reviews">What happens with Notifications and Reviews</h2>
@@ -3104,7 +3170,7 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
 <p>Required vs optional  </p>
 <ul>
 <li>Group level: User, Viewer, Reviewer, Trainer, Communications, Files Manager, Owner are available</li>
-<li>Subgroup level: User, Viewer, Reviewer, Files Manager are available (Trainer, Communications, Owner are group-level only)</li>
+<li>Subgroup level: User, Viewer, Reviewer, Files Manager, Appointer and Selector are available (Trainer, Communications and Owner are group-level only)</li>
 </ul>
 <p>Common messages  </p>
 <ul>
@@ -3179,10 +3245,10 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.expand", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.expand", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
       

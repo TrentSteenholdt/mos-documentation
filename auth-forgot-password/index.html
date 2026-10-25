@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://docs.matchofficialsystem.com/auth-forgot-password/">
       
       
-        <link rel="prev" href="../auth-register/">
+        <link rel="prev" href="../demo-registration/">
       
       
         <link rel="next" href="../system-requirements/">
@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
       
 
@@ -445,6 +445,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../demo-registration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explore the Demo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -531,10 +559,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-enter-your-email-or-username" class="md-nav__link">
+  <a href="#step-1-enter-your-email-address" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1: Enter Your Email or Username
+        Step 1: Enter Your Email Address
       
     </span>
   </a>
@@ -2677,10 +2705,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-enter-your-email-or-username" class="md-nav__link">
+  <a href="#step-1-enter-your-email-address" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1: Enter Your Email or Username
+        Step 1: Enter Your Email Address
       
     </span>
   </a>
@@ -2848,29 +2876,30 @@
 <p>Public (before authentication)</p>
 </div>
 <h2 id="overview">Overview</h2>
-<p>If you forget your password, you can reset it through a secure recovery process using your email address and a secret question.</p>
-<p><strong>How to Access:</strong> On the sign in page, click <strong>Forgot my password</strong></p>
+<p>If you forget your password, you can request a reset using the email address registered to your MOS account and the secret question saved for that account. Accounts that use a social sign-in provider cannot use this reset process.</p>
+<p><strong>How to Access:</strong> On the sign-in page, click <strong>Forgot your password?</strong></p>
+<p><img alt="MOS password recovery page with the email address field and a prompt to enter the address registered to the account" src="../assets/images/20261025-forgot-password-email-entry-card.jpg" /></p>
+<p><em>Captured 25 October 2026.</em></p>
 <h2 id="how-to-reset-your-password">How to Reset Your Password</h2>
 <p>The password recovery process has three steps:</p>
-<h3 id="step-1-enter-your-email-or-username">Step 1: Enter Your Email or Username</h3>
+<h3 id="step-1-enter-your-email-address">Step 1: Enter Your Email Address</h3>
 <ol>
-<li>On the sign-in page, click <strong>Forgot my password</strong></li>
-<li>Enter your <strong>email address</strong> or <strong>username</strong></li>
+<li>On the sign-in page, click <strong>Forgot your password?</strong></li>
+<li>Enter the <strong>email address</strong> registered to your account</li>
 <li>Click <strong>Next</strong></li>
 </ol>
 <p><strong>Field:</strong></p>
 <ul>
-<li><strong>Email Address or Username</strong> (required): Enter the email or username associated with your account</li>
+<li><strong>Email address</strong> (required): Enter the address registered to your account. A username alone is not accepted.</li>
 </ul>
 <p><strong>Validation:</strong></p>
 <ul>
-<li>Must match an account in the system</li>
-<li>Email must be in valid format (name@domain.com)</li>
-<li>Case-insensitive</li>
+<li>Must match the primary email address on an active account</li>
 </ul>
 <p><strong>Errors:</strong></p>
 <ul>
-<li>"Account not found": Check for typos; try your email or username (whichever you didn't use); contact your administrator if your account doesn't exist</li>
+<li>"No account found for that email address": Check the address and try again, or speak to your association administrator.</li>
+<li>Social sign-in accounts cannot reset their password through this page. Sign in through the account's social provider instead.</li>
 </ul>
 <h3 id="step-2-answer-your-secret-question">Step 2: Answer Your Secret Question</h3>
 <ol>
@@ -2896,9 +2925,10 @@
 </ul>
 <p><strong>Common Issues:</strong></p>
 <ul>
-<li>"Incorrect answer": The answer doesn't match your saved answer. Try alternate spellings or capitalisation. If unsure, contact your administrator.</li>
-<li>"No secret question set": Your account may not have security question set up. Contact your association administrator for password reset.</li>
-<li>"Self-service password recovery is currently disabled": Password recovery was disabled when your name was changed. Contact your administrator to reset your password.</li>
+<li><strong>The secret answer is not correct:</strong> Check its spelling and capitalisation. If you're unsure, contact your association administrator.</li>
+<li><strong>No secret question and answer are saved:</strong> MOS asks you to contact your association administrator.</li>
+<li><strong>Social sign-in account:</strong> Sign in through Microsoft or Google instead of using this recovery process.</li>
+<li><strong>Account not linked to Microsoft sign-in:</strong> Contact your association administrator for a reset.</li>
 </ul>
 <h3 id="step-3-receive-your-new-temporary-password">Step 3: Receive Your New Temporary Password</h3>
 <ol>
@@ -2966,57 +2996,31 @@
 <h2 id="when-password-recovery-is-disabled">When Password Recovery is Disabled</h2>
 <p>In some situations, self-service password recovery is not available.</p>
 <p><strong>Why Password Recovery Gets Disabled:</strong></p>
-<p>Password recovery is disabled if:</p>
-<ul>
-<li>Your name was changed by an administrator</li>
-<li>An administrator manually disabled it for security reasons</li>
-<li>Your account has unusual activity</li>
-</ul>
+<p>Password recovery cannot continue if your account has no saved secret question and answer, uses social sign-in, or is not linked to Microsoft sign-in.</p>
 <h3 id="if-password-recovery-is-disabled">If Password Recovery is Disabled</h3>
-<p><strong>You'll See:</strong></p>
-<p>"Self-service password recovery is currently disabled for your account"</p>
+<p><strong>You'll See:</strong> A message explaining why the reset cannot continue. For example, MOS asks you to contact your association administrator if no secret question and answer are saved.</p>
+<p><img alt="MOS password recovery message when no secret question and answer are saved" src="../assets/images/20261025-forgot-password-no-question-alert.jpg" /></p>
+<p><em>Captured 25 October 2026.</em></p>
 <p><strong>How to Reset Your Password:</strong></p>
 <ol>
-<li>Contact your association administrator</li>
-<li>Tell them your password recovery is disabled</li>
-<li>They can:<ul>
-<li>Manually reset your password</li>
-<li>Send you a temporary password</li>
-<li>Re-enable password recovery</li>
-</ul>
-</li>
-<li>Sign in with the temporary password your administrator provides</li>
-<li>Change your password immediately: <strong>My Account</strong> → <strong>Change Password</strong></li>
+<li>Contact your association administrator and explain the message.</li>
+<li>Follow their instructions to regain access to your account.</li>
 </ol>
-<p><strong>Why This Happens:</strong></p>
-<p>When your name changes (even if you do it yourself):</p>
-<ul>
-<li>Your username may change</li>
-<li>Your security settings are re-verified to protect your account</li>
-<li>Self-service recovery is temporarily disabled</li>
-</ul>
-<p>This is a security feature to prevent unauthorised account access.</p>
+<p>After a name change, MOS may also tell you to contact your administrator if password recovery is unavailable.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="account-not-found">Account Not Found</h3>
-<p><strong>Problem:</strong> "Account not found" message</p>
+<p><strong>Problem:</strong> MOS says no account was found for the email address.</p>
 <p><strong>What this means:</strong></p>
 <ul>
-<li>No account matches the email or username you entered</li>
-<li>You may have:<ul>
-<li>Entered a typo</li>
-<li>Used a different email than registered</li>
-<li>Not registered yet</li>
-</ul>
-</li>
+<li>No active account matches the email address you entered.</li>
+<li>You may have entered a typo or used a different email address.</li>
 </ul>
 <p><strong>Solutions:</strong></p>
 <ol>
 <li>
 <p><strong>Double-Check Entry:</strong></p>
 <ul>
-<li>Try your email address (if you used username)</li>
-<li>Try your username (if you used email)</li>
-<li>Check for typos</li>
+<li>Check for typos and use the email address registered to your account.</li>
 </ul>
 </li>
 <li>
@@ -3172,10 +3176,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.expand", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.expand", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
       

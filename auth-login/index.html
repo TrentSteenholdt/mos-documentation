@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
       
 
@@ -597,10 +597,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#dont-know-your-username" class="md-nav__link">
+  <a href="#dont-know-which-email-address-you-registered" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Don't know your username
+        Don't know which email address you registered
       
     </span>
   </a>
@@ -691,6 +691,34 @@
     
   
     Register
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../demo-registration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explore the Demo
   
 
     
@@ -2843,10 +2871,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#dont-know-your-username" class="md-nav__link">
+  <a href="#dont-know-which-email-address-you-registered" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Don't know your username
+        Don't know which email address you registered
       
     </span>
   </a>
@@ -2936,7 +2964,9 @@
 <p>Public (before authentication)</p>
 </div>
 <h2 id="overview">Overview</h2>
-<p>Sign in to access your Match Official System account using your email address. Authentication is handled entirely by Microsoft Azure AD B2C — there is no separate MOS sign-in page.</p>
+<p>Sign in to access your Match Official System account. The sign-in page is hosted by Microsoft and includes email and password sign-in, plus the Microsoft and Google options enabled for MOS.</p>
+<p><img alt="MOS sign-in form with Microsoft and Google options, email and password fields, and the Keep me signed in option" src="../assets/images/20261025-sign-in-form.jpg" /></p>
+<p><em>Captured 25 October 2026.</em></p>
 <p><strong>How to Access:</strong> Go to <a href="https://matchofficialsystem.com">matchofficialsystem.com</a> and you are redirected to Azure AD B2C to sign in.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2945,29 +2975,25 @@
 <h2 id="how-to-sign-in">How to Sign In</h2>
 <ol>
 <li>Go to <a href="https://matchofficialsystem.com">matchofficialsystem.com</a></li>
-<li>You are immediately redirected to <strong>Microsoft Azure AD B2C</strong></li>
-<li>Enter your <strong>email address</strong> (or username)</li>
-<li>Click <strong>Next</strong></li>
-<li>Enter your <strong>password</strong></li>
-<li>Optional: Check <strong>Keep me signed in</strong> to stay signed in longer (up to 3 months on trusted devices)</li>
-<li>Click <strong>Sign In</strong></li>
-<li>Result: You are authenticated and returned to Match Official System</li>
+<li>On the sign-in page, enter your registered <strong>email address</strong> and <strong>password</strong>. Both fields appear on the same page.</li>
+<li>Optional: Select <strong>Keep me signed in</strong> on a device you trust.</li>
+<li>Click <strong>Sign in</strong>.</li>
+<li>Result: You are authenticated and returned to Match Official System.</li>
 </ol>
 <p><strong>After Sign In:</strong></p>
 <ul>
 <li>You are taken to the Home page</li>
-<li>Your session is active for 50 minutes of inactivity</li>
 </ul>
 <p><strong>Fields (in Azure AD B2C):</strong></p>
 <ul>
-<li><strong>Email Address</strong> (required): Your registered email address or username</li>
+<li><strong>Email Address</strong> (required): The email address registered to your account</li>
 <li><strong>Password</strong> (required): Your account password</li>
-<li><strong>Forgot my password</strong>: Click to start password recovery (see Forgot Password below)</li>
-<li><strong>Keep me signed in</strong> (optional): Extends your session to 3 months on trusted devices</li>
+<li><strong>Forgot your password?</strong>: Opens MOS password recovery (see <a href="../auth-forgot-password/">Forgot Password</a>)</li>
+<li><strong>Keep me signed in</strong> (optional): Keeps you signed in for longer on a trusted device</li>
 </ul>
 <p><strong>Errors:</strong></p>
 <ul>
-<li>"Account not found": Check for typos in your email; try your username</li>
+<li>"Account not found": Check for typos in the registered email address</li>
 <li>"Incorrect password": Verify Caps Lock is off; try password recovery</li>
 <li>Account temporarily locked: You may have entered incorrect password multiple times — wait a few minutes and try again</li>
 </ul>
@@ -2975,9 +3001,7 @@
 <p>When you check <strong>Keep me signed in</strong> in Azure AD B2C, your session is extended.</p>
 <p><strong>How it works:</strong></p>
 <ul>
-<li>Your session extends to 3 months on the current device</li>
-<li>Uses secure cookies to maintain authentication</li>
-<li>Your login status is preserved across browser sessions</li>
+<li>Selecting this option requests a longer sign-in session on the current device. The sign-in policy determines how long it lasts.</li>
 </ul>
 <p><strong>When to use it:</strong></p>
 <ul>
@@ -2998,13 +3022,13 @@
 <p>Your session ends automatically after a period of inactivity to protect your account.</p>
 <p><strong>What happens:</strong></p>
 <ul>
-<li>After 50 minutes of inactivity, your session expires</li>
+<li>Your sign-in may expire after a period of inactivity</li>
 <li>You are automatically signed out</li>
 <li>Unsaved changes can be lost if your session expires</li>
 </ul>
 <p><strong>How to stay signed in:</strong></p>
 <ul>
-<li>Check <strong>Keep me signed in</strong> in Azure AD B2C when signing in (3 month session)</li>
+<li>Select <strong>Keep me signed in</strong> when using a device you trust</li>
 <li>Actively use the system (refresh activity timer)</li>
 <li>Save your work regularly</li>
 </ul>
@@ -3019,11 +3043,9 @@
 <p>If you forget your password, you can reset it.</p>
 <h3 id="how-to-reset-your-password">How to Reset Your Password</h3>
 <ol>
-<li>On the sign-in page, click <strong>Forgot my password</strong></li>
-<li>Enter your <strong>email address</strong></li>
-<li>Click <strong>Next</strong></li>
-<li>You'll be directed to a secure password reset process</li>
-<li>Follow the on-screen instructions to create a new password</li>
+<li>On the sign-in page, click <strong>Forgot your password?</strong></li>
+<li>Enter the email address registered to your account on the MOS password recovery page.</li>
+<li>Click <strong>Next</strong> and follow the recovery steps.</li>
 </ol>
 <p>See <a href="../auth-forgot-password/">Forgot Password</a> for detailed instructions.</p>
 <h2 id="account-lockout">Account Lockout</h2>
@@ -3033,7 +3055,7 @@
 <li>Wait a few minutes before trying again</li>
 <li>Your account will automatically unlock</li>
 <li>Try signing in again with the correct password</li>
-<li>If locked again, use <strong>Forgot my password</strong> to reset</li>
+<li>If locked again, use <strong>Forgot your password?</strong> to reset</li>
 <li>Contact your administrator if you need immediate help</li>
 </ol>
 <p><strong>Why this happens:</strong> Multiple failed password attempts trigger a temporary security lockout to protect against brute force attacks. This is normal and your account automatically recovers.</p>
@@ -3061,15 +3083,15 @@
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="cant-sign-in">Can't sign in</h3>
 <ol>
-<li>Use <strong>Forgot my password</strong> to reset your password</li>
+<li>Use <strong>Forgot your password?</strong> to reset your password</li>
 <li>Check your Caps Lock is off</li>
-<li>Verify there are no extra spaces before or after your username</li>
+<li>Check the email address for typing errors or extra spaces</li>
 <li>Clear your browser cookies and try again</li>
 </ol>
-<h3 id="dont-know-your-username">Don't know your username</h3>
+<h3 id="dont-know-which-email-address-you-registered">Don't know which email address you registered</h3>
 <ol>
-<li>Contact your association administrator to confirm your username</li>
-<li>Use <strong>Forgot my password</strong> if you prefer to reset</li>
+<li>Contact your association administrator to confirm the email address on your account.</li>
+<li>Use <strong>Forgot your password?</strong> if you need to reset your password.</li>
 </ol>
 <h3 id="new-device-not-recognised">New device not recognised</h3>
 <ol>
@@ -3162,10 +3184,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.expand", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.expand", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
       
