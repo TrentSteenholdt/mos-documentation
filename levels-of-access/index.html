@@ -63,7 +63,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -2471,6 +2471,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#where-a-role-applies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where a role applies
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#common-role-combinations" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2549,10 +2560,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#typical-folder-layout" class="md-nav__link">
+  <a href="#finding-your-folders" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Typical folder layout
+        Finding your folders
       
     </span>
   </a>
@@ -3068,6 +3079,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#where-a-role-applies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where a role applies
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#common-role-combinations" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3146,10 +3168,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#typical-folder-layout" class="md-nav__link">
+  <a href="#finding-your-folders" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Typical folder layout
+        Finding your folders
       
     </span>
   </a>
@@ -3360,12 +3382,12 @@
 <p><strong>Permissions:</strong></p>
 <ul>
 <li>All User permissions</li>
-<li>Create, edit, and delete user accounts</li>
+<li>Create accounts and manage members of the selected organisation</li>
 <li>Modify group settings</li>
 <li>Modify assessment templates</li>
 <li>Manage exam questions and answers</li>
 <li>Manage news and announcements</li>
-<li>Full access to all folders and files</li>
+<li>Manage library folders and files within the organisation</li>
 <li>Assign roles to other members</li>
 </ul>
 <h2 id="roles">Roles</h2>
@@ -3384,7 +3406,7 @@
 <ul>
 <li>Review diary and plan entries that are awaiting review</li>
 <li>Provide feedback on shared assessments</li>
-<li>Run reports on the group</li>
+<li>Run organisation-wide reports when Reviewer is assigned at organisation level</li>
 <li>View assessment lists (but cannot create assessments without Viewer role)</li>
 <li>View subgroup folders they are assigned to (read-only)</li>
 </ul>
@@ -3426,31 +3448,33 @@
 <p><span style="background-color: #0d6efd; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Appointer</span></p>
 <p><strong>Permissions:</strong></p>
 <ul>
-<li>Create, edit, and cancel appointment events</li>
+<li>Create, edit, and cancel shared appointment events with an organisation-level Appointer role</li>
 <li>Assign officials to events and manage appointments</li>
-<li>View and export group-wide availability</li>
+<li>View and export availability for the officials covered by the Appointer role</li>
 <li>Access the Auto-Appoint tool</li>
-<li>Import events and appointments from external files</li>
-<li>Manage import mappings (name and competition)</li>
+<li>Import events and appointments from external files with an organisation-level Appointer role</li>
+<li>Manage import mappings (name and competition) with an organisation-level Appointer role</li>
 <li>Send appointment notifications to officials</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Configuring appointment roles and venues requires Owner access. The Appointer role grants management of appointments only.</p>
+<p>The dedicated Roles and Venues pages require Owner access. Subgroup Appointers manage only permitted officials; shared event changes, venue changes and imports need an organisation-level Appointer or Owner.</p>
 </div>
 <h3 id="selector">Selector</h3>
 <p><span style="background-color: #212529; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Selector</span></p>
 <p><strong>Permissions:</strong></p>
 <ul>
-<li>View the depth chart across all grades</li>
+<li>View the depth chart within the assigned organisation or subgroup panels</li>
 <li>Manually reorder officials on the depth chart</li>
 <li>Enter subjective scores for officials</li>
 <li>Export depth chart data to CSV</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Configuring depth chart scoring and triggering recalculations requires Owner access.</p>
+<p>Scoring configuration and recalculation require Owner access. Subgroup-only Selectors must choose an assigned subgroup in Grade Chart and cannot open organisation-wide Overview or overall rankings.</p>
 </div>
+<h2 id="where-a-role-applies">Where a role applies</h2>
+<p>A role assigned to the organisation covers that organisation. A role assigned only to a subgroup stays within its assigned officials or panel. The same person can have different responsibilities in different organisations. Ask an Owner to review your role if a required action is unavailable; choosing another filter or opening a saved link does not extend your access.</p>
 <h2 id="common-role-combinations">Common Role Combinations</h2>
 <p>Here are some typical ways roles are combined:</p>
 <table>
@@ -3505,7 +3529,7 @@
 <tr>
 <td>Group administrator</td>
 <td>Owner</td>
-<td>(has all permissions)</td>
+<td>All organisation permissions</td>
 </tr>
 </tbody>
 </table>
@@ -3513,7 +3537,7 @@
 <p>Folder permissions depend on your access level and roles.</p>
 <h3 id="folder-access-for-users">Folder access for Users</h3>
 <ul>
-<li>Access only to personal folder: <code>User/{username}</code> (if enabled)</li>
+<li>Access your own personal folder when enabled; ownership stays with your account when your name changes</li>
 <li>Upload and delete files only inside personal folder</li>
 <li>Cannot access group or subgroup folders</li>
 </ul>
@@ -3539,20 +3563,8 @@
 <li>Can manage all files and folders</li>
 <li>Can generate share links for any file</li>
 </ul>
-<h3 id="typical-folder-layout">Typical folder layout</h3>
-<div class="highlight"><pre><span></span><code>Home/
-├── user/                   (personal user folders, if enabled)
-│   ├── john.smith/
-│   ├── jane.doe/
-│   └── ...
-├── subgroups/              (if enabled)
-│   ├── Northern Division/
-│   ├── Southern Division/
-│   └── ...
-├── Documents/
-├── Photos/
-└── Resources/
-</code></pre></div>
+<h3 id="finding-your-folders">Finding your folders</h3>
+<p>Your personal folder is shown alongside the organisation's other library folders when enabled. Its ownership follows your account, even if your display name changes. Group and subgroup folders appear only when your permissions allow them.</p>
 <h2 id="common-permission-questions">Common Permission Questions</h2>
 <h3 id="can-i-upload-files">Can I upload files?</h3>
 <ul>
@@ -3565,10 +3577,10 @@
 <h3 id="can-i-delete-files">Can I delete files?</h3>
 <ul>
 <li><strong>User (no roles)</strong>: Only files you created in your personal folder</li>
-<li><strong>Viewer</strong>: No</li>
-<li><strong>Reviewer</strong>: No</li>
+<li><strong>Viewer</strong>: Only within their enabled personal folder</li>
+<li><strong>Reviewer</strong>: Only within their enabled personal folder</li>
 <li><strong>Files Manager</strong>: Yes, in assigned areas</li>
-<li><strong>Owner</strong>: Yes, any file in any folder</li>
+<li><strong>Owner</strong>: Yes, within the organisation's library folders</li>
 </ul>
 <h3 id="can-i-review-assessments">Can I review assessments?</h3>
 <ul>
@@ -3595,28 +3607,31 @@
 </ul>
 <h3 id="can-i-run-reports">Can I run reports?</h3>
 <ul>
-<li><strong>User (no roles)</strong>: No</li>
-<li><strong>Viewer</strong>: No</li>
-<li><strong>Reviewer</strong>: Yes</li>
-<li><strong>Owner</strong>: Yes</li>
+<li><strong>All users</strong>: Can run their own personal reports</li>
+<li><strong>Organisation-level Viewer or Reviewer</strong>: Can run group reports</li>
+<li><strong>Subgroup-only Viewer or Reviewer</strong>: Personal reports only; organisation-wide group reports are not available</li>
+<li><strong>Owner</strong>: Can run group reports for their organisation</li>
 </ul>
 <h3 id="can-i-manage-appointments">Can I manage appointments?</h3>
 <ul>
 <li><strong>User (no roles)</strong>: Can view own appointments and respond only</li>
-<li><strong>Appointer</strong>: Yes — create events, assign officials, import, auto-appoint</li>
+<li><strong>Organisation-level Appointer</strong>: Create shared events, assign officials, import and use Auto-Appoint</li>
+<li><strong>Subgroup-only Appointer</strong>: Manage appointments and Auto-Appoint for permitted officials; shared event changes and imports require organisation-level access</li>
 <li><strong>Owner</strong>: Yes, full access including configuring roles and venues</li>
 </ul>
 <h3 id="can-i-view-group-wide-availability">Can I view group-wide availability?</h3>
 <ul>
 <li><strong>User (no roles)</strong>: No</li>
-<li><strong>Appointer</strong>: Yes</li>
-<li><strong>Owner</strong>: Yes</li>
+<li><strong>Organisation-level Appointer</strong>: Yes</li>
+<li><strong>Subgroup-only Appointer</strong>: Availability is limited to officials in assigned subgroups</li>
+<li><strong>Owner</strong>: Yes, within their organisation</li>
 </ul>
 <h3 id="can-i-view-the-depth-chart">Can I view the depth chart?</h3>
 <ul>
 <li><strong>User (no roles)</strong>: No</li>
-<li><strong>Selector</strong>: Yes</li>
-<li><strong>Owner</strong>: Yes</li>
+<li><strong>Organisation-level Selector</strong>: Yes, including organisation-wide views</li>
+<li><strong>Subgroup-only Selector</strong>: Assigned panels in Grade Chart and their score breakdowns; not organisation-wide views</li>
+<li><strong>Owner</strong>: Yes, within their organisation</li>
 </ul>
 <h3 id="can-i-manage-users">Can I manage users?</h3>
 <ul>

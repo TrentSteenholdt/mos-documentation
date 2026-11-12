@@ -63,7 +63,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -3147,11 +3147,16 @@
 <p><span style="background-color: #0d6efd; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Appointer</span> role or <span style="background-color: #198754; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Owner</span> access required</p>
 </div>
 <h2 id="overview">Overview</h2>
-<p>The Appointments page is where administrators create events, assign officials, and track staffing across all fixtures. You can see every event for the season, check how many officials have been assigned, and manage individual appointments from a single page.</p>
+<p>The Appointments page is where administrators create events, assign officials, and track staffing across all fixtures. You can see events for the season, check staffing within your permitted scope, and manage individual appointments from a single page.</p>
 <p><img alt="Appointments overview with an event selected, showing the fixture list, event details and assigned officials" src="../assets/images/20261025-appointments-selected-event-details.jpg" /></p>
 <p><em>Captured 25 October 2026. Fixture details are fictional.</em></p>
 <h2 id="how-to-access">How to Access</h2>
 <p>From the main menu under <strong>Owner Admin</strong>, click <strong>Appointments</strong> then <strong>Appointments</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Organisation and subgroup Appointers</p>
+<p>An Appointer role assigned to the organisation covers its officials. If your role is assigned only to a subgroup, official lists, availability, appointments, suggestions, notifications and exports are limited to officials in your assigned subgroups. Shared fixtures may still appear, but their staffing figures reflect only the appointments you can access.</p>
+<p>Creating, editing or deleting shared events, changing shared venues and using imports require an organisation-level Appointer role or Owner access. Ask an Owner to make those changes if your role is subgroup-only.</p>
+</div>
 <h2 id="before-you-start">Before You Start</h2>
 <p>Set up your <a href="../appointments-roles-venues/">Roles</a> and <a href="../appointments-roles-venues/">Venues</a> before creating events — these are needed when assigning officials and building events.</p>
 <p>If your organisation uses an external appointments system, you may be in <strong>Passive Mode</strong>. In this mode, events and appointments are imported from that system rather than created manually. A blue notice at the top of the page will tell you if this is the case.</p>
@@ -3212,7 +3217,7 @@
 <hr />
 <h2 id="creating-a-new-event">Creating a New Event</h2>
 <blockquote>
-<p><strong>Note:</strong> Not available in Passive Mode.</p>
+<p><strong>Note:</strong> Creating a shared event requires an organisation-level Appointer role or Owner access and is not available in Passive Mode.</p>
 </blockquote>
 <ol>
 <li>Click <strong>New Event</strong></li>
@@ -3315,7 +3320,7 @@
 <hr />
 <h2 id="assigning-an-official">Assigning an Official</h2>
 <blockquote>
-<p><strong>Note:</strong> Not available in Passive Mode.</p>
+<p><strong>Note:</strong> You need Appointer authority over the selected official to assign them. Subgroup Appointers can assign officials in their permitted subgroups. Manual assignment is not available in Passive Mode.</p>
 </blockquote>
 <ol>
 <li>Select the event from the list</li>
@@ -3349,7 +3354,7 @@
 <ol>
 <li>Click <strong>Notify All</strong> in the event header</li>
 <li>Confirm when prompted</li>
-<li>Result: A notification is sent to all assigned officials for this event</li>
+<li>Result: A notification is sent to the assigned officials you are permitted to manage for this event</li>
 </ol>
 <h3 id="re-notify-one-official">Re-notify One Official</h3>
 <ol>
@@ -3359,7 +3364,7 @@
 <hr />
 <h2 id="cancelling-an-event">Cancelling an Event</h2>
 <blockquote>
-<p><strong>Note:</strong> Not available in Passive Mode.</p>
+<p><strong>Note:</strong> Cancelling a shared event requires an organisation-level Appointer role or Owner access and is not available in Passive Mode.</p>
 </blockquote>
 <ol>
 <li>Select the event</li>
@@ -3370,7 +3375,7 @@
 <hr />
 <h2 id="deleting-an-event">Deleting an Event</h2>
 <blockquote>
-<p><strong>Note:</strong> Not available in Passive Mode.</p>
+<p><strong>Note:</strong> Deleting a shared event requires an organisation-level Appointer role or Owner access and is not available in Passive Mode.</p>
 </blockquote>
 <ol>
 <li>Select the event</li>

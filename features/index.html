@@ -63,7 +63,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -3317,8 +3317,8 @@
 <p>Includes:</p>
 <ul>
 <li>Update personal information and contact details</li>
-<li>Change password and security questions</li>
-<li>Update email address</li>
+<li>Change your password, with another sign-in when required</li>
+<li>Verify a new sign-in email address before switching to it</li>
 <li>Upload or replace profile picture</li>
 <li>Set notification preferences</li>
 <li>View recent account activity</li>
@@ -3330,8 +3330,8 @@
 <ul>
 <li>Invitation based registration</li>
 <li>Secure sign in</li>
-<li>Password recovery</li>
-<li>Session management</li>
+<li>Password recovery through a single-use link valid for one hour</li>
+<li>Sign-in sessions lasting up to eight hours, with sign-out ending older MOS sessions on other devices</li>
 <li>Account security controls</li>
 </ul>
 <p><a href="../auth-login/">Learn more: Sign In</a><br />
@@ -3412,7 +3412,6 @@
 <li>News attachments</li>
 <li>Profile images</li>
 <li>Media downloads</li>
-<li>Secure share links</li>
 <li>Administrative clean up of unused images</li>
 </ul>
 <p><a href="../library-media/">Learn more: Media</a></p>
@@ -3855,7 +3854,7 @@ Scoring configuration, recalculation, and historical season management require <
 <tr>
 <td>Group reports</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
@@ -3901,14 +3900,26 @@ Scoring configuration, recalculation, and historical season management require <
 <td>✅</td>
 </tr>
 <tr>
-<td>Manage events and appointments</td>
+<td>Manage appointments for permitted officials</td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
+<td>☑️</td>
 <td>❌</td>
 <td>✅</td>
+</tr>
+<tr>
+<td>Create or change shared events</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>☑️</td>
 <td>❌</td>
 <td>✅</td>
 </tr>
@@ -3920,7 +3931,7 @@ Scoring configuration, recalculation, and historical season management require <
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>✅</td>
+<td>☑️</td>
 <td>❌</td>
 <td>✅</td>
 </tr>
@@ -3932,19 +3943,19 @@ Scoring configuration, recalculation, and historical season management require <
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>✅</td>
+<td>☑️</td>
 <td>❌</td>
 <td>✅</td>
 </tr>
 <tr>
-<td>View group availability</td>
+<td>View permitted officials' availability</td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>✅</td>
+<td>☑️</td>
 <td>❌</td>
 <td>✅</td>
 </tr>
@@ -3969,7 +3980,7 @@ Scoring configuration, recalculation, and historical season management require <
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>✅</td>
+<td>☑️</td>
 <td>✅</td>
 </tr>
 <tr>
@@ -3981,7 +3992,7 @@ Scoring configuration, recalculation, and historical season management require <
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>✅</td>
+<td>☑️</td>
 <td>✅</td>
 </tr>
 <tr>
@@ -4005,7 +4016,7 @@ Scoring configuration, recalculation, and historical season management require <
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>✅</td>
+<td>☑️</td>
 <td>✅</td>
 </tr>
 <tr>
@@ -4155,6 +4166,9 @@ Scoring configuration, recalculation, and historical season management require <
 </tbody>
 </table>
 <p>☑️ - Access limited to assigned subgroups or when AI add-on is enabled.</p>
+<p>Organisation-wide reports require a Viewer, Reviewer or Owner role assigned at organisation level. A subgroup-only Viewer or Reviewer can still use personal reports but cannot open organisation-wide reports.</p>
+<p>Subgroup Appointers work with their permitted officials. Creating or changing shared events and importing appointments require an organisation-level Appointer or Owner role. Separate Roles and Venues administration pages require Owner access.</p>
+<p>Subgroup Selectors use their assigned panels; overall charts and organisation-wide ranking changes require organisation-level selection permissions. Records and files remain subject to their organisation, audience and feature permissions regardless of a role's general access in this table.</p>
 <p>Administrators can use <strong>Backfill All Seasons</strong>. The Home page's <strong>Depth Coverage</strong> card is available to administrators.</p>
 <h2 id="feature-enablement">Feature Enablement</h2>
 <div class="admonition tip">

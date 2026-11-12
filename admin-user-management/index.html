@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Manage users in your organisation including viewing, editing, creating and deleting user accounts">
+        <meta name="description" content="Manage organisation members, create accounts, request password recovery and update profiles">
       
       
         <meta name="author" content="Trent Steenholdt">
@@ -63,7 +63,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -2162,10 +2162,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resetting-user-passwords" class="md-nav__link">
+  <a href="#requesting-a-password-reset" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Resetting User Passwords
+        Requesting a Password Reset
       
     </span>
   </a>
@@ -2173,10 +2173,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deleting-users" class="md-nav__link">
+  <a href="#removing-a-member" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deleting Users
+        Removing a Member
       
     </span>
   </a>
@@ -3140,10 +3140,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resetting-user-passwords" class="md-nav__link">
+  <a href="#requesting-a-password-reset" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Resetting User Passwords
+        Requesting a Password Reset
       
     </span>
   </a>
@@ -3151,10 +3151,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deleting-users" class="md-nav__link">
+  <a href="#removing-a-member" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deleting Users
+        Removing a Member
       
     </span>
   </a>
@@ -3509,7 +3509,8 @@
 <li>Click <strong>Create User</strong></li>
 </ol>
 <p><strong>What Happens Next</strong></p>
-<p>Result: MOS confirms the account details and opens the new member's record, where you can review group membership and add profile details. MOS sends a welcome email with sign-in details.</p>
+<p>Result: MOS confirms the account details and opens the new member's record, where you can review group membership and add profile details. MOS requests a password setup email containing a <strong>one-hour, single-use link</strong>. The person opens the link, chooses their own password, then signs in; no temporary password is emailed for this organisation account setup.</p>
+<p><img alt="Password setup form where the member chooses and confirms their password" src="../assets/images/20261112-password-reset-choose-password.jpg" /></p>
 <h3 id="bulk-import-users">Bulk Import Users</h3>
 <p>To add multiple users from a CSV file:</p>
 <ol>
@@ -3535,7 +3536,7 @@
 <li>Valid email format</li>
 <li>Duplicate email addresses within the file</li>
 </ul>
-<p>If an email address already belongs to an account, the preview marks the row as a warning and explains whether that account will be added to your group or restored.</p>
+<p>If an email address already belongs to an account, the preview marks the row as an <strong>error</strong>. Add an existing active account through <a href="../admin-membership/">Membership</a> instead of recreating it. A disabled account needs support review before restoration; import does not restore it automatically.</p>
 <p><strong>Preview Table</strong></p>
 <p>The preview shows a table with these columns:</p>
 <ul>
@@ -3543,7 +3544,7 @@
 <li><strong>First Name</strong>: User's first name</li>
 <li><strong>Surname</strong>: User's surname</li>
 <li><strong>Email</strong>: User's email address</li>
-<li><strong>Status</strong>: Badge showing Valid, Warning, or Error</li>
+<li><strong>Status</strong>: Badge showing Valid or Error</li>
 <li><strong>Detail</strong>: Explanation of any issue found</li>
 </ul>
 <p><strong>Results</strong></p>
@@ -3552,37 +3553,25 @@
 <p class="admonition-title">Warning</p>
 <p>Check that you have enough available licences before importing.</p>
 </div>
-<h2 id="resetting-user-passwords">Resetting User Passwords</h2>
-<p>You can reset a user's password when they forget it or need a temporary password.</p>
-<p><strong>Availability:</strong> This action only appears for accounts that support password reset.</p>
-<p>To reset a user's password:</p>
+<h2 id="requesting-a-password-reset">Requesting a Password Reset</h2>
+<p>For an eligible email-and-password account, you can send the member a recovery link. You do not choose, see or email their new password.</p>
 <ol>
-<li>Find the member in the user list and click <strong>Reset password</strong>.</li>
-<li>Review the <strong>Confirm Password Reset</strong> message</li>
-<li>Click <strong>Reset Password</strong> to confirm</li>
-<li>Result: MOS confirms the reset and sends the user an email with temporary sign-in details</li>
+<li>Find the member in the user list and select <strong>Reset password</strong>.</li>
+<li>Review the <strong>Confirm Password Reset</strong> message.</li>
+<li>Select <strong>Reset Password</strong> to request the email.</li>
+<li>Ask the member to open the emailed link within <strong>one hour</strong>, choose a new password and sign in again.</li>
 </ol>
-<h2 id="deleting-users">Deleting Users</h2>
-<p>To remove a user from the system:</p>
+<p>The link is single-use. Requesting recovery does not immediately change the password. Completing it ends older MOS sign-in sessions, including those on other devices. If the link expires, the member can use <a href="../auth-forgot-password/">Forgot Password</a> to request another.</p>
+<p>The action appears only for accounts that support MOS password recovery. Microsoft and Google passwords are managed with those providers. An older account without a sign-in identity may require setup before a recovery link can be delivered; follow MOS's message or contact support if setup fails.</p>
+<h2 id="removing-a-member">Removing a Member</h2>
 <ol>
-<li>Find the member in the user list and click <strong>Delete user</strong></li>
-<li>Review the confirmation message</li>
-<li>Click <strong>Delete User</strong> to confirm</li>
-<li>Result: MOS removes the user and refreshes the list</li>
+<li>Select the intended organisation in MOS.</li>
+<li>Find the member in the user list and select <strong>Remove member</strong>.</li>
+<li>Review <strong>Confirm Remove Member</strong>, including the selected person and removal scope.</li>
+<li>Select <strong>Remove Member</strong>.</li>
+<li>Result: The member is removed from the selected organisation and the list refreshes.</li>
 </ol>
-<p><img alt="Delete User confirmation dialog showing the selected member and Cancel or Delete User actions." src="../assets/images/20261025-user-management-delete-confirmation.jpg" /></p>
-<p><em>Captured 25 October 2026.</em></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-</div>
-<p>If the person belongs to multiple groups, deleting them removes them from all groups. To remove them from only one group, use the <strong>Member</strong> switch in <a href="#group-membership">Group Membership</a>.</p>
-<p><strong>Before Deleting</strong></p>
-<p>Consider if you should:</p>
-<ul>
-<li>Remove them from specific groups instead of deleting entirely</li>
-<li>Lower their access level instead</li>
-<li>Keep the account but inform the user they no longer have access</li>
-</ul>
+<p>This removes their membership and organisation permissions <strong>only for the selected organisation</strong>. Their sign-in account, profile and access to other organisations remain available. If this was their only organisation, they no longer have ordinary access to its records but their sign-in account is retained. Use <a href="../admin-membership/">Membership and Roles</a> to change a role instead of removing membership when that better suits the intended access.</p>
 <h2 id="exporting-users">Exporting Users</h2>
 <p><img alt="Export Users control." src="../assets/images/20261025-user-management-export.jpg" /></p>
 <p><em>Captured 25 October 2026.</em></p>
@@ -3657,7 +3646,7 @@
 <li>Use bulk import for adding multiple users at once</li>
 <li>Check licence availability before adding users</li>
 <li>Use search to find users quickly in large lists</li>
-<li>Remove users from groups they no longer need access to instead of deleting</li>
+<li>Select the correct organisation before removing a member; other organisation memberships are preserved</li>
 </ul>
 <p><strong>When Changing Names</strong></p>
 <ul>

@@ -63,7 +63,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -1944,10 +1944,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example-1-group-level-reviewer-sees-everything-in-the-group" class="md-nav__link">
+  <a href="#example-1-group-level-reviewer-works-across-the-group" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example 1: Group-level reviewer sees everything in the group
+        Example 1: Group-level reviewer works across the group
       
     </span>
   </a>
@@ -2776,10 +2776,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example-1-group-level-reviewer-sees-everything-in-the-group" class="md-nav__link">
+  <a href="#example-1-group-level-reviewer-works-across-the-group" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example 1: Group-level reviewer sees everything in the group
+        Example 1: Group-level reviewer works across the group
       
     </span>
   </a>
@@ -2890,6 +2890,10 @@
 <p class="admonition-title">Owner access required</p>
 <p>Only users with <span style="background-color: #198754; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Owner</span> access can manage subgroup membership.</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">A subgroup role stays within its subgroup</p>
+<p>Appointers manage only officials in their assigned subgroups, and Selectors work only within their assigned panels. These roles do not grant shared event changes, imports, organisation-wide depth views or group reports. Group reports require an organisation-level Viewer or Reviewer, or Owner access. Personal reports remain available.</p>
+</div>
 <h2 id="overview">Overview</h2>
 <p>This guide explains how to add members to subgroups and how subgroup access affects visibility, notifications and reviews.</p>
 <div class="admonition note">
@@ -2903,7 +2907,7 @@
 <ul>
 <li><span style="background-color: #6c757d; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">User</span> Standard member with personal workspace access</li>
 <li><span style="background-color: #0dcaf0; color: #000; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Viewer</span> Can create assessments on other users and view subgroup folders</li>
-<li><span style="background-color: #ffc107; color: #000; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Reviewer</span> Can review diary and plan entries, run reports, and view subgroup folders</li>
+<li><span style="background-color: #ffc107; color: #000; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Reviewer</span> Can review permitted diary and plan entries and view assigned subgroup folders; group reports require an organisation-level role</li>
 <li><span style="background-color: #dc3545; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Trainer</span> Can manage exams (group-level only)</li>
 <li><span style="background-color: #6f42c1; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Communications</span> Can manage news articles (group-level only)</li>
 <li><span style="background-color: #20c997; color: #000; padding: 2px 8px; border-radius: 4px; font-size: 0.875em; font-weight: 500;">Files Manager</span> Can upload, delete, and organise files and folders</li>
@@ -2953,11 +2957,12 @@
 <h2 id="what-happens-with-notifications-and-reviews">What happens with Notifications and Reviews</h2>
 <ul>
 <li>Notifications: When a subgroup is selected, notifications go to group Owners and Reviewers, plus the subgroup’s Reviewers. If no subgroup is selected, only the group Owners and Reviewers are notified.</li>
-<li>Reviews: Group-level Reviewers can review items across the whole group. Subgroup Reviewers can only review items for members of the same subgroup(s).</li>
+<li>Reviews: Group-level Reviewers can review permitted submitted items across the group. Subgroup Reviewers are limited to their assigned subgroup(s). Drafts and other restricted records keep their own visibility rules.</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <p>The diagrams below show which people can see, get notified, or review. Shapes inside the group show subgroup membership.</p>
-<h3 id="example-1-group-level-reviewer-sees-everything-in-the-group">Example 1: Group-level reviewer sees everything in the group</h3>
+<p>These examples assume the entry is available to the reviewer and the relevant notifications are enabled. Membership alone does not make a private draft visible or guarantee an email notification.</p>
+<h3 id="example-1-group-level-reviewer-works-across-the-group">Example 1: Group-level reviewer works across the group</h3>
 <div class="panzoom-box" data-key="alt" id="panzoom0" oncontextmenu="return false;">
     <div class="panzoom-info-box panzoom-info-box-top panzoom-hidden">
 Hold "Alt" / "Option" to enable pan &amp; zoom
@@ -3196,7 +3201,7 @@ Hold "Alt" / "Option" to enable pan &amp; zoom
 <h2 id="field-details-and-messages">Field Details and Messages</h2>
 <p>Required vs optional  </p>
 <ul>
-<li>Group level: User, Viewer, Reviewer, Trainer, Communications, Files Manager, Owner are available</li>
+<li>Group level: User, Viewer, Reviewer, Trainer, Communications, Files Manager, Appointer, Selector and Owner are available</li>
 <li>Subgroup level: User, Viewer, Reviewer, Files Manager, Appointer and Selector are available (Trainer, Communications and Owner are group-level only)</li>
 </ul>
 <p>Common messages  </p>

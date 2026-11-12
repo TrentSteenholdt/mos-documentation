@@ -63,7 +63,7 @@
     
     
   <meta name="panzoom-theme" content="material">
-<meta name="panzoom-data" content='{"selectors": [".mermaid", ".d2"], "initial_zoom_level": 1.0}'> </head>
+<meta name="panzoom-data" content='{"selectors": [".d2", ".mermaid"], "initial_zoom_level": 1.0}'> </head>
   
   
     <body dir="ltr">
@@ -3016,7 +3016,7 @@
 <li><strong>Email Address</strong> (required): The email address registered to your account</li>
 <li><strong>Password</strong> (required): Your account password</li>
 <li><strong>Forgot your password?</strong>: Opens MOS password recovery (see <a href="../auth-forgot-password/">Forgot Password</a>)</li>
-<li><strong>Keep me signed in</strong> (optional): Keeps you signed in for longer on a trusted device</li>
+<li><strong>Keep me signed in</strong> (optional): Requests remembered sign-in with Microsoft; it does not extend the eight-hour MOS session limit</li>
 </ul>
 <p><strong>Errors:</strong></p>
 <ul>
@@ -3025,10 +3025,10 @@
 <li>Account temporarily locked: You may have entered incorrect password multiple times — wait a few minutes and try again</li>
 </ul>
 <h2 id="keep-me-signed-in">Keep Me Signed In</h2>
-<p>When you check <strong>Keep me signed in</strong> in Azure AD B2C, your session is extended.</p>
+<p>The Microsoft sign-in page may offer <strong>Keep me signed in</strong> on a device you trust. MOS itself uses a fixed session lasting up to <strong>eight hours</strong>, even when you select this option.</p>
 <p><strong>How it works:</strong></p>
 <ul>
-<li>Selecting this option requests a longer sign-in session on the current device. The sign-in policy determines how long it lasts.</li>
+<li>This option affects the sign-in provider's remembered session. It does not keep an MOS session open indefinitely or extend it through continued activity.</li>
 </ul>
 <p><strong>When to use it:</strong></p>
 <ul>
@@ -3046,33 +3046,20 @@
 </ul>
 <p><strong>Security:</strong> Your authentication is protected by Microsoft Azure AD B2C enterprise security.</p>
 <h2 id="session-timeout">Session Timeout</h2>
-<p>Your session ends automatically after a period of inactivity to protect your account.</p>
-<p><strong>What happens:</strong></p>
+<p>Your MOS sign-in session lasts up to <strong>eight hours</strong>. Working in MOS or refreshing a page does not extend that session. You may be asked to sign in earlier when you change sensitive account details or another session is ended.</p>
 <ul>
-<li>Your sign-in may expire after a period of inactivity</li>
-<li>You are automatically signed out</li>
-<li>Unsaved changes can be lost if your session expires</li>
+<li>Save your work regularly; unsaved edits may be lost when a session ends.</li>
+<li>If prompted to sign in, complete sign-in before continuing.</li>
+<li>Before changing a password or primary email, a <strong>Sign in again</strong> confirmation may appear. Complete it, then re-enter the intended change on the returning page.</li>
+<li>Signing out, resetting your password or confirming a primary-email change ends older MOS sessions on other devices. Sign in again on those devices when you next use them.</li>
 </ul>
-<p><strong>How to stay signed in:</strong></p>
-<ul>
-<li>Select <strong>Keep me signed in</strong> when using a device you trust</li>
-<li>Actively use the system (refresh activity timer)</li>
-<li>Save your work regularly</li>
-</ul>
-<p><strong>If you're signed out:</strong></p>
-<ol>
-<li>Go to <a href="https://matchofficialsystem.com">matchofficialsystem.com</a></li>
-<li>Sign in with your email and password</li>
-<li>You'll be returned to the system</li>
-</ol>
-<p><strong>Tip:</strong> Save your work regularly to avoid losing changes when your session ends.</p>
 <h2 id="forgot-your-password">Forgot Your Password</h2>
 <p>If you forget your password, you can reset it.</p>
 <h3 id="how-to-reset-your-password">How to Reset Your Password</h3>
 <ol>
 <li>On the sign-in page, click <strong>Forgot your password?</strong></li>
 <li>Enter the email address registered to your account on the MOS password recovery page.</li>
-<li>Click <strong>Next</strong> and follow the recovery steps.</li>
+<li>Select <strong>Send reset link</strong>, then open the email link within one hour to choose your new password. The link can be used once.</li>
 </ol>
 <p>See <a href="../auth-forgot-password/">Forgot Password</a> for detailed instructions.</p>
 <h2 id="account-lockout">Account Lockout</h2>
@@ -3105,7 +3092,8 @@
 <ol>
 <li>Click your profile name or avatar in the top-right corner</li>
 <li>Click <strong>Sign Out</strong></li>
-<li>Result: You are signed out and return to the sign-in page</li>
+<li>In the confirmation, select <strong>Sign out</strong>.</li>
+<li>Result: You return to sign-in, and older MOS sessions on your other devices are ended too.</li>
 </ol>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="cant-sign-in">Can't sign in</h3>
